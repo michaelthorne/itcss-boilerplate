@@ -5,7 +5,9 @@
   "dependencies": {
     "normalize.css": "^7.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
   "scripts": {},
   "repository": {
     "type": "git",
