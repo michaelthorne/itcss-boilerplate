@@ -6,9 +6,12 @@
     "normalize.css": "^7.0.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
   },
-  "scripts": {},
+  "scripts": {
+    "start": "gulp"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/michaelthorne/itcss-boilerplate.git"
