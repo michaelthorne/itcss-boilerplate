@@ -1,0 +1,19 @@
+{
+  "name": "itcss-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "normalize.css": "^7.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelthorne/itcss-boilerplate.git"
+  },
+  "author": "Michael Thorne",
+  "bugs": {
+    "url": "https://github.com/michaelthorne/itcss-boilerplate/issues"
+  },
+  "homepage": "https://github.com/michaelthorne/itcss-boilerplate#readme"
+}
