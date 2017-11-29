@@ -16,6 +16,14 @@
     text-shadow: none;
 }
 
+/**
+ * Correct the `line-height` of placeholder text in Chrome.
+ * http://stackoverflow.com/a/17681447/648203
+ */
+::-webkit-input-placeholder {
+    line-height: normal;
+}
+
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
