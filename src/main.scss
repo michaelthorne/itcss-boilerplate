@@ -15,15 +15,17 @@
  * Clearfix............Contain floated elements.
  *
  * GENERIC
+ * Normalize.css.......Render all elements more consistently.
  *
  * ELEMENTS
  * Headings............Font sizing for h1 to h6.
  * Table...............Basic table styles.
  *
  * OBJECTS
+ * Wrapper.............Content width constraints.
  *
  * COMPONENTS
- * Buttons.............The button component.
+ * Buttons.............Styling for buttons.
  *
  * UTILITIES
  */
@@ -67,6 +69,7 @@
 
 @import "elements/elements.page";
 @import "elements/elements.headings";
+@import "elements/elements.type";
 @import "elements/elements.images";
 @import "elements/elements.tables";
 
@@ -78,3 +81,10 @@
    ========================================================================== */
 
 @import "components/components.buttons";
+
+
+
+
+
+/* #UTILITIES
+   ========================================================================== */
