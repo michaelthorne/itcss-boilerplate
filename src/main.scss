@@ -12,6 +12,7 @@
  * Responsive..........Breakpoints for media queries.
  *
  * TOOLS
+ * Clearfix............Contain floated elements.
  *
  * GENERIC
  *
@@ -38,6 +39,15 @@
 @import "settings/settings.colors";
 @import "settings/settings.fonts";
 @import "settings/settings.responsive";
+
+
+
+
+
+/* #TOOLS
+   ========================================================================== */
+
+@import "tools/tools.clearfix";
 
 
 
