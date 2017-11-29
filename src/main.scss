@@ -6,9 +6,9 @@
  * TABLE OF CONTENTS
  *
  * SETTINGS
- * Global..............Globally-available brand settings.
- * Color...............The color palette.
- * Font................Settings related to typography.
+ * Global..............Globally-available settings.
+ * Colors..............The color palette.
+ * Fonts...............Settings related to typography.
  * Responsive..........Breakpoints for media queries.
  *
  * TOOLS
@@ -20,6 +20,7 @@
  * OBJECTS
  *
  * COMPONENTS
+ * Buttons.............The button component.
  *
  * UTILITIES
  */
@@ -28,9 +29,14 @@
  * #SETTINGS
  */
 @import "settings/settings.global";
-@import "settings/settings.color";
-@import "settings/settings.font";
+@import "settings/settings.colors";
+@import "settings/settings.fonts";
 @import "settings/settings.responsive";
+
+/**
+ * #COMPONENTS
+ */
+@import "components/components.buttons";
 
 /**
  * #GENERIC
