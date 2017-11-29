@@ -6,16 +6,27 @@
  * TABLE OF CONTENTS
  *
  * SETTINGS
+ * Global..............
+ *
  * TOOLS
+ *
  * GENERIC
+ *
  * ELEMENTS
+ *
  * OBJECTS
+ *
  * COMPONENTS
+ *
  * UTILITIES
  */
 
-// SETTINGS
+/**
+ * #SETTINGS
+ */
 @import "settings/settings.global";
 
-// GENERIC
-@import "./node_modules/normalize.css/normalize";
+/**
+ * #GENERIC
+ */
+@import "node_modules/normalize.css/normalize";
