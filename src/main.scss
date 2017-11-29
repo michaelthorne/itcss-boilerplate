@@ -25,6 +25,10 @@
  * UTILITIES
  */
 
+
+
+
+
 /**
  * #SETTINGS
  */
@@ -33,12 +37,29 @@
 @import "settings/settings.fonts";
 @import "settings/settings.responsive";
 
-/**
- * #COMPONENTS
- */
-@import "components/components.buttons";
+
+
+
 
 /**
  * #GENERIC
  */
 @import "node_modules/normalize.css/normalize";
+
+
+
+
+
+/**
+ * #ELEMENTS
+ */
+@import "elements/elements.headings";
+
+
+
+
+
+/**
+ * #COMPONENTS
+ */
+@import "components/components.buttons";
