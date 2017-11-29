@@ -3,6 +3,11 @@
 \* -------------------------------------------------------------------------- */
 
 .c-btn {
+    cursor: pointer;
+    font: $font;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
 
     // Secondary
     &.c-btn--secondary {
