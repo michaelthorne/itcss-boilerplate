@@ -1,13 +1,16 @@
 {
   "name": "itcss-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "ITCSS Boilerplate: Inverted Triangle CSS architecture by Harry Roberts @csswizardry",
   "dependencies": {
     "normalize.css": "^7.0.0"
   },
   "devDependencies": {
+    "del": "^3.0.0",
     "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.8",
+    "run-sequence": "^2.2.0"
   },
   "scripts": {
     "start": "gulp"
