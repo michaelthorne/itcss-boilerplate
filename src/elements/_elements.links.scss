@@ -1,0 +1,15 @@
+/* ==========================================================================
+   #LINKS
+   ========================================================================== */
+
+a {
+    color: $color-brand;
+    text-decoration: none;
+    text-decoration-skip: ink;
+
+    &:active,
+    &:focus,
+    &:hover {
+        color: $color-brand-secondary;
+    }
+}
