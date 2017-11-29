@@ -29,6 +29,7 @@
  * Buttons.............Styling for buttons.
  *
  * UTILITIES
+ * Clearfix............Bind the clearfix mixin to a utility class.
  */
 
 
@@ -90,3 +91,5 @@
 
 /* #UTILITIES
    ========================================================================== */
+
+@import "utilities/utilities.clearfix";
