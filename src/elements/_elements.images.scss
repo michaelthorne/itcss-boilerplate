@@ -1,0 +1,17 @@
+/* ==========================================================================
+   #IMAGES
+   ========================================================================== */
+
+/* Fluid images for responsive design */
+img {
+    max-width: 100%;
+}
+
+/**
+ * Images with an explicitly defined `width`
+ * and/or `height` are not fluid.
+ */
+img[width],
+img[height] {
+    max-width: none;
+}
