@@ -3,13 +3,13 @@
    ========================================================================== */
 
 a {
-    color: $color-brand;
+    color: $color-brand-secondary;
     text-decoration: none;
     text-decoration-skip: ink;
 
     &:active,
     &:focus,
     &:hover {
-        color: $color-brand-secondary;
+        color: $color-brand;
     }
 }
