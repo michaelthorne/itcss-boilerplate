@@ -2,7 +2,8 @@
    #CLEARFIX
    ========================================================================== */
 
-/* Attach the clearfix mixin to a utility class */
+/* Attach the clearfix mixin to a utility class. */
+
 .u-clearfix {
     @include clearfix;
 }

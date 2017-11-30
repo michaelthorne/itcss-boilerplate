@@ -1,9 +1,9 @@
 /* ==========================================================================
-   #TYPE
+   #LISTS
    ========================================================================== */
 
-hr {
-    border: 0;
-    border-top: 0.125em solid $color-brand;
-    display: block;
+/* Consistent indentation for lists. */
+
+dd, ol, ul {
+    margin-left: $base-spacing-unit;
 }

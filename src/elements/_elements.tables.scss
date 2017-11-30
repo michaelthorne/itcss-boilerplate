@@ -6,12 +6,15 @@ table {
     border-collapse: collapse;
     width: 100%;
 
+    thead {
+        border-bottom: 0.125em solid $color-brand;
+    }
+
     th {
-        padding: 1em;
-        text-align: left;
+        padding: $base-spacing-unit;
     }
 
     td {
-        padding: 1em;
+        padding: $base-spacing-unit;
     }
 }

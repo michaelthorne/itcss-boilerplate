@@ -2,15 +2,17 @@
    #IMAGES
    ========================================================================== */
 
-/* Fluid images for responsive design */
+/* Fluid images for responsive design. */
+
 img {
     max-width: 100%;
 }
 
 /**
- * Images with an explicitly defined `width`
- * and/or `height` are not fluid.
- */
+ * If a `width` and/or `height` attribute have been explicitly defined, let’s
+ * not make the image fluid.
+*/
+
 img[width],
 img[height] {
     max-width: none;

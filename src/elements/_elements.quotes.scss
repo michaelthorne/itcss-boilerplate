@@ -2,10 +2,11 @@
    #QUOTES
    ========================================================================== */
 
-/* Block quote */
+/* Block */
+
 blockquote {
-    border-left: 0.25em solid $color-brand;
-    padding-left: 1em;
+    border-left: 0.125em solid $color-brand-secondary;
+    padding-left: $base-spacing-unit;
 
     p {
 
@@ -28,7 +29,8 @@ blockquote {
     }
 }
 
-/* Inline quote */
+/* Inline */
+
 q {
     font-style: italic;
     quotes: '‘' '’' '“' '”';

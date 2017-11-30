@@ -2,33 +2,24 @@
    #RESET
    ========================================================================== */
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+/* Remove margins and padding. */
+
+body,
+h1, h2, h3, h4, h5, h6,
+blockquote, p, pre,
+dl, dd, ol, ul,
+figure,
+hr,
+fieldset, legend {
+    margin: 0;
+    padding: 0;
 }
 
 /**
- * Correct the `line-height` of placeholder text in Chrome.
- * http://stackoverflow.com/a/17681447/648203
+ * Remove the gap between audio, canvas, iframes, images, videos and the bottom
+ * of their containers: https://github.com/h5bp/html5-boilerplate/issues/440
  */
-::-webkit-input-placeholder {
-    line-height: normal;
-}
 
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
 audio,
 canvas,
 iframe,
@@ -38,9 +29,8 @@ video {
     vertical-align: middle;
 }
 
-/* Remove default fieldset styles */
+/* Remove the default border. */
+
 fieldset {
     border: 0;
-    margin: 0;
-    padding: 0;
 }

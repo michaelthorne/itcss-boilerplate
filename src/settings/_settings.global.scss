@@ -3,11 +3,14 @@
    ========================================================================== */
 
 /* Brand */
+
 $brand-color:           #001f3f;
 $brand-color-secondary: #01ff70;
 $brand-font:            Arial, sans-serif;
 $brand-font-secondary:  Georgia, serif;
 
 /* Base */
+
 $base-font-size:        100%;
 $base-line-height:      1.5;
+$base-spacing-unit:     $base-line-height + em;
