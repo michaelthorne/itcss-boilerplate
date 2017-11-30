@@ -1,9 +1,8 @@
 /* ==========================================================================
    #MIXINS
    ========================================================================== */
-/**
- * Set font size and
- */
+
+/* Set font size with a relative line height. */
 
 @mixin font-size($font-size, $line-height: auto, $important: false) {
     font-size: $font-size;
