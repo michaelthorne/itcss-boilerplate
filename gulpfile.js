@@ -22,12 +22,20 @@ function getPath () {
     return config.dist ? config.paths.dist : config.paths.build;
 }
 
-// Delete built files
+// Cleanup
 gulp.task('delete', function () {
     return del([getPath()]);
 });
 
-// Compile Sass to CSS
+// Copy assets to build
+gulp.task('html', function () {
+    return gulp.src(config.paths.src + '*.html', {
+        'base': config.paths.src,
+    })
+        .pipe(gulp.dest(getPath()));
+});
+
+// Sass
 gulp.task('sass', function () {
     let options = {
         outputStyle: 'nested',
@@ -42,10 +50,10 @@ gulp.task('sass', function () {
         .pipe(gulp.dest(getPath() + '/css'));
 });
 
-// Build the project
+// Build
 gulp.task('build', function () {
-    runSequence('delete', 'sass');
+    runSequence('delete', 'sass', 'html');
 });
 
-// Default task
-gulp.task('default', ['sass']);
+// Default
+gulp.task('default', ['build']);
