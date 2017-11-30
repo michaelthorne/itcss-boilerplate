@@ -2,15 +2,34 @@
    #GLOBAL
    ========================================================================== */
 
-/* Brand */
+/* #BRAND
+   ========================================================================== */
+
+/* Color */
 
 $brand-color:           #001f3f;
 $brand-color-secondary: #01ff70;
+
+/* Font */
+
 $brand-font:            Arial, sans-serif;
 $brand-font-secondary:  Georgia, serif;
 
-/* Base */
 
-$base-font-size:        100%;
-$base-line-height:      1.5;
-$base-spacing-unit:     $base-line-height + em;
+
+
+
+/* #BASE
+   ========================================================================== */
+
+/* Font */
+
+$base-font-size:                 100%;
+$base-line-height:               1.5;
+
+/* Spacing */
+$base-spacing-unit-factor-small: 0.5;
+$base-spacing-unit-factor-large: 2;
+$base-spacing-unit:              $base-line-height + em;
+$base-spacing-unit-small:        $base-line-height * $base-spacing-unit-factor-small + em;
+$base-spacing-unit-large:        $base-line-height * $base-spacing-unit-factor-large + em;
