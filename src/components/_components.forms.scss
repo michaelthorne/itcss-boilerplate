@@ -6,6 +6,20 @@
 
 .c-form-group {
     margin-bottom: $base-spacing-unit;
+
+    /* Checkbox or Radio Button */
+
+    &.c-form-group--check {
+
+        label {
+            margin-bottom: 0;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: $base-spacing-unit-xs;
+        }
+    }
 }
 
 /* Control */
@@ -14,12 +28,15 @@
     border: $base-border-width-small solid $color-silver;
     border-radius: $base-border-radius;
     display: block;
-    padding: $base-spacing-unit-small;
+    font-family: $font;
+    font-size: 100%;
+    line-height: 1.5;
+    padding: $base-spacing-unit-xs $base-spacing-unit-small;
     transition: border-color 0.25s, box-shadow 0.25s;
     width: 100%;
 
     &:focus {
-        box-shadow: 0 0 $base-spacing-unit-small $color-brand;
+        box-shadow: 0 0 $base-spacing-unit-small $color-silver;
         outline: 0;
     }
 

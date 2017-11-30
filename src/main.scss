@@ -6,27 +6,38 @@
  * TABLE OF CONTENTS
  *
  * SETTINGS
- * Global..............Globally-available settings.
+ * Global..............Brand specific and base settings.
  * Colors..............The color palette.
- * Fonts...............Settings related to typography.
+ * Fonts...............Variables for related font settings.
  * Responsive..........Breakpoints for media queries.
  *
  * TOOLS
+ * Mixins..............Functions for DRY code.
  * Clearfix............Contain floated elements.
  *
  * GENERIC
  * Normalize.css.......Render all elements more consistently.
  * Reset...............A tiny reset.
+ * Shared..............Rules that apply to multiple selectors.
  *
  * ELEMENTS
- * Headings............Font sizing for h1 to h6.
- * Table...............Basic table styles.
+ * Page................The starting point of our web page.
+ * Headings............Setup of h1 to h6.
+ * Type................Basic typographic elements.
+ * Links...............The default anchor style.
+ * Lists...............Styles for lists.
+ * Images..............Ensure images are fluid.
+ * Quotes..............Cater for block and inline quotes.
+ * Tables..............Table styles.
+ * Forms...............Basic form elements.
  *
  * OBJECTS
  * Wrapper.............Content width constraints.
  *
  * COMPONENTS
- * Buttons.............Styling for buttons.
+ * Button Groups.......Grouping of related buttons.
+ * Buttons.............Button styles.
+ * Forms...............Custom styles for form control layout.
  *
  * UTILITIES
  * Clearfix............Bind the clearfix mixin to a utility class.
@@ -51,8 +62,8 @@
 /* #TOOLS
    ========================================================================== */
 
-@import "tools/tools.clearfix";
 @import "tools/tools.mixins";
+@import "tools/tools.clearfix";
 
 
 
@@ -98,6 +109,7 @@
 /* #COMPONENTS
    ========================================================================== */
 
+@import "components/components.button-group";
 @import "components/components.buttons";
 @import "components/components.forms";
 

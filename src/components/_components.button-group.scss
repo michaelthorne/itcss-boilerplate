@@ -1,0 +1,16 @@
+/* ==========================================================================
+   #BUTTON GROUP
+   ========================================================================== */
+
+.c-btn-group {
+    @include clearfix;
+    margin-bottom: $base-spacing-unit;
+
+    .c-btn {
+        float: left;
+    }
+
+    .c-btn:not(last-child) {
+        margin-right: $base-spacing-unit-small;
+    }
+}

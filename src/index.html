@@ -103,18 +103,35 @@
                 </tbody>
             </table>
 
-            <form>
+            <form action="index.html" method="post">
                 <div class="c-form-group">
                     <label for="full_name">Full Name</label>
                     <input class="c-form-control" type="text" id="full_name" name="full_name">
                 </div>
 
                 <div class="c-form-group">
-                    <label for="email">Email</label>
-                    <input class="c-form-control" type="email" id="email" name="email">
+                    <label for="email_address">Email Address</label>
+                    <input class="c-form-control" type="email" id="email_address" name="email_address">
                 </div>
 
-                <button class="c-btn" type="submit">Sign Up</button>
+                <div class="c-form-group">
+                    <label for="password">Password</label>
+                    <input class="c-form-control" type="password" id="password" name="password">
+                </div>
+
+                <div class="c-form-group c-form-group--check">
+                    <label for="remember">
+                        <input type="checkbox" value="1" id="remember" name="remember">
+                        Remember me?
+                    </label>
+                </div>
+
+                <div class="c-btn-group">
+                    <button class="c-btn" type="submit">Sign Up</button>
+                    <button class="c-btn c-btn--secondary" type="button">Cancel</button>
+                </div>
+
+                <hr>
             </form>
         </div>
     </main>
