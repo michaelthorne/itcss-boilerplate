@@ -1,3 +1,4 @@
+let browserSync = require('browser-sync');
 let del = require('del');
 let runSequence = require('run-sequence');
 let gulp = require('gulp');
@@ -29,7 +30,7 @@ gulp.task('delete', function () {
 
 // Copy assets to build
 gulp.task('html', function () {
-    return gulp.src(config.paths.src + '*.html', {
+    return gulp.src(config.paths.src + '**/*.html', {
         'base': config.paths.src,
     })
         .pipe(gulp.dest(getPath()));
@@ -50,10 +51,26 @@ gulp.task('sass', function () {
         .pipe(gulp.dest(getPath() + '/css'));
 });
 
+// Watch
+gulp.task('watch', function () {
+    gulp.watch(config.paths.src + '**/*.html', ['html']).on('change', browserSync.reload);
+    gulp.watch(config.paths.src + '**/*.scss', ['sass']).on('change', browserSync.reload);
+});
+
+// Server
+gulp.task('server', function () {
+    if (!config.dist) {
+        browserSync.init({
+            port: 1337,
+            server: getPath(),
+        });
+    }
+});
+
 // Build
 gulp.task('build', function () {
     runSequence('delete', 'sass', 'html');
 });
 
 // Default
-gulp.task('default', ['build']);
+gulp.task('default', ['build', 'server', 'watch']);
