@@ -11,5 +11,6 @@ a {
     &:focus,
     &:hover {
         color: $color-brand;
+        text-decoration: underline;
     }
 }
