@@ -1,0 +1,29 @@
+/* ==========================================================================
+   #FORMS
+   ========================================================================== */
+
+/* Group */
+
+.c-form-group {
+    margin-bottom: $base-spacing-unit;
+}
+
+/* Control */
+
+.c-form-control {
+    border: $base-border-width-small solid $color-silver;
+    border-radius: $base-border-radius;
+    display: block;
+    padding: $base-spacing-unit-small;
+    transition: border-color 0.25s, box-shadow 0.25s;
+    width: 100%;
+
+    &:focus {
+        box-shadow: 0 0 $base-spacing-unit-small $color-brand-secondary;
+        outline: 0;
+    }
+
+    &:hover {
+        border-color: $color-gray;
+    }
+}

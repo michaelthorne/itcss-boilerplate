@@ -6,6 +6,6 @@ table {
     width: 100%;
 
     thead {
-        border-bottom: 0.125em solid $color-brand;
+        border-bottom: $base-border-width solid $color-brand;
     }
 }

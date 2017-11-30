@@ -5,7 +5,7 @@
 /* Block */
 
 blockquote {
-    border-left: 0.125em solid $color-brand-secondary;
+    border-left: $base-border-width solid $color-brand-secondary;
     padding-left: $base-spacing-unit;
 
     q {

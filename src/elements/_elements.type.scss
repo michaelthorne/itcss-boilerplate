@@ -6,7 +6,7 @@
 
 hr {
     border: 0;
-    border-top: 0.125em solid $color-brand;
+    border-top: $base-border-width solid $color-brand;
     display: block;
 }
 

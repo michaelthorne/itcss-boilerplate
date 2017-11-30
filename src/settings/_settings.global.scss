@@ -28,8 +28,18 @@ $base-font-size:                 100%;
 $base-line-height:               1.5;
 
 /* Spacing */
-$base-spacing-unit-factor-small: 0.5;
+
 $base-spacing-unit-factor-large: 2;
+$base-spacing-unit-factor-small: 0.5;
+$base-spacing-unit-factor-xs:    0.1667;
 $base-spacing-unit:              $base-line-height + rem;
-$base-spacing-unit-small:        $base-line-height * $base-spacing-unit-factor-small + rem;
 $base-spacing-unit-large:        $base-line-height * $base-spacing-unit-factor-large + rem;
+$base-spacing-unit-small:        $base-line-height * $base-spacing-unit-factor-small + rem;
+$base-spacing-unit-xs:           $base-line-height * $base-spacing-unit-factor-xs + rem;
+
+/* Borders */
+
+$base-border-width:              0.125em;
+$base-border-width-small:        0.0625em;
+$base-border-radius:             0.25em;
+$base-border-radius-small:       0.0625em;
