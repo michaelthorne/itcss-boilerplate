@@ -15,6 +15,16 @@ fieldset, legend {
     padding: 0;
 }
 
+/* Remove trailing margins from nested lists. */
+
+li > {
+
+    ol,
+    ul {
+        margin-bottom: 0;
+    }
+}
+
 /**
  * Remove the gap between audio, canvas, iframes, images, videos and the bottom
  * of their containers: https://github.com/h5bp/html5-boilerplate/issues/440
@@ -29,8 +39,21 @@ video {
     vertical-align: middle;
 }
 
-/* Remove the default border. */
+/**
+ * 1. Remove default border on fieldsets.
+ * 2. Reset Chrome and Firefox behaviour which sets a `min-width: min-content;`
+ *    on fieldsets.
+ */
 
 fieldset {
-    border: 0;
+    border: 0; /* [1] */
+    min-width: 0; /* [2] */
+}
+
+/**
+ * Remove default table spacing.
+ */
+
+table {
+    border-collapse: collapse;
 }
