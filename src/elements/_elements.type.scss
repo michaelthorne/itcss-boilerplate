@@ -7,3 +7,10 @@ hr {
     border-top: 0.125em solid $color-brand;
     display: block;
 }
+
+figure {
+
+    > img {
+        margin-bottom: $base-spacing-unit-small;
+    }
+}
