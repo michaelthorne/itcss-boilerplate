@@ -9,8 +9,7 @@
     color: $color-brand-secondary;
     cursor: pointer;
     display: inline-block;
-    font-family: $font;
-    font-size: 100%;
+    font: inherit;
     line-height: 1.5;
     padding: $base-spacing-unit-xs $base-spacing-unit-small;
     text-align: center;
