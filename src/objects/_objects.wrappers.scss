@@ -10,4 +10,10 @@
     max-width: 75em; /* 1200 / 16 */
     padding-left: 1em;
     padding-right: 1em;
+
+    /* Small */
+
+    &.o-wrapper--small {
+        max-width: 40em; /* 640 / 16 */
+    }
 }

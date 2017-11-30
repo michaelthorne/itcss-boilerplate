@@ -12,7 +12,7 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::after,
+*::before {
     box-sizing: inherit;
 }

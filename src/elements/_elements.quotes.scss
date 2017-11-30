@@ -8,18 +8,14 @@ blockquote {
     border-left: 0.125em solid $color-brand-secondary;
     padding-left: $base-spacing-unit;
 
-    p {
-
-    }
-
     q {
         quotes: '‘' '’';
 
-        &:after {
+        &::after {
             content: close-quote;
         }
 
-        &:before {
+        &::before {
             content: open-quote;
         }
     }
@@ -35,11 +31,11 @@ q {
     font-style: italic;
     quotes: '‘' '’' '“' '”';
 
-    &:after {
+    &::after {
         content: close-quote;
     }
 
-    &:before {
+    &::before {
         content: open-quote;
     }
 }

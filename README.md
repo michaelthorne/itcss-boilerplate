@@ -1,6 +1,6 @@
 # ITCSS Boilerplate
 
-Inverted Triangle CSS architecture boilerplate. Includes a Gulp task to build CSS for production.
+[Inverted Triangle CSS](https://itcss.io/) architecture boilerplate. Includes a Gulp task to build CSS for production.
 
 ## Setup
 
