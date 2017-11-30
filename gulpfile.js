@@ -62,6 +62,7 @@ gulp.task('server', function () {
     if (!config.dist) {
         browserSync.init({
             port: 1337,
+            reloadDelay: 250,
             server: getPath(),
         });
     }
