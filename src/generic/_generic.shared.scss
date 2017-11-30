@@ -17,3 +17,8 @@ caption,
 th {
     text-align: left;
 }
+
+th,
+td {
+    padding: $base-spacing-unit-small $base-spacing-unit;
+}
