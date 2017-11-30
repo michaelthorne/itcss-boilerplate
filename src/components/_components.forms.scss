@@ -28,7 +28,9 @@
     border: $base-border-width-small solid $color-silver;
     border-radius: $base-border-radius;
     display: block;
-    font: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    height: 2.125em; /* 34 / 16 */
     line-height: 1.5;
     padding: $base-spacing-unit-xs $base-spacing-unit-small;
     transition: border-color 0.25s, box-shadow 0.25s;
