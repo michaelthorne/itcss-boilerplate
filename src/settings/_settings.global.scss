@@ -30,6 +30,6 @@ $base-line-height:               1.5;
 /* Spacing */
 $base-spacing-unit-factor-small: 0.5;
 $base-spacing-unit-factor-large: 2;
-$base-spacing-unit:              $base-line-height + em;
-$base-spacing-unit-small:        $base-line-height * $base-spacing-unit-factor-small + em;
-$base-spacing-unit-large:        $base-line-height * $base-spacing-unit-factor-large + em;
+$base-spacing-unit:              $base-line-height + rem;
+$base-spacing-unit-small:        $base-line-height * $base-spacing-unit-factor-small + rem;
+$base-spacing-unit-large:        $base-line-height * $base-spacing-unit-factor-large + rem;
