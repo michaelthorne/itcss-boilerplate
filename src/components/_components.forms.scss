@@ -44,4 +44,24 @@
     &:hover {
         border-color: $color-gray;
     }
+
+    /* File */
+
+    &.c-form-control--file {
+        border: 0;
+        height: auto;
+        padding: 0;
+        width: auto;
+
+        &:focus,
+        &:hover {
+            box-shadow: none;
+        }
+    }
+
+    /* Text Area */
+
+    &.c-form-control--textarea {
+        height: auto;
+    }
 }
