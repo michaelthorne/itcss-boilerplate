@@ -106,17 +106,27 @@
             <form action="index.html" method="post">
                 <div class="c-form-group">
                     <label for="full_name">Full Name</label>
-                    <input class="c-form-control" type="text" id="full_name" name="full_name">
+                    <input class="c-form-control" type="text" id="full_name" name="full_name" required>
                 </div>
 
                 <div class="c-form-group">
                     <label for="email_address">Email Address</label>
-                    <input class="c-form-control" type="email" id="email_address" name="email_address">
+                    <input class="c-form-control" type="email" id="email_address" name="email_address" required>
                 </div>
 
                 <div class="c-form-group">
                     <label for="password">Password</label>
-                    <input class="c-form-control" type="password" id="password" name="password">
+                    <input class="c-form-control" type="password" id="password" name="password" required>
+                </div>
+
+                <div class="c-form-group">
+                    <label for="membership">Membership</label>
+                    <select class="c-form-control" id="membership" name="membership" required>
+                        <option value="">Please select…</option>
+                        <option value="1">1 Week Trial</option>
+                        <option value="2">Monthly Subscription</option>
+                        <option value="3">Annual Membership</option>
+                    </select>
                 </div>
 
                 <div class="c-form-group c-form-group--check">
