@@ -31,7 +31,7 @@ $base-line-height:               1.5;
 
 $base-spacing-unit-factor-large: 2;
 $base-spacing-unit-factor-small: 0.5;
-$base-spacing-unit-factor-xs:    0.1667;
+$base-spacing-unit-factor-xs:    0.25;
 $base-spacing-unit:              $base-line-height + rem;
 $base-spacing-unit-large:        $base-line-height * $base-spacing-unit-factor-large + rem;
 $base-spacing-unit-small:        $base-line-height * $base-spacing-unit-factor-small + rem;
