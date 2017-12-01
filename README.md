@@ -8,6 +8,9 @@
 # install dependencies
 npm install
 
+# run local server
+gulp
+
 # build for development
 gulp build
 
