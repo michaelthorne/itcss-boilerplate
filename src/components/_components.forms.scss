@@ -45,6 +45,13 @@
         border-color: $color-gray;
     }
 
+    &:required {
+
+        &:invalid {
+            outline: none;
+        }
+    }
+
     /* File */
 
     &.c-form-control--file {
