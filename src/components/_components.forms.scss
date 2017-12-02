@@ -15,8 +15,8 @@
             margin-bottom: 0;
         }
 
-        &[type='checkbox'],
-        &[type='radio'] {
+        input[type='checkbox'],
+        input[type='radio'] {
             margin-right: $base-spacing-unit-xs;
         }
     }
@@ -72,4 +72,12 @@
     &.c-form-control--textarea {
         height: auto;
     }
+}
+
+/* Help */
+
+.c-form-help {
+    color: $color-gray;
+    font-size: 0.75rem; /* 14 / 16 */
+    margin-top: $base-spacing-unit-xs;
 }

@@ -117,8 +117,14 @@
 
             <form action="index.html" method="post">
                 <div class="c-form-group">
-                    <label for="full_name">Full Name</label>
-                    <input class="c-form-control" type="text" id="full_name" name="full_name" required>
+                    <label for="first_name">First Name</label>
+                    <input class="c-form-control" type="text" id="first_name" name="first_name" required>
+                </div>
+
+                <div class="c-form-group">
+                    <label for="last_name">Last Name</label>
+                    <input class="c-form-control" type="text" id="last_name" name="last_name" required>
+                    <div class="c-form-help">Your public profile only shows your first name.</div>
                 </div>
 
                 <div class="c-form-group">
@@ -137,12 +143,13 @@
                 </div>
 
                 <div class="c-form-group">
-                    <label for="membership">Membership</label>
+                    <label for="membership">Preferred Language</label>
                     <select class="c-form-control" id="membership" name="membership" required>
                         <option value="">Please select…</option>
-                        <option value="1">1 Week Trial</option>
-                        <option value="2">Monthly Subscription</option>
-                        <option value="3">Annual Membership</option>
+                        <option value="1">Afrikaans</option>
+                        <option value="2">Deutsch</option>
+                        <option value="3">English</option>
+                        <option value="4">Français</option>
                     </select>
                 </div>
 
