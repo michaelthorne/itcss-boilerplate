@@ -7,19 +7,14 @@
 .c-form-group {
     margin-bottom: $base-spacing-unit;
 
-    /* Checkbox or Radio Button */
+    /* Inline */
 
-    &.c-form-group--check {
+    &.c-form-group--inline {
 
         label {
-            margin-bottom: 0;
-        }
 
-        input {
-
-            &[type='checkbox'],
-            &[type='radio'] {
-                margin-right: $base-spacing-unit-xs;
+            &:not(:last-child) {
+                margin-right: $base-spacing-unit-small;
             }
         }
     }

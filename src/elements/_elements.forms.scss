@@ -5,4 +5,14 @@
 label {
     display: inline-block;
     margin-bottom: $base-spacing-unit-xs;
+
+    /* Checkbox or Radio Button */
+
+    input {
+
+        &[type='checkbox'],
+        &[type='radio'] {
+            margin-right: $base-spacing-unit-xs;
+        }
+    }
 }
