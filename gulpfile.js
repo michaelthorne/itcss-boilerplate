@@ -69,7 +69,7 @@ gulp.task('sass', function () {
 // Watch HTML and SCSS files for changes
 gulp.task('watch', function () {
     gulp.watch(config.paths.src + '**/*.html', ['html']).on('change', browserSync.reload);
-    gulp.watch(config.paths.src + '**/*.scss', ['sass']).on('change', browserSync.reload);
+    gulp.watch(config.paths.src + '**/*.scss', ['sass', 'lint']).on('change', browserSync.reload);
 });
 
 // Start a local server
@@ -85,7 +85,7 @@ gulp.task('server', function () {
 
 // Build the files
 gulp.task('build', function () {
-    runSequence('delete', 'sass', 'html');
+    runSequence('delete', 'sass', 'lint', 'html');
 });
 
 // Default task
