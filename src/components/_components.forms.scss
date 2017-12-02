@@ -15,9 +15,12 @@
             margin-bottom: 0;
         }
 
-        input[type='checkbox'],
-        input[type='radio'] {
-            margin-right: $base-spacing-unit-xs;
+        input {
+
+            &[type='checkbox'],
+            &[type='radio'] {
+                margin-right: $base-spacing-unit-xs;
+            }
         }
     }
 }
