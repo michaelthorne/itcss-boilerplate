@@ -4,12 +4,13 @@
 
 .c-btn-group {
     @include clearfix;
-    margin-bottom: $base-spacing-unit;
+    margin-bottom: calc(#{$base-spacing-unit} - #{$base-spacing-unit-small});
 
     .c-btn {
         float: left;
+        margin-bottom: $base-spacing-unit-small;
 
-        &:not(last-child) {
+        &:not(:last-child) {
             margin-right: $base-spacing-unit-small;
         }
     }
