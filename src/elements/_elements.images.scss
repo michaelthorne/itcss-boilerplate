@@ -6,11 +6,10 @@
 
 img {
     max-width: 100%;
-}
 
-/* Images with a `width` and/or `height` attribute are not fluid. */
-
-img[height],
-img[width] {
-    max-width: none;
+    &[height],
+    &[width] {
+        /* Images with a `width` and/or `height` attribute are not fluid. */
+        max-width: none;
+    }
 }

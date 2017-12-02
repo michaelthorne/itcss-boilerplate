@@ -3,6 +3,7 @@ let del = require('del');
 let runSequence = require('run-sequence');
 let gulp = require('gulp');
 let sass = require('gulp-sass');
+let sassLint = require('gulp-sass-lint');
 let util = require('gulp-util');
 
 // Config
@@ -23,7 +24,7 @@ function getPath () {
     return config.dist ? config.paths.dist : config.paths.build;
 }
 
-// Cleanup
+// Cleanup build files
 gulp.task('delete', function () {
     return del([getPath()]);
 });
@@ -36,7 +37,21 @@ gulp.task('html', function () {
         .pipe(gulp.dest(getPath()));
 });
 
-// Sass
+// Lint Sass
+gulp.task('lint', function () {
+    let options = {
+        'merge-default-rules': false,
+    };
+
+    return gulp.src([
+        config.paths.src + '**/*.scss',
+    ])
+        .pipe(sassLint(options))
+        .pipe(sassLint.format())
+        .pipe(sassLint.failOnError());
+});
+
+// Compile Sass to CSS
 gulp.task('sass', function () {
     let options = {
         outputStyle: 'nested',
@@ -51,13 +66,13 @@ gulp.task('sass', function () {
         .pipe(gulp.dest(getPath() + '/css'));
 });
 
-// Watch
+// Watch HTML and SCSS files for changes
 gulp.task('watch', function () {
     gulp.watch(config.paths.src + '**/*.html', ['html']).on('change', browserSync.reload);
     gulp.watch(config.paths.src + '**/*.scss', ['sass']).on('change', browserSync.reload);
 });
 
-// Server
+// Start a local server
 gulp.task('server', function () {
     if (!config.dist) {
         browserSync.init({
@@ -68,10 +83,10 @@ gulp.task('server', function () {
     }
 });
 
-// Build
+// Build the files
 gulp.task('build', function () {
     runSequence('delete', 'sass', 'html');
 });
 
-// Default
+// Default task
 gulp.task('default', ['build', 'server', 'watch']);

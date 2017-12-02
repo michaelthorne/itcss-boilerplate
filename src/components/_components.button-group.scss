@@ -8,9 +8,9 @@
 
     .c-btn {
         float: left;
-    }
 
-    .c-btn:not(last-child) {
-        margin-right: $base-spacing-unit-small;
+        &:not(last-child) {
+            margin-right: $base-spacing-unit-small;
+        }
     }
 }

@@ -14,7 +14,7 @@
  *    `:before` to contain the top-margins of child elements.
  */
 
-@mixin clearfix() {
+@mixin clearfix {
     &::before,
     &::after {
         content: ' '; /* 1 */

@@ -51,10 +51,10 @@
 /* #SETTINGS
    ========================================================================== */
 
-@import "settings/settings.global";
-@import "settings/settings.colors";
-@import "settings/settings.fonts";
-@import "settings/settings.responsive";
+@import 'settings/settings.global';
+@import 'settings/settings.colors';
+@import 'settings/settings.fonts';
+@import 'settings/settings.responsive';
 
 
 
@@ -63,8 +63,8 @@
 /* #TOOLS
    ========================================================================== */
 
-@import "tools/tools.mixins";
-@import "tools/tools.clearfix";
+@import 'tools/tools.mixins';
+@import 'tools/tools.clearfix';
 
 
 
@@ -73,10 +73,10 @@
 /* #GENERIC
    ========================================================================== */
 
-@import "node_modules/normalize.css/normalize";
-@import "generic/generic.reset";
-@import "generic/generic.box-sizing";
-@import "generic/generic.shared";
+@import 'node_modules/normalize.css/normalize';
+@import 'generic/generic.reset';
+@import 'generic/generic.box-sizing';
+@import 'generic/generic.shared';
 
 
 
@@ -85,15 +85,15 @@
 /* #ELEMENTS
    ========================================================================== */
 
-@import "elements/elements.page";
-@import "elements/elements.headings";
-@import "elements/elements.type";
-@import "elements/elements.links";
-@import "elements/elements.lists";
-@import "elements/elements.images";
-@import "elements/elements.quotes";
-@import "elements/elements.tables";
-@import "elements/elements.forms";
+@import 'elements/elements.page';
+@import 'elements/elements.headings';
+@import 'elements/elements.type';
+@import 'elements/elements.links';
+@import 'elements/elements.lists';
+@import 'elements/elements.images';
+@import 'elements/elements.quotes';
+@import 'elements/elements.tables';
+@import 'elements/elements.forms';
 
 
 
@@ -102,7 +102,7 @@
 /* #OBJECTS
    ========================================================================== */
 
-@import "objects/objects.wrappers";
+@import 'objects/objects.wrappers';
 
 
 
@@ -111,9 +111,9 @@
 /* #COMPONENTS
    ========================================================================== */
 
-@import "components/components.button-group";
-@import "components/components.buttons";
-@import "components/components.forms";
+@import 'components/components.button-group';
+@import 'components/components.buttons';
+@import 'components/components.forms';
 
 
 
@@ -122,4 +122,4 @@
 /* #UTILITIES
    ========================================================================== */
 
-@import "utilities/utilities.clearfix";
+@import 'utilities/utilities.clearfix';
