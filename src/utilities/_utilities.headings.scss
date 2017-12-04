@@ -1,0 +1,35 @@
+/* ==========================================================================
+   #HEADINGS
+   ========================================================================== */
+
+/**
+ * Define classes for all headings so that the appearance can change, but the
+ * semantic meaning will remain as is. e.g.
+ *
+ * <h2 class="u-h1"></h2>
+ *
+ */
+
+.u-h1 {
+    @include font-size($font-size-h1, $important: true);
+}
+
+.u-h2 {
+    @include font-size($font-size-h2, $important: true);
+}
+
+.u-h3 {
+    @include font-size($font-size-h3, $important: true);
+}
+
+.u-h4 {
+    @include font-size($font-size-h4, $important: true);
+}
+
+.u-h5 {
+    @include font-size($font-size-h5, $important: true);
+}
+
+.u-h6 {
+    @include font-size($font-size-h6, $important: true);
+}
