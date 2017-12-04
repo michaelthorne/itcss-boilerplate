@@ -1,0 +1,35 @@
+/* ==========================================================================
+   #MEDIA
+   ========================================================================== */
+
+/**
+ * The media object is an image to the left, with descriptive content to the right:
+ * http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code
+ */
+
+.o-media {
+    @include clearfix;
+    display: block;
+
+    /* Image */
+
+    .o-media__img {
+        float: left;
+        margin-right: $base-spacing-unit;
+
+        > img {
+            display: block;
+        }
+    }
+
+    /* Body */
+
+    .o-media__body {
+        display: block;
+        overflow: hidden;
+
+        > :last-child {
+            margin-bottom: 0;
+        }
+    }
+}

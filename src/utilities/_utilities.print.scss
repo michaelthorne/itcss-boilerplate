@@ -14,8 +14,11 @@
     *:before,
     *:after {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
+        /**
+         * Black prints faster:
+         * http://www.sanbeiji.com/archives/953
+         */
+        color: #000 !important;
         -webkit-box-shadow: none !important;
         box-shadow: none !important;
         text-shadow: none !important;
@@ -34,7 +37,7 @@
         content: " (" attr(title) ")";
     }
 
-    /*
+    /**
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
@@ -53,7 +56,7 @@
         page-break-inside: avoid;
     }
 
-    /*
+    /**
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
