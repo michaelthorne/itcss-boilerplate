@@ -36,7 +36,7 @@
     width: 100%;
 
     &:focus {
-        box-shadow: 0 0 $base-spacing-unit-small $color-silver;
+        box-shadow: 0 0.125em $base-spacing-unit-small $color-silver;
         outline: 0;
     }
 

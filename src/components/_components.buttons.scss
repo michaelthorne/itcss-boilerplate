@@ -21,7 +21,7 @@
 
     &::after {
         border-radius: $base-border-radius;
-        box-shadow: 0 0 $base-spacing-unit-small $color-gray;
+        box-shadow: 0 0.125em $base-spacing-unit-small $color-gray;
         content: '';
         height: 100%;
         left: 0;
@@ -44,7 +44,7 @@
     }
 
     &:active {
-        transform: translateY(0);
+        transform: translateY(0.0625em);
 
         &::after {
             opacity: 0;
