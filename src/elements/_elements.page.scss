@@ -2,10 +2,22 @@
    #PAGE
    ========================================================================== */
 
+/**
+ * The page-level setup of the entire project.
+ *
+ * 1. The browser will emphasize legibility over rendering speed and geometric
+ *    precision: https://developer.mozilla.org/en-US/docs/Web/CSS/text-rendering
+ */
+
 html {
+    // sass-lint:disable no-vendor-prefixes
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
     background-color: $color-white;
     color: $color-black;
     font-family: $font;
     font-size: $base-font-size;
     line-height: $base-line-height;
+    text-rendering: optimizeLegibility; /* [1] */
 }
