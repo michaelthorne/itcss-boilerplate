@@ -48,6 +48,10 @@
 
         &:invalid {
             outline: none;
+
+            &:focus {
+                border-color: $color-error;
+            }
         }
     }
 
