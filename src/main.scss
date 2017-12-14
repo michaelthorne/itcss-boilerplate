@@ -103,6 +103,7 @@
    ========================================================================== */
 
 @import 'objects/objects.wrappers';
+@import 'objects/objects.grid';
 @import 'objects/objects.lists';
 @import 'objects/objects.media';
 
@@ -124,8 +125,9 @@
 /* #UTILITIES
    ========================================================================== */
 
+@import 'utilities/utilities.print';
 @import 'utilities/utilities.clearfix';
 @import 'utilities/utilities.headings';
 @import 'utilities/utilities.floats';
 @import 'utilities/utilities.visibility';
-@import 'utilities/utilities.print';
+@import 'utilities/utilities.widths';

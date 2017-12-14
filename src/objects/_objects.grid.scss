@@ -1,0 +1,17 @@
+/* ==========================================================================
+   #GRID
+   ========================================================================== */
+
+.o-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -$base-spacing-unit;
+
+    /* Column */
+
+    .o-grid__col {
+        flex: 1;
+        padding-left: $base-spacing-unit;
+        padding-top: $base-spacing-unit;
+    }
+}
