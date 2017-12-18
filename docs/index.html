@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ITCSS Boilerplate</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <main>
+        <div class="o-wrapper o-wrapper--small">
+            <h1>The quick brown fox jumps over the lazy dog</h1>
+
+            <h2>The quick brown fox jumps over the lazy dog</h2>
+
+            <h3>The quick brown fox jumps over the lazy dog</h3>
+
+            <h4>The quick brown fox jumps over the lazy dog</h4>
+
+            <h5>The quick brown fox jumps over the lazy dog</h5>
+
+            <h6>The quick brown fox jumps over the lazy dog</h6>
+
+            <p>"The quick brown fox jumps over the lazy dog" is an English-language pangram—a sentence that contains all
+                of the letters of the alphabet.</p>
+
+            <hr>
+
+            <dl class="o-list--inline">
+                <dt><dfn>Bee</dfn>, n.</dt>
+                <dd>A buzzing insect, known for its role in pollination.</dd>
+                <dt><dfn>Buzz</dfn>, v.</dt>
+                <dd>To make a continuous, humming noise, like that made by bees.</dd>
+            </dl>
+
+            <ol>
+                <li>First ordered list item</li>
+                <li>
+                    Second ordered list item
+                    <ol>
+                        <li>First nested, ordered list item</li>
+                        <li>Second nested, ordered list item</li>
+                        <li>Third nested, ordered list item</li>
+                    </ol>
+                </li>
+                <li>Third ordered list item</li>
+            </ol>
+
+            <ul>
+                <li>An unordered list item</li>
+                <li>Another unordered list item</li>
+                <li>Final unordered list item</li>
+            </ul>
+
+            <ul class="o-list">
+                <li>An unstyled list item</li>
+                <li>Another unstyled list item</li>
+                <li>Final unstyled list item</li>
+            </ul>
+
+            <ul class="o-list o-list--inline">
+                <li class="o-list__item">An inline list item</li>
+                <li class="o-list__item">Another inline list item</li>
+                <li class="o-list__item">Final inline list item</li>
+            </ul>
+
+            <figure>
+                <img src="http://via.placeholder.com/350x150" alt="350x150 placeholder image">
+                <figcaption>This is a placeholder image.</figcaption>
+            </figure>
+
+            <blockquote>
+                <p>The HTML <code>&lt;blockquote&gt;</code> Element (or HTML Block Quotation Element) indicates that the
+                    enclosed text is an extended quotation. Usually, this is rendered visually by indentation (see Notes
+                    for how to change it). A URL for the source of the quotation may be given using the cite attribute,
+                    while a text representation of the source can be given using the <code>&lt;cite&gt;</code> element.</p>
+
+                <cite>— <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">MDN</a></cite>
+            </blockquote>
+
+            <table>
+                <caption>Recent Major Volcanic Eruptions in the Pacific Northwest</caption>
+
+                <thead>
+                <tr>
+                    <th>Volcano Name</th>
+                    <th>Location</th>
+                    <th>Last Major Eruption</th>
+                    <th>Type of Eruption</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>Mt. Lassen</td>
+                    <td>California</td>
+                    <td>1914-17</td>
+                    <td>Explosive Eruption</td>
+                </tr>
+                <tr>
+                    <td>Mt. Hood</td>
+                    <td>Oregon</td>
+                    <td>1790s</td>
+                    <td>Pyroclastic flows and Mudflows</td>
+                </tr>
+                <tr>
+                    <td>Mt. St. Helens</td>
+                    <td>Washington</td>
+                    <td>1980</td>
+                    <td>Explosive Eruption</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <form action="index.html" method="post">
+                <div class="c-form-group">
+                    <label for="first_name">First Name</label>
+                    <input class="c-form-control" type="text" id="first_name" name="first_name" required>
+                </div>
+
+                <div class="c-form-group">
+                    <label for="last_name">Last Name</label>
+                    <input class="c-form-control" type="text" id="last_name" name="last_name" required>
+                    <div class="c-form-help">Your public profile only shows your first name.</div>
+                </div>
+
+                <div class="c-form-group">
+                    <label for="photo">Photo</label>
+                    <input class="c-form-control c-form-control--file" type="file" id="photo" name="photo" required>
+                </div>
+
+                <div class="c-form-group">
+                    <label for="email_address">Email Address</label>
+                    <input class="c-form-control" type="email" id="email_address" name="email_address" required>
+                </div>
+
+                <div class="c-form-group">
+                    <label for="password">Password</label>
+                    <input class="c-form-control" type="password" id="password" name="password" required>
+                </div>
+
+                <fieldset class="c-form-group c-form-group--inline">
+                    <legend>Favourite Food</legend>
+                    <label for="food-1">
+                        <input type="checkbox" value="1" id="food-1" name="food">
+                        American
+                    </label>
+
+                    <label for="food-2">
+                        <input type="checkbox" value="1" id="food-2" name="food">
+                        Chinese
+                    </label>
+
+                    <label for="food-3">
+                        <input type="checkbox" value="1" id="food-3" name="food">
+                        French
+                    </label>
+
+                    <label for="food-4">
+                        <input type="checkbox" value="1" id="food-4" name="food">
+                        Italian
+                    </label>
+                </fieldset>
+
+                <div class="c-form-group">
+                    <label for="membership">Preferred Language</label>
+                    <select class="c-form-control" id="membership" name="membership" required>
+                        <option value="">Please select…</option>
+                        <option value="1">Afrikaans</option>
+                        <option value="2">Deutsch</option>
+                        <option value="3">English</option>
+                        <option value="4">Français</option>
+                    </select>
+                </div>
+
+                <div class="c-form-group">
+                    <label for="notes">Notes <small>(optional)</small></label>
+                    <textarea class="c-form-control c-form-control--textarea" id="notes" name="notes" rows="4"></textarea>
+                </div>
+
+                <div class="c-form-group">
+                    <label for="remember">
+                        <input type="checkbox" value="1" id="remember" name="remember">
+                        Remember me?
+                    </label>
+                </div>
+
+                <div class="c-btn-group">
+                    <button class="c-btn" type="submit">Sign up</button>
+                    <button class="c-btn c-btn--secondary" type="button">Find out more</button>
+                    <button class="c-btn c-btn--ghost" type="button">Cancel</button>
+                </div>
+
+                <hr>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
