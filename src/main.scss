@@ -39,6 +39,7 @@
  * Media...............An image with descriptive contents.
  *
  * COMPONENTS
+ * Breadcrumbs.........Display the hierarchy between content.
  * Button Groups.......Grouping of related buttons.
  * Buttons.............Button styles.
  * Forms...............Form control styling and layout.
@@ -118,6 +119,7 @@
 /* #COMPONENTS
    ========================================================================== */
 
+@import 'components/components.breadcrumbs';
 @import 'components/components.button-group';
 @import 'components/components.buttons';
 @import 'components/components.forms';

@@ -1,0 +1,33 @@
+/* ==========================================================================
+   #BREADCRUMBS
+   ========================================================================== */
+
+.c-breadcrumbs {
+    display: flex;
+
+    /* Item */
+
+    .c-breadcrumbs__item {
+        color: $color-brand;
+        display: flex;
+        flex: 0 1 auto;
+        font-size: 0.875rem;
+
+        &:not(:last-child) {
+
+            &::after {
+                color: $color-black;
+                content: '/';
+                flex: 0 1 auto;
+                padding-left: $base-spacing-unit-xs;
+                padding-right: $base-spacing-unit-xs;
+            }
+        }
+    }
+
+    /* Link */
+
+    .c-breadcrumbs__link {
+        flex: 0 1 auto;
+    }
+}
