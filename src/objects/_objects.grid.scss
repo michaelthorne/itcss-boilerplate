@@ -3,9 +3,15 @@
    ========================================================================== */
 
 .o-grid {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -$base-spacing-unit;
+    width: 100%;
+
+    /* Row */
+
+    .o-grid__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -$base-spacing-unit;
+    }
 
     /* Column */
 
