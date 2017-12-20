@@ -12,6 +12,7 @@
     &.c-form-group--inline {
 
         label {
+            margin-bottom: 0;
 
             &:not(:last-child) {
                 margin-right: $base-spacing-unit-small;
