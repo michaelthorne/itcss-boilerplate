@@ -16,7 +16,7 @@
     position: relative;
     text-align: center;
     text-decoration: none;
-    transition: transform 0.25s;
+    transition: color 0.25s, transform 0.25s;
     vertical-align: middle;
 
     &::after {
@@ -51,6 +51,7 @@
         }
     }
 
+    &.is-disabled,
     &[disabled] {
         background-color: $color-silver;
         border-color: $color-silver;
