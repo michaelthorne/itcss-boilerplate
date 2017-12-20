@@ -3,8 +3,8 @@
    ========================================================================== */
 
 .c-btn {
-    background-color: $color-brand;
-    border: $base-border-width-small solid $color-brand;
+    background-color: $color-white;
+    border: $base-border-width-small solid $color-brand-secondary;
     border-radius: $base-border-radius;
     color: $color-brand-secondary;
     cursor: pointer;
@@ -16,6 +16,7 @@
     position: relative;
     text-align: center;
     text-decoration: none;
+    transform: translate3d(0, 0, 0);
     transition: transform 0.25s;
     vertical-align: middle;
 
@@ -51,18 +52,34 @@
         }
     }
 
+    &[disabled] {
+        background-color: $color-silver;
+        border-color: $color-silver;
+        color: $color-gray;
+        cursor: default;
+
+        &:focus,
+        &:hover {
+            transform: translateY(0);
+
+            &::after {
+                opacity: 0;
+            }
+        }
+    }
+
+    /* Primary */
+
+    &.c-btn--primary {
+        background-color: $color-brand;
+        border-color: $color-brand;
+    }
+
     /* Secondary */
 
     &.c-btn--secondary {
         background-color: $color-brand-secondary;
         border-color: $color-brand-secondary;
         color: $color-white;
-    }
-
-    /* Ghost */
-
-    &.c-btn--ghost {
-        background-color: $color-white;
-        border-color: $color-brand-secondary;
     }
 }
