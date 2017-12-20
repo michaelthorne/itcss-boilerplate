@@ -48,10 +48,12 @@
     &:required {
 
         &:invalid {
+            box-shadow: none;
             outline: none;
 
             &:focus {
                 border-color: $color-error;
+                box-shadow: 0 0.125em $base-spacing-unit-small $color-silver;
             }
         }
     }
