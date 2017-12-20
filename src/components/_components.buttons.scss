@@ -12,7 +12,7 @@
     font-family: inherit;
     font-size: inherit;
     line-height: $base-line-height;
-    padding: $base-spacing-unit-xs $base-spacing-unit-small;
+    padding: $base-spacing-unit-small $base-spacing-unit;
     position: relative;
     text-align: center;
     text-decoration: none;
@@ -81,5 +81,17 @@
         background-color: $color-brand-secondary;
         border-color: $color-brand-secondary;
         color: $color-white;
+    }
+
+    /* Small */
+
+    &.c-btn--small {
+        padding: $base-spacing-unit-xs $base-spacing-unit-small;
+    }
+
+    /* Large */
+
+    &.c-btn--large {
+        padding: $base-spacing-unit $base-spacing-unit-large;
     }
 }
