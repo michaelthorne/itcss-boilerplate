@@ -811,8 +811,8 @@ label {
    #BUTTONS
    ========================================================================== */
 .c-btn {
-  background-color: #01ff70;
-  border: 0.0625em solid #01ff70;
+  background-color: #fff;
+  border: 0.0625em solid #001f3f;
   border-radius: 0.25em;
   color: #001f3f;
   cursor: pointer;
@@ -826,8 +826,8 @@ label {
   text-decoration: none;
   transition: transform 0.25s;
   vertical-align: middle;
-  /* Secondary */
-  /* Ghost */ }
+  /* Primary */
+  /* Secondary */ }
   .c-btn::after {
     border-radius: 0.25em;
     box-shadow: 0 0.125em 0.75rem #aaa;
@@ -849,13 +849,22 @@ label {
     transform: translateY(0.0625em); }
     .c-btn:active::after {
       opacity: 0; }
+  .c-btn[disabled] {
+    background-color: #ddd;
+    border-color: #ddd;
+    color: #aaa;
+    cursor: default; }
+    .c-btn[disabled]:focus, .c-btn[disabled]:hover {
+      transform: translateY(0); }
+      .c-btn[disabled]:focus::after, .c-btn[disabled]:hover::after {
+        opacity: 0; }
+  .c-btn.c-btn--primary {
+    background-color: #01ff70;
+    border-color: #01ff70; }
   .c-btn.c-btn--secondary {
     background-color: #001f3f;
     border-color: #001f3f;
     color: #fff; }
-  .c-btn.c-btn--ghost {
-    background-color: #fff;
-    border-color: #001f3f; }
 
 /* ==========================================================================
    #FORMS
