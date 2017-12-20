@@ -42,6 +42,7 @@
  * Button Groups.......Grouping of related buttons.
  * Buttons.............Button styles.
  * Forms...............Form control styling and layout.
+ * Pagination..........Controls to navigate pages of data.
  *
  * UTILITIES
  * Clearfix............Provide a utility class for the clearfix mixin.
@@ -120,6 +121,7 @@
 @import 'components/components.button-group';
 @import 'components/components.buttons';
 @import 'components/components.forms';
+@import 'components/components.pagination';
 
 
 

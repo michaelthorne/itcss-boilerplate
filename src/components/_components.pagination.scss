@@ -1,0 +1,17 @@
+/* ==========================================================================
+   #PAGINATION
+   ========================================================================== */
+
+.c-pagination {
+    @include clearfix;
+    align-items: center;
+    display: flex;
+    margin-top: $base-spacing-unit;
+
+    /* Meta */
+
+    .c-pagination__meta {
+        margin-right: $base-spacing-unit-small;
+        vertical-align: middle;
+    }
+}
