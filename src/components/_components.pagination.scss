@@ -22,11 +22,40 @@
         color: $color-white;
         line-height: 1;
         padding: $base-spacing-unit-xs $base-spacing-unit-small;
+        position: relative;
         text-decoration: none;
+        transition: transform 0.25s;
+
+        &::after {
+            border-radius: $base-border-radius;
+            box-shadow: 0 0.125em $base-spacing-unit-small $color-gray;
+            content: '';
+            height: 100%;
+            left: 0;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            transition: opacity 0.25s;
+            width: 100%;
+            z-index: -1;
+        }
 
         &:focus,
         &:hover {
             color: $color-brand;
+            transform: translateY(-0.0625em);
+
+            &::after {
+                opacity: 1;
+            }
+        }
+
+        &:active {
+            transform: translateY(0);
+
+            &::after {
+                opacity: 0;
+            }
         }
 
         & + .c-pagination__control {
