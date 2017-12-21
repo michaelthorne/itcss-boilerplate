@@ -4,19 +4,22 @@
 
 .c-breadcrumbs {
     display: flex;
+    overflow-y: auto;
 
     /* Item */
 
     .c-breadcrumbs__item {
-        color: $color-brand;
+        color: $color-brand-secondary;
         display: flex;
         flex: 0 1 auto;
         font-size: 0.875rem;
+        font-weight: $weight-bold;
+        white-space: nowrap;
 
         &:not(:last-child) {
 
             &::after {
-                color: $color-black;
+                color: $color-brand-secondary;
                 content: '/';
                 flex: 0 1 auto;
                 padding-left: $base-spacing-unit-xs;
@@ -29,5 +32,6 @@
 
     .c-breadcrumbs__link {
         flex: 0 1 auto;
+        font-weight: $weight-normal;
     }
 }
