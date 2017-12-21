@@ -13,4 +13,23 @@
         margin-right: $base-spacing-unit-small;
         vertical-align: middle;
     }
+
+    /* Control */
+
+    .c-pagination__control {
+        background-color: $color-brand-secondary;
+        color: $color-white;
+        line-height: 1;
+        padding: $base-spacing-unit-xs $base-spacing-unit-small;
+        text-decoration: none;
+
+        &:focus,
+        &:hover {
+            color: $color-brand;
+        }
+
+        & + .c-pagination__control {
+            margin-left: $base-spacing-unit-xs;
+        }
+    }
 }
