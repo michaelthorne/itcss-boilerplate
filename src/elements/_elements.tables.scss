@@ -3,9 +3,20 @@
    ========================================================================== */
 
 table {
+    white-space: nowrap;
     width: 100%;
+
+    caption {
+        caption-side: bottom;
+        color: $color-gray;
+        margin-top: $base-spacing-unit-small;
+    }
 
     thead {
         border-bottom: $base-border-width solid $color-brand-secondary;
+    }
+
+    td {
+        border-bottom: $base-border-width-small solid $color-silver;
     }
 }
