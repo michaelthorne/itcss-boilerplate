@@ -29,8 +29,8 @@
     display: block;
     font-family: inherit;
     font-size: inherit;
-    height: calc(#{$base-font-size} * #{$base-line-height} +
-        (#{$base-border-width-small} * 2) + (#{$base-spacing-unit-xs} * 2));
+    // sass-lint:disable max-line-length
+    height: calc(#{$base-font-size} * #{$base-line-height} + (#{$base-border-width-small} * 2) + (#{$base-spacing-unit-xs} * 2));
     line-height: $base-line-height;
     padding: $base-spacing-unit-xs $base-spacing-unit-small;
     transition: border-color 0.25s, box-shadow 0.25s;
