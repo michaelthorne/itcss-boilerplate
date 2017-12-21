@@ -4,7 +4,7 @@
 
 a {
     color: $color-brand-secondary;
-    text-decoration: none;
+    text-decoration: underline;
     text-decoration-skip: ink;
     transition: color 0.25s;
 
@@ -12,6 +12,5 @@ a {
     &:focus,
     &:hover {
         color: $color-brand;
-        text-decoration: underline;
     }
 }

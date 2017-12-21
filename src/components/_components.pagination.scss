@@ -18,6 +18,7 @@
 
     .c-pagination__control {
         background-color: $color-brand-secondary;
+        border-radius: $base-border-radius;
         color: $color-white;
         line-height: 1;
         padding: $base-spacing-unit-xs $base-spacing-unit-small;
