@@ -9,12 +9,3 @@ hr {
     border-top: $base-border-width solid $color-brand;
     display: block;
 }
-
-/* Figure */
-
-figure {
-
-    > img {
-        margin-bottom: $base-spacing-unit-small;
-    }
-}

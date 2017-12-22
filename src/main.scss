@@ -27,6 +27,7 @@
  * Type................Basic typographic elements.
  * Links...............The default anchor style.
  * Lists...............Styles for lists.
+ * Figures.............Represent self-contained content.
  * Images..............Ensure images are fluid.
  * Quotes..............Cater for block and inline quotes.
  * Tables..............Tabular data styles.
@@ -102,6 +103,7 @@
 @import 'elements/elements.type';
 @import 'elements/elements.links';
 @import 'elements/elements.lists';
+@import 'elements/elements.figures';
 @import 'elements/elements.images';
 @import 'elements/elements.quotes';
 @import 'elements/elements.tables';
