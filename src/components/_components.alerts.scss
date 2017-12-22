@@ -3,19 +3,34 @@
    ========================================================================== */
 
 .c-alert {
-    background-color: lighten($color-information, 56%);
+    background-color: lighten($color-information, 40%);
     border: $base-border-width-small solid $color-information;
-    border-radius: $base-border-radius;
+    border-radius: $base-border-radius-large;
+    box-shadow: 0 0.125em $base-spacing-unit $color-silver;
+    color: darken($color-information, 20%);
     margin-bottom: $base-spacing-unit;
     padding: $base-spacing-unit-small $base-spacing-unit $base-spacing-unit-small $base-spacing-unit-small;
     position: relative;
+
+    /* Body */
+
+    .c-alert__body {
+
+        p {
+            margin-bottom: 0;
+
+            & + p {
+                margin-top: $base-spacing-unit;
+            }
+        }
+    }
 
     /* Dismiss */
 
     .c-alert__dismiss {
         background-color: transparent;
         border: 0;
-        color: $color-gray;
+        color: lighten($color-information, 20%);
         cursor: pointer;
         padding: 0;
         position: absolute;
@@ -26,7 +41,7 @@
 
         &:focus,
         &:hover {
-            color: $color-black;
+            color: $color-information;
         }
     }
 
@@ -35,8 +50,20 @@
      */
 
     &.c-alert--success {
-        background-color: lighten($color-success, 50%);
+        background-color: lighten($color-success, 35%);
         border-color: $color-success;
+        color: darken($color-success, 20%);
+
+        /* Dismiss */
+
+        .c-alert__dismiss {
+            color: lighten($color-success, 20%);
+
+            &:focus,
+            &:hover {
+                color: $color-success;
+            }
+        }
     }
 
     /**
@@ -44,8 +71,20 @@
      */
 
     &.c-alert--warning {
-        background-color: lighten($color-warning, 43%);
+        background-color: lighten($color-warning, 35%);
         border-color: $color-warning;
+        color: darken($color-warning, 20%);
+
+        /* Dismiss */
+
+        .c-alert__dismiss {
+            color: lighten($color-warning, 20%);
+
+            &:focus,
+            &:hover {
+                color: $color-warning;
+            }
+        }
     }
 
     /**
@@ -53,7 +92,19 @@
      */
 
     &.c-alert--error {
-        background-color: lighten($color-error, 38%);
+        background-color: lighten($color-error, 35%);
         border-color: $color-error;
+        color: darken($color-error, 20%);
+
+        /* Dismiss */
+
+        .c-alert__dismiss {
+            color: lighten($color-error, 20%);
+
+            &:focus,
+            &:hover {
+                color: $color-error;
+            }
+        }
     }
 }
