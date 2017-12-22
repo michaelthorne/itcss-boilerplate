@@ -39,6 +39,7 @@
  * Media...............An image with descriptive contents.
  *
  * COMPONENTS
+ * Alerts..............Show a message in the interface.
  * Breadcrumbs.........Displays the hierarchy between content.
  * Button Groups.......Grouping of related buttons.
  * Buttons.............Button styles.
@@ -46,7 +47,13 @@
  * Pagination..........Controls to navigate pages of data.
  *
  * UTILITIES
- * Clearfix............Provide a utility class for the clearfix mixin.
+ * Print...............Default styles from HTML5 Boilerplate.
+ * Colors..............Background and foreground color overrides.
+ * Clearfix............Provides a class for the clearfix mixin.
+ * Floats..............Pull a child element to the left or right.
+ * Headings............Maintain heading hierarchy, but change font sizing.
+ * Visibility..........Control the visibility of elements.
+ * Widths..............Specify the width of an element e.g. a grid column.
  */
 
 
@@ -119,8 +126,9 @@
 /* #COMPONENTS
    ========================================================================== */
 
+@import 'components/components.alerts';
 @import 'components/components.breadcrumbs';
-@import 'components/components.button-group';
+@import 'components/components.button-groups';
 @import 'components/components.buttons';
 @import 'components/components.forms';
 @import 'components/components.pagination';
@@ -133,8 +141,9 @@
    ========================================================================== */
 
 @import 'utilities/utilities.print';
+@import 'utilities/utilities.colors';
 @import 'utilities/utilities.clearfix';
-@import 'utilities/utilities.headings';
 @import 'utilities/utilities.floats';
+@import 'utilities/utilities.headings';
 @import 'utilities/utilities.visibility';
 @import 'utilities/utilities.widths';
