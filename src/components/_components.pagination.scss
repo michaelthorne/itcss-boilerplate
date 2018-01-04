@@ -24,7 +24,7 @@
         padding: $base-spacing-unit-xs $base-spacing-unit-small;
         position: relative;
         text-decoration: none;
-        transition: transform 0.25s;
+        transition: color 0.25s, transform 0.25s;
 
         &::after {
             border-radius: $base-border-radius;
