@@ -68,15 +68,12 @@
 
         .c-alert__body {
 
-            p {
+            a {
+                color: darken($color-success, 20%);
 
-                a {
-                    color: darken($color-success, 20%);
-
-                    &:focus,
-                    &:hover {
-                        color: $color-success;
-                    }
+                &:focus,
+                &:hover {
+                    color: $color-success;
                 }
             }
         }
@@ -106,15 +103,12 @@
 
         .c-alert__body {
 
-            p {
+            a {
+                color: darken($color-warning, 20%);
 
-                a {
-                    color: darken($color-warning, 20%);
-
-                    &:focus,
-                    &:hover {
-                        color: $color-warning;
-                    }
+                &:focus,
+                &:hover {
+                    color: $color-warning;
                 }
             }
         }
@@ -144,15 +138,12 @@
 
         .c-alert__body {
 
-            p {
+            a {
+                color: darken($color-error, 20%);
 
-                a {
-                    color: darken($color-error, 20%);
-
-                    &:focus,
-                    &:hover {
-                        color: $color-error;
-                    }
+                &:focus,
+                &:hover {
+                    color: $color-error;
                 }
             }
         }
