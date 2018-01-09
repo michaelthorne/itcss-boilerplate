@@ -61,5 +61,23 @@
         & + .c-pagination__control {
             margin-left: $base-spacing-unit-xs;
         }
+
+        /**
+         * Disabled
+         */
+
+        &.c-pagination__control--disabled {
+            background-color: $color-silver;
+
+            &:focus,
+            &:hover {
+                color: $color-white;
+                transform: none;
+
+                &::after {
+                    opacity: 0;
+                }
+            }
+        }
     }
 }
