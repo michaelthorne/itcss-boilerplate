@@ -17,9 +17,8 @@
     /* Control */
 
     .c-pagination__control {
-        background-color: $color-brand-secondary;
-        border-radius: $base-border-radius;
-        color: $color-white;
+        border: 0.0625em solid $color-silver;
+        color: $color-brand-secondary;
         line-height: 1;
         padding: $base-spacing-unit-xs $base-spacing-unit-small;
         position: relative;
@@ -50,6 +49,25 @@
             }
         }
 
+        /**
+         * Previous
+         */
+
+        &.c-pagination__control--prev {
+            border-bottom-left-radius: $base-border-radius;
+            border-top-left-radius: $base-border-radius;
+        }
+
+        /**
+         * Next
+         */
+
+        &.c-pagination__control--next {
+            border-bottom-right-radius: $base-border-radius;
+            border-left-width: 0;
+            border-top-right-radius: $base-border-radius;
+        }
+
         &:active {
             transform: translateY(0);
 
@@ -58,20 +76,16 @@
             }
         }
 
-        & + .c-pagination__control {
-            margin-left: $base-spacing-unit-xs;
-        }
-
         /**
          * Disabled
          */
 
         &.is-disabled {
-            background-color: $color-silver;
+            color: $color-silver;
 
             &:focus,
             &:hover {
-                color: $color-white;
+                color: $color-silver;
                 transform: none;
 
                 &::after {
