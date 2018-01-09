@@ -73,6 +73,11 @@
     &.c-btn--primary {
         background-color: $color-brand;
         border-color: $color-brand;
+
+        &:focus,
+        &:hover {
+            color: $color-brand-secondary;
+        }
     }
 
     /* Secondary */
@@ -81,6 +86,11 @@
         background-color: $color-brand-secondary;
         border-color: $color-brand-secondary;
         color: $color-white;
+
+        &:focus,
+        &:hover {
+            color: $color-white;
+        }
     }
 
     /* Small */
