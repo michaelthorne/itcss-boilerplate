@@ -34,6 +34,7 @@
     line-height: $base-line-height;
     padding: $base-spacing-unit-xs $base-spacing-unit-small;
     transition: border-color 0.25s, box-shadow 0.25s;
+    width: 100%;
 
     &:focus {
         box-shadow: 0 0.125em $base-spacing-unit-small $color-silver;
