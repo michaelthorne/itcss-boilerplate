@@ -7,10 +7,11 @@
     border-radius: $base-border-radius-large;
     color: darken($color-information, 20%);
     display: inline-block;
-    font-size: 0.75rem;
+    font-size: 0.625rem;
     font-weight: $weight-bold;
     padding: 0.125em 0.5em;
     text-align: center;
+    text-transform: uppercase;
     transition: background-color 0.25s;
 
     /* Link */
