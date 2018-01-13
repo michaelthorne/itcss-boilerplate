@@ -3,15 +3,15 @@
    ========================================================================== */
 
 .c-btn-group {
-    @include clearfix;
-    margin-top: -$base-spacing-unit-small;
+  @include clearfix;
+  margin-top: -$base-spacing-unit-small;
 
-    .c-btn {
-        float: left;
-        margin-top: $base-spacing-unit-small;
+  .c-btn {
+    float: left;
+    margin-top: $base-spacing-unit-small;
 
-        &:not(:last-child) {
-            margin-right: $base-spacing-unit-small;
-        }
+    &:not(:last-child) {
+      margin-right: $base-spacing-unit-small;
     }
+  }
 }

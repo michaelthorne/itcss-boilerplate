@@ -3,105 +3,105 @@
    ========================================================================== */
 
 .c-btn {
-    background-color: $color-white;
-    border: $base-border-width-small solid $color-brand-secondary;
-    border-radius: $base-border-radius-large;
-    color: $color-brand-secondary;
-    cursor: pointer;
-    display: inline-block;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: $base-line-height;
-    padding: $base-spacing-unit-small $base-spacing-unit;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    transition: color 0.25s, transform 0.25s;
-    vertical-align: middle;
+  background-color: $color-white;
+  border: $base-border-width-small solid $color-brand-secondary;
+  border-radius: $base-border-radius-large;
+  color: $color-brand-secondary;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: $base-line-height;
+  padding: $base-spacing-unit-small $base-spacing-unit;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.25s, transform 0.25s;
+  vertical-align: middle;
+
+  &::after {
+    border-radius: $base-border-radius;
+    box-shadow: 0 0.125em $base-spacing-unit-small $color-black-25;
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: 0.25;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.25s;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &:focus,
+  &:hover {
+    outline: 0;
+    transform: translateY(-0.0625em);
 
     &::after {
-        border-radius: $base-border-radius;
-        box-shadow: 0 0.125em $base-spacing-unit-small $color-black-25;
-        content: '';
-        height: 100%;
-        left: 0;
-        opacity: 0.25;
-        position: absolute;
-        top: 0;
-        transition: opacity 0.25s;
-        width: 100%;
-        z-index: -1;
+      opacity: 1;
     }
+  }
+
+  &:active {
+    transform: translateY(0);
+
+    &::after {
+      opacity: 0.5;
+    }
+  }
+
+  &.is-disabled,
+  &[disabled] {
+    background-color: $color-silver;
+    border-color: $color-silver;
+    color: $color-gray;
+    cursor: default;
 
     &:focus,
     &:hover {
-        outline: 0;
-        transform: translateY(-0.0625em);
+      transform: translateY(0);
 
-        &::after {
-            opacity: 1;
-        }
+      &::after {
+        opacity: 0;
+      }
     }
+  }
 
-    &:active {
-        transform: translateY(0);
+  /* Primary */
 
-        &::after {
-            opacity: 0.5;
-        }
+  &.c-btn--primary {
+    background-color: $color-brand;
+    border-color: $color-brand;
+
+    &:focus,
+    &:hover {
+      color: $color-brand-secondary;
     }
+  }
 
-    &.is-disabled,
-    &[disabled] {
-        background-color: $color-silver;
-        border-color: $color-silver;
-        color: $color-gray;
-        cursor: default;
+  /* Secondary */
 
-        &:focus,
-        &:hover {
-            transform: translateY(0);
+  &.c-btn--secondary {
+    background-color: $color-brand-secondary;
+    border-color: $color-brand-secondary;
+    color: $color-white;
 
-            &::after {
-                opacity: 0;
-            }
-        }
+    &:focus,
+    &:hover {
+      color: $color-white;
     }
+  }
 
-    /* Primary */
+  /* Small */
 
-    &.c-btn--primary {
-        background-color: $color-brand;
-        border-color: $color-brand;
+  &.c-btn--small {
+    padding: $base-spacing-unit-xs $base-spacing-unit-small;
+  }
 
-        &:focus,
-        &:hover {
-            color: $color-brand-secondary;
-        }
-    }
+  /* Large */
 
-    /* Secondary */
-
-    &.c-btn--secondary {
-        background-color: $color-brand-secondary;
-        border-color: $color-brand-secondary;
-        color: $color-white;
-
-        &:focus,
-        &:hover {
-            color: $color-white;
-        }
-    }
-
-    /* Small */
-
-    &.c-btn--small {
-        padding: $base-spacing-unit-xs $base-spacing-unit-small;
-    }
-
-    /* Large */
-
-    &.c-btn--large {
-        padding: $base-spacing-unit $base-spacing-unit-large;
-    }
+  &.c-btn--large {
+    padding: $base-spacing-unit $base-spacing-unit-large;
+  }
 }

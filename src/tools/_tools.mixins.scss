@@ -5,17 +5,17 @@
 /* Set font size with a relative line height. */
 
 @mixin font-size($font-size, $line-height: auto, $important: false) {
-    font-size: $font-size;
+  font-size: $font-size;
 
-    @if ($important == true) {
-        $important: !important;
-    } @else {
-        $important: null;
-    }
+  @if ($important == true) {
+    $important: !important;
+  } @else {
+    $important: null;
+  }
 
-    @if ($line-height == 'auto') {
-        line-height: ceil($font-size / $base-line-height) * ($base-line-height / $font-size) $important;
-    } @else {
-        line-height: $line-height $important;
-    }
+  @if ($line-height == 'auto') {
+    line-height: ceil($font-size / $base-line-height) * ($base-line-height / $font-size) $important;
+  } @else {
+    line-height: $line-height $important;
+  }
 }

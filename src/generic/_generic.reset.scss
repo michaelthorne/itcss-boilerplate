@@ -2,8 +2,6 @@
    #RESET
    ========================================================================== */
 
-// sass-lint:disable single-line-per-selector
-
 /* Remove margins and padding. */
 
 body,
@@ -13,18 +11,18 @@ dl, dd, ol, ul,
 figure,
 hr,
 fieldset, legend {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* Remove trailing margins from nested lists. */
 
 li > {
 
-    ol,
-    ul {
-        margin-bottom: 0;
-    }
+  ol,
+  ul {
+    margin-bottom: 0;
+  }
 }
 
 /**
@@ -38,7 +36,7 @@ iframe,
 img,
 svg,
 video {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 /**
@@ -48,8 +46,8 @@ video {
  */
 
 fieldset {
-    border: 0; /* [1] */
-    min-width: 0; /* [2] */
+  border: 0; /* [1] */
+  min-width: 0; /* [2] */
 }
 
 /**
@@ -57,5 +55,5 @@ fieldset {
  */
 
 table {
-    border-collapse: collapse;
+  border-collapse: collapse;
 }

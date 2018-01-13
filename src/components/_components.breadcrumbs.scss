@@ -3,35 +3,35 @@
    ========================================================================== */
 
 .c-breadcrumbs {
+  display: flex;
+  overflow-x: auto;
+
+  /* Item */
+
+  .c-breadcrumbs__item {
+    color: $color-brand-secondary;
     display: flex;
-    overflow-x: auto;
+    flex: 0 1 auto;
+    font-size: 0.875rem;
+    font-weight: $weight-bold;
+    white-space: nowrap;
 
-    /* Item */
+    &:not(:last-child) {
 
-    .c-breadcrumbs__item {
-        color: $color-brand-secondary;
-        display: flex;
+      &::after {
+        color: $color-silver;
+        content: '/';
         flex: 0 1 auto;
-        font-size: 0.875rem;
-        font-weight: $weight-bold;
-        white-space: nowrap;
-
-        &:not(:last-child) {
-
-            &::after {
-                color: $color-silver;
-                content: '/';
-                flex: 0 1 auto;
-                padding-left: $base-spacing-unit-xs;
-                padding-right: $base-spacing-unit-xs;
-            }
-        }
+        padding-left: $base-spacing-unit-xs;
+        padding-right: $base-spacing-unit-xs;
+      }
     }
+  }
 
-    /* Link */
+  /* Link */
 
-    .c-breadcrumbs__link {
-        flex: 0 1 auto;
-        font-weight: $weight-normal;
-    }
+  .c-breadcrumbs__link {
+    flex: 0 1 auto;
+    font-weight: $weight-normal;
+  }
 }

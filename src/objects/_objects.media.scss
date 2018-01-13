@@ -8,28 +8,28 @@
  */
 
 .o-media {
-    @include clearfix;
+  @include clearfix;
+  display: block;
+
+  /* Image */
+
+  .o-media__img {
+    float: left;
+    margin-right: $base-spacing-unit;
+
+    > img {
+      display: block;
+    }
+  }
+
+  /* Body */
+
+  .o-media__body {
     display: block;
+    overflow: hidden;
 
-    /* Image */
-
-    .o-media__img {
-        float: left;
-        margin-right: $base-spacing-unit;
-
-        > img {
-            display: block;
-        }
+    > :last-child {
+      margin-bottom: 0;
     }
-
-    /* Body */
-
-    .o-media__body {
-        display: block;
-        overflow: hidden;
-
-        > :last-child {
-            margin-bottom: 0;
-        }
-    }
+  }
 }

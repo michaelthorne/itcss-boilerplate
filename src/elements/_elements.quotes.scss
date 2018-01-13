@@ -5,37 +5,37 @@
 /* Block */
 
 blockquote {
-    border-left: $base-border-width solid $color-brand;
-    padding-left: $base-spacing-unit;
+  border-left: $base-border-width solid $color-brand;
+  padding-left: $base-spacing-unit;
 
-    q {
-        quotes: '‘' '’';
+  q {
+    quotes: '‘' '’';
 
-        &::after {
-            content: close-quote;
-        }
-
-        &::before {
-            content: open-quote;
-        }
+    &::after {
+      content: close-quote;
     }
 
-    cite {
-        display: block;
+    &::before {
+      content: open-quote;
     }
+  }
+
+  cite {
+    display: block;
+  }
 }
 
 /* Inline */
 
 q {
-    font-style: italic;
-    quotes: '‘' '’' '“' '”';
+  font-style: italic;
+  quotes: '‘' '’' '“' '”';
 
-    &::after {
-        content: close-quote;
-    }
+  &::after {
+    content: close-quote;
+  }
 
-    &::before {
-        content: open-quote;
-    }
+  &::before {
+    content: open-quote;
+  }
 }

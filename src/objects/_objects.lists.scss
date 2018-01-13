@@ -3,15 +3,15 @@
    ========================================================================== */
 
 .o-list {
-    list-style: none;
-    margin-left: 0;
+  list-style: none;
+  margin-left: 0;
 
-    /* Inline */
+  /* Inline */
 
-    &.o-list--inline {
+  &.o-list--inline {
 
-        li {
-            display: inline-block;
-        }
+    li {
+      display: inline-block;
     }
+  }
 }

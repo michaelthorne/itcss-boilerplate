@@ -3,16 +3,16 @@
    ========================================================================== */
 
 label {
-    display: inline-block;
-    margin-bottom: $base-spacing-unit-xs;
+  display: inline-block;
+  margin-bottom: $base-spacing-unit-xs;
 
-    /* Checkbox or Radio Button */
+  /* Checkbox or Radio Button */
 
-    input {
+  input {
 
-        &[type='checkbox'],
-        &[type='radio'] {
-            margin-right: $base-spacing-unit-xs;
-        }
+    &[type='checkbox'],
+    &[type='radio'] {
+      margin-right: $base-spacing-unit-xs;
     }
+  }
 }

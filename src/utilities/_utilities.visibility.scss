@@ -12,7 +12,7 @@
  */
 
 .u-hidden {
-    display: none !important;
+  display: none !important;
 }
 
 /**
@@ -25,37 +25,37 @@
  */
 
 .u-visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    white-space: nowrap; /* 1 */
-    width: 1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap; /* 1 */
+  width: 1px;
 
-    /*
-     * Extends the .visuallyhidden class to allow the element
-     * to be focusable when navigated to via the keyboard:
-     * https://www.drupal.org/node/897638
-     */
+  /*
+   * Extends the .visuallyhidden class to allow the element
+   * to be focusable when navigated to via the keyboard:
+   * https://www.drupal.org/node/897638
+   */
 
-    &.focusable {
+  &.focusable {
 
-        &:active,
-        &:focus {
-            clip: auto;
-            clip-path: none;
-            height: auto;
-            margin: 0;
-            overflow: visible;
-            position: static;
-            white-space: inherit;
-            width: auto;
-        }
+    &:active,
+    &:focus {
+      clip: auto;
+      clip-path: none;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      white-space: inherit;
+      width: auto;
     }
+  }
 }
 
 /**
@@ -63,5 +63,5 @@
  */
 
 .u-invisible {
-    visibility: hidden;
+  visibility: hidden;
 }

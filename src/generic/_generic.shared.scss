@@ -2,8 +2,6 @@
    #SHARED
    ========================================================================== */
 
-// sass-lint:disable single-line-per-selector
-
 address,
 h1, h2, h3, h4, h5, h6,
 blockquote, p, pre,
@@ -12,15 +10,15 @@ figure,
 hr,
 table,
 fieldset, legend {
-    margin-bottom: $base-spacing-unit;
+  margin-bottom: $base-spacing-unit;
 }
 
 caption,
 th {
-    text-align: left;
+  text-align: left;
 }
 
 th,
 td {
-    padding: $base-spacing-unit-small $base-spacing-unit;
+  padding: $base-spacing-unit-small $base-spacing-unit;
 }

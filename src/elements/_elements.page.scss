@@ -10,14 +10,13 @@
  */
 
 html {
-    // sass-lint:disable no-vendor-prefixes
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-size-adjust: 100%;
-    background-color: $color-white;
-    color: $color-black;
-    font-family: $font;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    text-rendering: optimizeLegibility; /* [1] */
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  background-color: $color-white;
+  color: $color-black;
+  font-family: $font;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  text-rendering: optimizeLegibility; /* [1] */
 }

@@ -3,66 +3,66 @@
    ========================================================================== */
 
 .c-badge {
-    background-color: lighten($color-information, 40%);
-    border-radius: $base-border-radius-large;
+  background-color: lighten($color-information, 40%);
+  border-radius: $base-border-radius-large;
+  color: darken($color-information, 20%);
+  display: inline-block;
+  font-size: 0.625rem;
+  font-weight: $weight-bold;
+  padding: 0.125em 0.5em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color 0.25s;
+
+  /* Link */
+
+  .c-badge__link {
     color: darken($color-information, 20%);
-    display: inline-block;
-    font-size: 0.625rem;
-    font-weight: $weight-bold;
-    padding: 0.125em 0.5em;
-    text-align: center;
-    text-transform: uppercase;
-    transition: background-color 0.25s;
+    text-decoration: none;
+  }
+
+  /**
+   * Success
+   */
+
+  &.c-badge--success {
+    background-color: lighten($color-success, 35%);
+    color: darken($color-success, 20%);
 
     /* Link */
 
     .c-badge__link {
-        color: darken($color-information, 20%);
-        text-decoration: none;
+      color: darken($color-success, 20%);
     }
+  }
 
-    /**
-     * Success
-     */
+  /**
+   * Warning
+   */
 
-    &.c-badge--success {
-        background-color: lighten($color-success, 35%);
-        color: darken($color-success, 20%);
+  &.c-badge--warning {
+    background-color: lighten($color-warning, 35%);
+    color: darken($color-warning, 20%);
 
-        /* Link */
+    /* Link */
 
-        .c-badge__link {
-            color: darken($color-success, 20%);
-        }
+    .c-badge__link {
+      color: darken($color-warning, 20%);
     }
+  }
 
-    /**
-     * Warning
-     */
+  /**
+   * Error
+   */
 
-    &.c-badge--warning {
-        background-color: lighten($color-warning, 35%);
-        color: darken($color-warning, 20%);
+  &.c-badge--error {
+    background-color: lighten($color-error, 35%);
+    color: darken($color-error, 20%);
 
-        /* Link */
+    /* Link */
 
-        .c-badge__link {
-            color: darken($color-warning, 20%);
-        }
+    .c-badge__link {
+      color: darken($color-error, 20%);
     }
-
-    /**
-     * Error
-     */
-
-    &.c-badge--error {
-        background-color: lighten($color-error, 35%);
-        color: darken($color-error, 20%);
-
-        /* Link */
-
-        .c-badge__link {
-            color: darken($color-error, 20%);
-        }
-    }
+  }
 }
