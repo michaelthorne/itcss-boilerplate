@@ -17,7 +17,7 @@
   /* Control */
 
   .c-pagination__control {
-    border: 0.0625em solid $color-silver;
+    border: 0.0625em solid $color-gray-20;
     color: $color-brand-secondary;
     line-height: 1;
     padding: $base-spacing-unit-xs $base-spacing-unit-small;
@@ -27,7 +27,7 @@
 
     &::after {
       border-radius: $base-border-radius;
-      box-shadow: 0 0.125em $base-spacing-unit-small $color-gray;
+      box-shadow: $base-box-shadow;
       content: '';
       height: 100%;
       left: 0;
@@ -81,11 +81,11 @@
      */
 
     &.is-disabled {
-      color: $color-silver;
+      color: $color-gray-20;
 
       &:focus,
       &:hover {
-        color: $color-silver;
+        color: $color-gray-20;
         transform: none;
 
         &::after {

@@ -3,8 +3,7 @@
    ========================================================================== */
 
 .o-list {
-  list-style: none;
-  margin-left: 0;
+  @include list-reset;
 
   /* Inline */
 

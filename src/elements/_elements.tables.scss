@@ -10,7 +10,7 @@ table {
 
   caption {
     caption-side: bottom;
-    color: $color-gray;
+    color: $color-gray-50;
     font-size: 0.875rem;
     margin-top: $base-spacing-unit-small;
   }
@@ -20,6 +20,6 @@ table {
   }
 
   td {
-    border-bottom: $base-border-width-small solid $color-silver;
+    border-bottom: $base-border-width-small solid $color-gray-20;
   }
 }

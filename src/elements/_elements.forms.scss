@@ -2,8 +2,11 @@
    #FORMS
    ========================================================================== */
 
+/* Label */
+
 label {
   display: inline-block;
+  font-weight: $weight-bold;
   margin-bottom: $base-spacing-unit-xs;
 
   /* Checkbox or Radio Button */
@@ -15,4 +18,10 @@ label {
       margin-right: $base-spacing-unit-xs;
     }
   }
+}
+
+/* Legend */
+
+legend {
+  font-weight: $weight-bold;
 }

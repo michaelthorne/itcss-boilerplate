@@ -3,11 +3,11 @@
    ========================================================================== */
 
 .c-alert {
-  background-color: lighten($color-information, 40%);
+  background-color: $color-information-lighter;
   border: $base-border-width-small solid $color-information;
   border-radius: $base-border-radius-large;
-  box-shadow: 0 0.125em $base-spacing-unit $color-silver;
-  color: darken($color-information, 20%);
+  box-shadow: $base-box-shadow;
+  color: $color-information-dark;
   margin-bottom: $base-spacing-unit;
   padding: $base-spacing-unit-small $base-spacing-unit $base-spacing-unit-small $base-spacing-unit-small;
   position: relative;
@@ -20,12 +20,12 @@
       margin-bottom: 0;
 
       & + p {
-        margin-top: $base-spacing-unit;
+        margin-top: $base-spacing-unit-small;
       }
     }
 
     a {
-      color: darken($color-information, 20%);
+      color: $color-information-dark;
       font-weight: $weight-bold;
 
       &:focus,
@@ -40,18 +40,18 @@
   .c-alert__dismiss {
     background-color: transparent;
     border: 0;
-    color: lighten($color-information, 20%);
+    color: $color-information-light;
     cursor: pointer;
     padding: 0;
     position: absolute;
-    right: $base-spacing-unit-small;
-    top: 50%;
-    transform: translateY(-50%);
+    right: $base-spacing-unit-xs;
+    top: $base-spacing-unit-xs;
     transition: color 0.25s;
 
     &:focus,
     &:hover {
       color: $color-information;
+      outline: none;
     }
   }
 
@@ -60,16 +60,16 @@
    */
 
   &.c-alert--success {
-    background-color: lighten($color-success, 35%);
+    background-color: $color-success-lighter;
     border-color: $color-success;
-    color: darken($color-success, 20%);
+    color: $color-success-dark;
 
     /* Body */
 
     .c-alert__body {
 
       a {
-        color: darken($color-success, 20%);
+        color: $color-success-dark;
 
         &:focus,
         &:hover {
@@ -81,7 +81,7 @@
     /* Dismiss */
 
     .c-alert__dismiss {
-      color: lighten($color-success, 20%);
+      color: $color-success-light;
 
       &:focus,
       &:hover {
@@ -95,16 +95,16 @@
    */
 
   &.c-alert--warning {
-    background-color: lighten($color-warning, 35%);
+    background-color: $color-warning-lighter;
     border-color: $color-warning;
-    color: darken($color-warning, 20%);
+    color: $color-warning-dark;
 
     /* Body */
 
     .c-alert__body {
 
       a {
-        color: darken($color-warning, 20%);
+        color: $color-warning-dark;
 
         &:focus,
         &:hover {
@@ -116,7 +116,7 @@
     /* Dismiss */
 
     .c-alert__dismiss {
-      color: lighten($color-warning, 20%);
+      color: $color-warning-light;
 
       &:focus,
       &:hover {
@@ -130,16 +130,16 @@
    */
 
   &.c-alert--error {
-    background-color: lighten($color-error, 35%);
+    background-color: $color-error-lighter;
     border-color: $color-error;
-    color: darken($color-error, 20%);
+    color: $color-error-dark;
 
     /* Body */
 
     .c-alert__body {
 
       a {
-        color: darken($color-error, 20%);
+        color: $color-error-dark;
 
         &:focus,
         &:hover {
@@ -151,7 +151,7 @@
     /* Dismiss */
 
     .c-alert__dismiss {
-      color: lighten($color-error, 20%);
+      color: $color-error-light;
 
       &:focus,
       &:hover {

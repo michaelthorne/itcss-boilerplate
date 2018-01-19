@@ -7,7 +7,7 @@
 
 /* Color */
 
-$brand-color:           #01ff70;
+$brand-color:           #0074d9;
 $brand-color-secondary: #001f3f;
 
 /* Font */
@@ -44,3 +44,8 @@ $base-border-width-small:        0.0625em;
 $base-border-radius-large:       0.25em;
 $base-border-radius:             0.125em;
 $base-border-radius-small:       0.0625em;
+
+/* Shadows */
+
+$base-box-shadow:                0 0.125em 0.5em rgba(34, 34, 34, 0.125);
+$base-box-shadow-highlight:      0 0 0.5em rgba(1, 255, 112, 0.25);

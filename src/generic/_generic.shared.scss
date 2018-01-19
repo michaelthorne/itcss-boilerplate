@@ -8,9 +8,13 @@ blockquote, p, pre,
 dl, ol, ul,
 figure,
 hr,
-table,
-fieldset, legend {
+table {
   margin-bottom: $base-spacing-unit;
+}
+
+fieldset,
+legend {
+  margin-bottom: $base-spacing-unit-small;
 }
 
 caption,

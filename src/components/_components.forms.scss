@@ -5,13 +5,14 @@
 /* Group */
 
 .c-form-group {
-  margin-bottom: $base-spacing-unit;
+  margin-bottom: $base-spacing-unit-small;
 
   /* Inline */
 
   &.c-form-group--inline {
 
     label {
+      font-weight: $weight-normal;
       margin-bottom: 0;
 
       &:not(:last-child) {
@@ -24,7 +25,7 @@
 /* Control */
 
 .c-form-control {
-  border: $base-border-width-small solid $color-silver;
+  border: $base-border-width-small solid $color-gray-10;
   border-radius: $base-border-radius;
   display: block;
   font-family: inherit;
@@ -35,26 +36,11 @@
   transition: border-color 0.25s, box-shadow 0.25s;
   width: 100%;
 
-  &:focus {
-    box-shadow: 0 0.125em $base-spacing-unit-small $color-silver;
-    outline: 0;
-  }
-
+  &:focus,
   &:hover {
-    border-color: $color-gray;
-  }
-
-  &:required {
-
-    &:invalid {
-      box-shadow: none;
-      outline: none;
-
-      &:focus {
-        border-color: $color-error;
-        box-shadow: 0 0.125em $base-spacing-unit-small $color-silver;
-      }
-    }
+    border-color: $color-brand;
+    box-shadow: $base-box-shadow-highlight;
+    outline: 0;
   }
 
   /* File */
@@ -81,7 +67,7 @@
 /* Help */
 
 .c-form-help {
-  color: $color-gray;
+  color: $color-gray-50;
   font-size: 0.75rem; /* 14 / 16 */
   margin-top: $base-spacing-unit-xs;
 }

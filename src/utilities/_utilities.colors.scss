@@ -7,30 +7,46 @@
 
 /* Brand */
 
-.u-bg-color-brand           { background-color: $color-brand !important; }
-.u-bg-color-brand-secondary { background-color: $color-brand-secondary !important; }
+.u-bg-color-brand-dark            { background-color: $color-brand-dark !important; }
+.u-bg-color-brand                 { background-color: $color-brand !important; }
+.u-bg-color-brand-light           { background-color: $color-brand-light !important; }
+.u-bg-color-brand-secondary-dark  { background-color: $color-brand-secondary-dark !important; }
+.u-bg-color-brand-secondary       { background-color: $color-brand-secondary !important; }
+.u-bg-color-brand-secondary-light { background-color: $color-brand-secondary-light !important; }
 
 /* Neutral */
 
-.u-bg-color-black           { background-color: $color-black !important; }
-.u-bg-color-gray            { background-color: $color-gray !important; }
-.u-bg-color-silver          { background-color: $color-silver !important; }
-.u-bg-color-white           { background-color: $color-white !important; }
+.u-bg-color-black                 { background-color: $color-black !important; }
+.u-bg-color-gray-90               { background-color: $color-gray-90 !important; }
+.u-bg-color-gray-80               { background-color: $color-gray-80 !important; }
+.u-bg-color-gray-50               { background-color: $color-gray-50 !important; }
+.u-bg-color-gray-20               { background-color: $color-gray-20 !important; }
+.u-bg-color-gray-10               { background-color: $color-gray-10 !important; }
+.u-bg-color-gray-05               { background-color: $color-gray-05 !important; }
+.u-bg-color-white                 { background-color: $color-white !important; }
 
 /* Social */
 
-.u-bg-color-facebook        { background-color: $color-facebook !important; }
-.u-bg-color-linkedin        { background-color: $color-linkedin !important; }
-.u-bg-color-twitter         { background-color: $color-twitter !important; }
-.u-bg-color-youtube         { background-color: $color-youtube !important; }
+.u-bg-color-facebook              { background-color: $color-facebook !important; }
+.u-bg-color-linkedin              { background-color: $color-linkedin !important; }
+.u-bg-color-twitter               { background-color: $color-twitter !important; }
+.u-bg-color-youtube               { background-color: $color-youtube !important; }
 
 /* Utility */
 
-.u-bg-color-error           { background-color: $color-error !important; }
-.u-bg-color-warning         { background-color: $color-warning !important; }
-.u-bg-color-highlight       { background-color: $color-highlight !important; }
-.u-bg-color-success         { background-color: $color-success !important; }
-.u-bg-color-information     { background-color: $color-information !important; }
+.u-bg-color-error-dark            { background-color: $color-error-dark !important; }
+.u-bg-color-error                 { background-color: $color-error !important; }
+.u-bg-color-error-light           { background-color: $color-error-light !important; }
+.u-bg-color-warning-dark          { background-color: $color-warning-dark !important; }
+.u-bg-color-warning               { background-color: $color-warning !important; }
+.u-bg-color-warning-light         { background-color: $color-warning-light !important; }
+.u-bg-color-highlight             { background-color: $color-highlight !important; }
+.u-bg-color-success-dark          { background-color: $color-success-dark !important; }
+.u-bg-color-success               { background-color: $color-success !important; }
+.u-bg-color-success-light         { background-color: $color-success-light !important; }
+.u-bg-color-information-dark      { background-color: $color-information-dark !important; }
+.u-bg-color-information           { background-color: $color-information !important; }
+.u-bg-color-information-light     { background-color: $color-information-light !important; }
 
 
 
@@ -41,27 +57,35 @@
 
 /* Brand */
 
-.u-color-brand           { background-color: $color-brand !important; }
-.u-color-brand-secondary { background-color: $color-brand-secondary !important; }
+.u-color-brand-dark            { background-color: $color-brand-dark !important; }
+.u-color-brand                 { background-color: $color-brand !important; }
+.u-color-brand-light           { background-color: $color-brand-light !important; }
+.u-color-brand-secondary-dark  { background-color: $color-brand-secondary-dark !important; }
+.u-color-brand-secondary       { background-color: $color-brand-secondary !important; }
+.u-color-brand-secondary-light { background-color: $color-brand-secondary-light !important; }
 
 /* Neutral */
 
-.u-color-black           { background-color: $color-black !important; }
-.u-color-gray            { background-color: $color-gray !important; }
-.u-color-silver          { background-color: $color-silver !important; }
-.u-color-white           { background-color: $color-white !important; }
+.u-color-black                 { background-color: $color-black !important; }
+.u-color-gray-90               { background-color: $color-gray-90 !important; }
+.u-color-gray-80               { background-color: $color-gray-80 !important; }
+.u-color-gray-50               { background-color: $color-gray-50 !important; }
+.u-color-gray-20               { background-color: $color-gray-20 !important; }
+.u-color-gray-10               { background-color: $color-gray-10 !important; }
+.u-color-gray-05               { background-color: $color-gray-05 !important; }
+.u-color-white                 { background-color: $color-white !important; }
 
 /* Social */
 
-.u-color-facebook        { background-color: $color-facebook !important; }
-.u-color-linkedin        { background-color: $color-linkedin !important; }
-.u-color-twitter         { background-color: $color-twitter !important; }
-.u-color-youtube         { background-color: $color-youtube !important; }
+.u-color-facebook              { background-color: $color-facebook !important; }
+.u-color-linkedin              { background-color: $color-linkedin !important; }
+.u-color-twitter               { background-color: $color-twitter !important; }
+.u-color-youtube               { background-color: $color-youtube !important; }
 
 /* Utility */
 
-.u-color-error           { background-color: $color-error !important; }
-.u-color-warning         { background-color: $color-warning !important; }
-.u-color-highlight       { background-color: $color-highlight !important; }
-.u-color-success         { background-color: $color-success !important; }
-.u-color-information     { background-color: $color-information !important; }
+.u-color-error                 { background-color: $color-error !important; }
+.u-color-warning               { background-color: $color-warning !important; }
+.u-color-highlight             { background-color: $color-highlight !important; }
+.u-color-success               { background-color: $color-success !important; }
+.u-color-information           { background-color: $color-information !important; }

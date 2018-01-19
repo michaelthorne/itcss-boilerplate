@@ -9,3 +9,18 @@ hr {
   border-top: $base-border-width solid $color-brand;
   display: block;
 }
+
+/* Mark */
+
+mark {
+  background-color: $color-highlight;
+}
+
+/* Paragraph */
+
+p {
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

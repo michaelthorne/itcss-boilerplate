@@ -9,17 +9,16 @@
   /* Item */
 
   .c-breadcrumbs__item {
-    color: $color-brand-secondary;
+    color: $color-brand;
     display: flex;
     flex: 0 1 auto;
     font-size: 0.875rem;
-    font-weight: $weight-bold;
     white-space: nowrap;
 
     &:not(:last-child) {
 
       &::after {
-        color: $color-silver;
+        color: $color-brand-secondary;
         content: '/';
         flex: 0 1 auto;
         padding-left: $base-spacing-unit-xs;
@@ -31,7 +30,12 @@
   /* Link */
 
   .c-breadcrumbs__link {
+    color: $color-brand-secondary;
     flex: 0 1 auto;
-    font-weight: $weight-normal;
+
+    &:focus,
+    &:hover {
+      color: $color-brand;
+    }
   }
 }

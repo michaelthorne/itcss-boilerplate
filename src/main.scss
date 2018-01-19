@@ -22,7 +22,7 @@
  * Shared..............Rules that apply to multiple selectors.
  *
  * ELEMENTS
- * Page................The starting point of our web page.
+ * Page................The defaults of the document.
  * Headings............Setup of h1 to h6.
  * Type................Basic typographic elements.
  * Links...............The default anchor style.
@@ -34,17 +34,19 @@
  * Forms...............Basic form elements.
  *
  * OBJECTS
+ * Layout..............Page layout styles.
  * Wrapper.............Content width constraints.
  * Grid................Basic grid layout.
  * Lists...............Custom list styles.
  * Media...............An image with descriptive contents.
  *
  * COMPONENTS
- * Alerts..............Show a message in the interface.
+ * Alerts..............Provides feedback to the interface.
+ * Badges..............Highlight a piece of information.
  * Breadcrumbs.........Displays the hierarchy between content.
+ * Forms...............Form control styling and layout.
  * Button Groups.......Grouping of related buttons.
  * Buttons.............Button styles.
- * Forms...............Form control styling and layout.
  * Pagination..........Controls to navigate pages of data.
  *
  * UTILITIES
@@ -53,8 +55,9 @@
  * Clearfix............Provides a class for the clearfix mixin.
  * Floats..............Pull a child element to the left or right.
  * Headings............Maintain heading hierarchy, but change font sizing.
+ * Spacing.............Set the margin or padding on an element.
  * Visibility..........Control the visibility of elements.
- * Widths..............Specify the width of an element e.g. a grid column.
+ * Widths..............Specify the width of an element.
  */
 
 
@@ -131,9 +134,9 @@
 @import 'components/components.alerts';
 @import 'components/components.badges';
 @import 'components/components.breadcrumbs';
+@import 'components/components.forms';
 @import 'components/components.button-groups';
 @import 'components/components.buttons';
-@import 'components/components.forms';
 @import 'components/components.pagination';
 
 
@@ -148,5 +151,6 @@
 @import 'utilities/utilities.clearfix';
 @import 'utilities/utilities.floats';
 @import 'utilities/utilities.headings';
+@import 'utilities/utilities.spacing';
 @import 'utilities/utilities.visibility';
 @import 'utilities/utilities.widths';

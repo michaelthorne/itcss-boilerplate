@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .c-btn {
-  background-color: $color-white;
+  background-color: transparent;
   border: $base-border-width-small solid $color-brand-secondary;
   border-radius: $base-border-radius-large;
   color: $color-brand-secondary;
@@ -16,16 +16,16 @@
   position: relative;
   text-align: center;
   text-decoration: none;
-  transition: color 0.25s, transform 0.25s;
+  transition: background-color 0.25s, transform 0.25s;
   vertical-align: middle;
 
   &::after {
     border-radius: $base-border-radius;
-    box-shadow: 0 0.125em $base-spacing-unit-small $color-black-25;
+    box-shadow: $base-box-shadow;
     content: '';
     height: 100%;
     left: 0;
-    opacity: 0.25;
+    opacity: 0.5;
     position: absolute;
     top: 0;
     transition: opacity 0.25s;
@@ -53,9 +53,9 @@
 
   &.is-disabled,
   &[disabled] {
-    background-color: $color-silver;
-    border-color: $color-silver;
-    color: $color-gray;
+    background-color: $color-gray-20;
+    border-color: $color-gray-20;
+    color: $color-gray-50;
     cursor: default;
 
     &:focus,
@@ -68,19 +68,24 @@
     }
   }
 
-  /* Primary */
+  /**
+   * Primary
+   */
 
   &.c-btn--primary {
     background-color: $color-brand;
     border-color: $color-brand;
+    color: $color-white;
 
     &:focus,
     &:hover {
-      color: $color-brand-secondary;
+      background-color: $color-brand-light;
     }
   }
 
-  /* Secondary */
+  /**
+   * Secondary
+   */
 
   &.c-btn--secondary {
     background-color: $color-brand-secondary;
@@ -89,17 +94,30 @@
 
     &:focus,
     &:hover {
-      color: $color-white;
+      background-color: $color-brand-secondary-light;
     }
   }
 
-  /* Small */
+  /**
+   * Block
+   */
+
+  &.c-btn--block {
+    display: block;
+    width: 100%;
+  }
+
+  /**
+   * Small
+   */
 
   &.c-btn--small {
     padding: $base-spacing-unit-xs $base-spacing-unit-small;
   }
 
-  /* Large */
+  /**
+   * Large
+   */
 
   &.c-btn--large {
     padding: $base-spacing-unit $base-spacing-unit-large;
