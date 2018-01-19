@@ -38,7 +38,7 @@ gulp.task('html', function () {
 })
 
 // Lint CSS
-gulp.task('lint-scss', function () {
+gulp.task('lint-css', function () {
 
   return gulp
     .src(config.paths.src + '**/*.scss')
