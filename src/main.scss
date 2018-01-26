@@ -6,14 +6,13 @@
  * TABLE OF CONTENTS
  *
  * SETTINGS
- * Global..............Brand specific and base settings.
+ * Global..............Unique brand identity values.
  * Colors..............The color palette.
- * Fonts...............Variables for related font settings.
+ * Fonts...............Font family, sizing and weights.
  * Responsive..........Breakpoints for media queries.
  *
  * TOOLS
  * Mixins..............Functions for DRY code.
- * Clearfix............Contain floated elements.
  *
  * GENERIC
  * Normalize.css.......Render all elements more consistently.
@@ -27,14 +26,13 @@
  * Type................Basic typographic elements.
  * Links...............The default anchor style.
  * Lists...............Styles for lists.
+ * Forms...............Basic form elements.
  * Figures.............Represent self-contained content.
  * Images..............Ensure images are fluid.
  * Quotes..............Cater for block and inline quotes.
  * Tables..............Tabular data styles.
- * Forms...............Basic form elements.
  *
  * OBJECTS
- * Layout..............Page layout styles.
  * Wrapper.............Content width constraints.
  * Grid................Basic grid layout.
  * Lists...............Custom list styles.
@@ -45,9 +43,10 @@
  * Badges..............Highlight a piece of information.
  * Breadcrumbs.........Displays the hierarchy between content.
  * Forms...............Form control styling and layout.
- * Button Groups.......Grouping of related buttons.
  * Buttons.............Button styles.
+ * Button Groups.......Grouping of related buttons.
  * Pagination..........Controls to navigate pages of data.
+ * Footer..............Page footer styles.
  *
  * UTILITIES
  * Print...............Default styles from HTML5 Boilerplate.
@@ -105,11 +104,11 @@
 @import 'elements/elements.type';
 @import 'elements/elements.links';
 @import 'elements/elements.lists';
+@import 'elements/elements.forms';
 @import 'elements/elements.figures';
 @import 'elements/elements.images';
 @import 'elements/elements.quotes';
 @import 'elements/elements.tables';
-@import 'elements/elements.forms';
 
 
 
@@ -134,8 +133,8 @@
 @import 'components/components.badges';
 @import 'components/components.breadcrumbs';
 @import 'components/components.forms';
-@import 'components/components.button-groups';
 @import 'components/components.buttons';
+@import 'components/components.button-groups';
 @import 'components/components.pagination';
 
 
