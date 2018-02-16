@@ -1,339 +1,452 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>ITCSS Boilerplate</title>
+  <title>ITCSS Boilerplate</title>
 
-    <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    .c-palette {
+      display: flex;
+      flex-wrap: wrap;
+    }
 
-    <script src="https://use.fontawesome.com/releases/v5.0.2/js/all.js" defer></script>
+    .c-palette__group {
+      flex-direction: row;
+      flex: 1 1 100%;
+    }
+
+    .c-palette__color {
+      padding: 0.5em;
+    }
+
+    .c-palette__code {
+      background-color: #fff;
+      border-radius: 0.25em;
+      box-shadow: 0 0.125em 0.25em rgba(34, 34, 34, 0.25);
+      display: inline-block;
+      font-size: 0.875rem;
+      padding: 0.125em 0.5em;
+    }
+
+    @media all and (min-width: 48em) {
+
+      .c-palette__group {
+        flex-direction: column;
+        flex-basis: 0;
+      }
+    }
+  </style>
+
+  <script src="https://use.fontawesome.com/releases/v5.0.2/js/all.js" defer></script>
 </head>
 <body>
-    <main>
-        <div class="o-wrapper o-wrapper--small">
-            <h1>The quick brown fox jumps over the lazy dog</h1>
+  <main>
+    <div class="o-wrapper o-wrapper--small">
+      <br>
+      <h1><a href="https://github.com/michaelthorne/itcss-boilerplate">ITCSS Boilerplate</a></h1>
+    </div>
 
-            <h2>The quick brown fox jumps over the lazy dog</h2>
+    <div class="o-wrapper">
+      <div class="c-palette">
+        <div class="c-palette__group">
+          <div class="c-palette__color u-bg-color-brand-dark">
+            <code class="c-palette__code">$color-brand-dark</code>
+          </div>
+          <div class="c-palette__color u-bg-color-brand">
+            <code class="c-palette__code">$color-brand</code>
+          </div>
+          <div class="c-palette__color u-bg-color-brand-light">
+            <code class="c-palette__code">$color-brand-light</code>
+          </div>
+          <div class="c-palette__color u-bg-color-brand-secondary-dark">
+            <code class="c-palette__code">$color-brand-secondary-dark</code>
+          </div>
+          <div class="c-palette__color u-bg-color-brand-secondary">
+            <code class="c-palette__code">$color-brand-secondary</code>
+          </div>
+          <div class="c-palette__color u-bg-color-brand-secondary-light">
+            <code class="c-palette__code">$color-brand-secondary-light</code>
+          </div>
+        </div>
+        <div class="c-palette__group">
+          <div class="c-palette__color u-bg-color-black">
+            <code class="c-palette__code">$color-black</code>
+          </div>
+          <div class="c-palette__color u-bg-color-gray-90">
+            <code class="c-palette__code">$color-gray-90</code>
+          </div>
+          <div class="c-palette__color u-bg-color-gray-80">
+            <code class="c-palette__code">$color-gray-80</code>
+          </div>
+          <div class="c-palette__color u-bg-color-gray-50">
+            <code class="c-palette__code">$color-gray-50</code>
+          </div>
+          <div class="c-palette__color u-bg-color-gray-20">
+            <code class="c-palette__code">$color-gray-20</code>
+          </div>
+          <div class="c-palette__color u-bg-color-gray-10">
+            <code class="c-palette__code">$color-gray-10</code>
+          </div>
+          <div class="c-palette__color u-bg-color-gray-05">
+            <code class="c-palette__code">$color-gray-05</code>
+          </div>
+          <div class="c-palette__color u-bg-color-white">
+            <code class="c-palette__code">$color-white</code>
+          </div>
+        </div>
+        <div class="c-palette__group">
+          <div class="c-palette__color u-bg-color-error">
+            <code class="c-palette__code">$color-error</code>
+          </div>
+          <div class="c-palette__color u-bg-color-warning">
+            <code class="c-palette__code">$color-warning</code>
+          </div>
+          <div class="c-palette__color u-bg-color-highlight">
+            <code class="c-palette__code">$color-highlight</code>
+          </div>
+          <div class="c-palette__color u-bg-color-information">
+            <code class="c-palette__code">$color-information</code>
+          </div>
+          <div class="c-palette__color u-bg-color-success">
+            <code class="c-palette__code">$color-success</code>
+          </div>
+        </div>
+      </div>
 
-            <h3>The quick brown fox jumps over the lazy dog</h3>
+      <br>
+    </div>
 
-            <h4>The quick brown fox jumps over the lazy dog</h4>
+    <div class="o-wrapper o-wrapper--small">
+      <h1>The quick brown fox jumps over the lazy dog</h1>
 
-            <h5>The quick brown fox jumps over the lazy dog</h5>
+      <h2>The quick brown fox jumps over the lazy dog</h2>
 
-            <h6>The quick brown fox jumps over the lazy dog</h6>
+      <h3>The quick brown fox jumps over the lazy dog</h3>
 
-            <p>"The quick brown fox jumps over the lazy dog" is an English-language pangram—a sentence that contains all
-                of the letters of the alphabet.</p>
+      <h4>The quick brown fox jumps over the lazy dog</h4>
 
-            <hr>
+      <h5>The quick brown fox jumps over the lazy dog</h5>
 
-            <dl class="o-list--inline">
-                <dt><dfn>Bee</dfn>, n.</dt>
-                <dd>A buzzing insect, known for its role in pollination.</dd>
-                <dt><dfn>Buzz</dfn>, v.</dt>
-                <dd>To make a continuous, humming noise, like that made by bees.</dd>
-            </dl>
+      <h6>The quick brown fox jumps over the lazy dog</h6>
 
-            <ol>
-                <li>First ordered list item</li>
-                <li>
-                    Second ordered list item
-                    <ol>
-                        <li>First nested, ordered list item</li>
-                        <li>Second nested, ordered list item</li>
-                        <li>Third nested, ordered list item</li>
-                    </ol>
-                </li>
-                <li>Third ordered list item</li>
-            </ol>
+      <p>"The quick brown fox jumps over the lazy dog" is an English-language pangram—a sentence that contains all
+        of the letters of the alphabet.</p>
 
-            <ul>
-                <li>An unordered list item</li>
-                <li>Another unordered list item</li>
-                <li>Final unordered list item</li>
-            </ul>
+      <hr>
 
-            <ul class="o-list">
-                <li>An unstyled list item</li>
-                <li>Another unstyled list item</li>
-                <li>Final unstyled list item</li>
-            </ul>
+      <dl>
+        <dt><dfn>Bee</dfn>, n.</dt>
+        <dd>A buzzing insect, known for its role in pollination.</dd>
+        <dt><dfn>Buzz</dfn>, v.</dt>
+        <dd>To make a continuous, humming noise, like that made by bees.</dd>
+      </dl>
 
-            <ul class="o-list o-list--inline">
-                <li class="o-list__item">An inline list item</li>
-                <li class="o-list__item">Another inline list item</li>
-                <li class="o-list__item">Final inline list item</li>
-            </ul>
+      <ol>
+        <li>First ordered list item</li>
+        <li>
+          Second ordered list item
+          <ol>
+            <li>First nested, ordered list item</li>
+            <li>Second nested, ordered list item</li>
+            <li>Third nested, ordered list item</li>
+          </ol>
+        </li>
+        <li>Third ordered list item</li>
+      </ol>
 
-            <figure>
-                <img src="http://via.placeholder.com/350x150" alt="350x150 placeholder image">
-                <figcaption>This is a placeholder image.</figcaption>
-            </figure>
+      <ul>
+        <li>An unordered list item</li>
+        <li>Another unordered list item</li>
+        <li>Final unordered list item</li>
+      </ul>
 
-            <blockquote>
-                <p>The HTML <code>&lt;blockquote&gt;</code> Element (or HTML Block Quotation Element) indicates that the
-                    enclosed text is an extended quotation. Usually, this is rendered visually by indentation (see Notes
-                    for how to change it). A URL for the source of the quotation may be given using the cite attribute,
-                    while a text representation of the source can be given using the <code>&lt;cite&gt;</code> element.</p>
+      <ul class="o-list">
+        <li>An unstyled list item</li>
+        <li>Another unstyled list item</li>
+        <li>Final unstyled list item</li>
+      </ul>
 
-                <cite>— <a href="index.html">MDN</a></cite>
-            </blockquote>
+      <br>
 
-            <table>
-                <caption>Recent Major Volcanic Eruptions in the Pacific Northwest.</caption>
+      <ul class="o-list o-list--inline">
+        <li class="o-list__item">An inline list item</li>
+        <li class="o-list__item">Another inline list item</li>
+        <li class="o-list__item">Final inline list item</li>
+      </ul>
 
-                <thead>
-                <tr>
-                    <th>Volcano Name</th>
-                    <th>Location</th>
-                    <th>Last Major Eruption</th>
-                    <th>Type of Eruption</th>
-                </tr>
-                </thead>
+      <br>
 
-                <tbody>
-                <tr>
-                    <td>Mt. Lassen</td>
-                    <td>California</td>
-                    <td>1914-17</td>
-                    <td>Explosive Eruption</td>
-                </tr>
-                <tr>
-                    <td>Mt. Hood</td>
-                    <td>Oregon</td>
-                    <td>1790s</td>
-                    <td>Pyroclastic flows and Mudflows</td>
-                </tr>
-                <tr>
-                    <td>Mt. St. Helens</td>
-                    <td>Washington</td>
-                    <td>1980</td>
-                    <td>Explosive Eruption</td>
-                </tr>
-                </tbody>
-            </table>
+      <figure>
+        <img src="http://via.placeholder.com/350x150" alt="350x150 placeholder image">
+        <figcaption>This is a placeholder image.</figcaption>
+      </figure>
 
-            <form action="index.html" method="post">
-                <div class="c-form-group">
-                    <label for="first_name">First Name</label>
-                    <input class="c-form-control" type="text" id="first_name" name="first_name" required>
-                </div>
+      <blockquote>
+        <p>The HTML <code>&lt;blockquote&gt;</code> Element (or HTML Block Quotation Element) indicates that the
+          enclosed text is an extended quotation. Usually, this is rendered visually by indentation (see Notes
+          for how to change it). A URL for the source of the quotation may be given using the cite attribute,
+          while a text representation of the source can be given using the <code>&lt;cite&gt;</code> element.</p>
 
-                <div class="c-form-group">
-                    <label for="last_name">Last Name</label>
-                    <input class="c-form-control" type="text" id="last_name" name="last_name" required>
-                    <div class="c-form-help">Your public profile only shows your first name.</div>
-                </div>
+        <cite>— <a href="index.html">MDN</a></cite>
+      </blockquote>
 
-                <div class="c-form-group">
-                    <label for="photo">Photo</label>
-                    <input class="c-form-control c-form-control--file" type="file" id="photo" name="photo" required>
-                </div>
+      <table>
+        <caption>Recent Major Volcanic Eruptions in the Pacific Northwest.</caption>
 
-                <div class="c-form-group">
-                    <label for="email_address">Email Address</label>
-                    <input class="c-form-control" type="email" id="email_address" name="email_address" required>
-                </div>
+        <thead>
+        <tr>
+          <th>Volcano Name</th>
+          <th>Location</th>
+          <th>Last Major Eruption</th>
+          <th>Type of Eruption</th>
+        </tr>
+        </thead>
 
-                <div class="c-form-group">
-                    <label for="password">Password</label>
-                    <input class="c-form-control" type="password" id="password" name="password" required>
-                </div>
+        <tbody>
+        <tr>
+          <td>Mt. Lassen</td>
+          <td>California</td>
+          <td>1914-17</td>
+          <td>Explosive Eruption</td>
+        </tr>
+        <tr>
+          <td>Mt. Hood</td>
+          <td>Oregon</td>
+          <td>1790s</td>
+          <td>Pyroclastic flows and Mudflows</td>
+        </tr>
+        <tr>
+          <td>Mt. St. Helens</td>
+          <td>Washington</td>
+          <td>1980</td>
+          <td>Explosive Eruption</td>
+        </tr>
+        </tbody>
+      </table>
 
-                <fieldset class="c-form-group c-form-group--inline">
-                    <legend>Favourite Food</legend>
-                    <label for="food-1">
-                        <input type="checkbox" value="1" id="food-1" name="food">
-                        American
-                    </label>
+      <form action="index.html" method="post">
+        <div class="c-form-group">
+          <label for="first_name">First Name</label>
+          <input class="c-form-control" type="text" id="first_name" name="first_name" required>
+        </div>
 
-                    <label for="food-2">
-                        <input type="checkbox" value="1" id="food-2" name="food">
-                        Chinese
-                    </label>
+        <div class="c-form-group">
+          <label for="last_name">Last Name</label>
+          <input class="c-form-control" type="text" id="last_name" name="last_name" required>
+          <div class="c-form-help">Your public profile only shows your first name.</div>
+        </div>
 
-                    <label for="food-3">
-                        <input type="checkbox" value="1" id="food-3" name="food">
-                        French
-                    </label>
+        <div class="c-form-group">
+          <label for="photo">Photo</label>
+          <input class="c-form-control c-form-control--file" type="file" id="photo" name="photo" required>
+        </div>
 
-                    <label for="food-4">
-                        <input type="checkbox" value="1" id="food-4" name="food">
-                        Italian
-                    </label>
-                </fieldset>
+        <div class="c-form-group">
+          <label for="email_address">Email Address</label>
+          <input class="c-form-control" type="email" id="email_address" name="email_address" required>
+        </div>
 
-                <div class="c-form-group">
-                    <label for="membership">Preferred Language</label>
-                    <select class="c-form-control" id="membership" name="membership" required>
-                        <option value="">Please select…</option>
-                        <option value="1">Afrikaans</option>
-                        <option value="2">Deutsch</option>
-                        <option value="3">English</option>
-                        <option value="4">Français</option>
-                    </select>
-                </div>
+        <div class="c-form-group">
+          <label for="password">Password</label>
+          <input class="c-form-control" type="password" id="password" name="password" required>
+        </div>
 
-                <div class="c-form-group">
-                    <label for="notes">Notes <small>(optional)</small></label>
-                    <textarea class="c-form-control c-form-control--textarea" id="notes" name="notes" rows="4"></textarea>
-                </div>
+        <fieldset class="c-form-group c-form-group--inline">
+          <legend>Favourite Food</legend>
+          <label for="food-1">
+            <input type="checkbox" value="1" id="food-1" name="food">
+            American
+          </label>
 
-                <div class="c-form-group c-form-group--inline">
-                    <label for="remember">
-                        <input type="checkbox" value="1" id="remember" name="remember">
-                        Remember me? <a href="index.html">I’m not sure</a>.
-                    </label>
-                </div>
+          <label for="food-2">
+            <input type="checkbox" value="1" id="food-2" name="food">
+            Chinese
+          </label>
 
-                <div class="c-btn-group">
-                    <button class="c-btn c-btn--primary c-btn--large" type="submit">Sign up</button>
-                    <button class="c-btn c-btn--secondary c-btn--large" type="button">Find out more</button>
-                    <button class="c-btn c-btn--large" type="button">Cancel</button>
-                    <button class="c-btn c-btn--large" type="button" disabled>Help</button>
-                </div>
+          <label for="food-3">
+            <input type="checkbox" value="1" id="food-3" name="food">
+            French
+          </label>
 
-                <br>
+          <label for="food-4">
+            <input type="checkbox" value="1" id="food-4" name="food">
+            Italian
+          </label>
+        </fieldset>
 
-                <div class="c-btn-group">
-                    <button class="c-btn c-btn--primary" type="submit">Sign up</button>
-                    <button class="c-btn c-btn--secondary" type="button">Find out more</button>
-                    <button class="c-btn" type="button">Cancel</button>
-                    <button class="c-btn" type="button" disabled>Help</button>
-                </div>
+        <div class="c-form-group">
+          <label for="membership">Preferred Language</label>
+          <select class="c-form-control" id="membership" name="membership" required>
+            <option value="">Please select…</option>
+            <option value="1">Afrikaans</option>
+            <option value="2">Deutsch</option>
+            <option value="3">English</option>
+            <option value="4">Français</option>
+          </select>
+        </div>
 
-                <br>
+        <div class="c-form-group">
+          <label for="notes">Notes
+            <small>(optional)</small>
+          </label>
+          <textarea class="c-form-control c-form-control--textarea" id="notes" name="notes" rows="4"></textarea>
+        </div>
 
-                <div class="c-btn-group">
-                    <button class="c-btn c-btn--primary c-btn--small" type="submit">Sign up</button>
-                    <button class="c-btn c-btn--secondary c-btn--small" type="button">Find out more</button>
-                    <button class="c-btn c-btn--small" type="button">Cancel</button>
-                    <button class="c-btn c-btn--small" type="button" disabled>Help</button>
-                </div>
+        <div class="c-form-group c-form-group--inline">
+          <label for="remember">
+            <input type="checkbox" value="1" id="remember" name="remember">
+            Remember me? <a href="index.html">I’m not sure</a>.
+          </label>
+        </div>
 
-                <div class="o-grid">
-                    <div class="o-grid__row">
-                        <div class="o-grid__col u-1/2">
-                            <div style="background-color: #ddd; padding: 1em; text-align: center">u-1/2</div>
-                        </div>
-                        <div class="o-grid__col u-1/2">
-                            <div style="background-color: #ddd; padding: 1em; text-align: center">u-1/2</div>
-                        </div>
-                    </div>
+        <div class="c-btn-group">
+          <button class="c-btn c-btn--primary c-btn--large" type="submit">Sign up</button>
+          <button class="c-btn c-btn--secondary c-btn--large" type="button">Find out more</button>
+          <button class="c-btn c-btn--large" type="button">Cancel</button>
+          <button class="c-btn c-btn--large" type="button" disabled>Help</button>
+        </div>
 
-                    <div class="o-grid__row">
-                        <div class="o-grid__col u-1/1 u-1/3@md">
-                            <div style="background-color: #ddd; padding: 1em; text-align: center">u-1/1 u-1/3@md</div>
-                        </div>
-                        <div class="o-grid__col u-1/1 u-1/3@md">
-                            <div style="background-color: #ddd; padding: 1em; text-align: center">u-1/1 u-1/3@md</div>
-                        </div>
-                        <div class="o-grid__col u-1/1 u-1/3@md">
-                            <div style="background-color: #ddd; padding: 1em; text-align: center">u-1/1 u-1/3@md</div>
-                        </div>
-                    </div>
+        <br>
 
-                    <div class="o-grid__row">
-                        <div class="o-grid__col u-1/2 u-1/4@lg">
-                            <div style="background-color: #ddd; padding: 1em; text-align: center">u-1/2 u-1/4@lg</div>
-                        </div>
-                        <div class="o-grid__col u-1/2 u-1/4@lg">
-                            <div style="background-color: #ddd; padding: 1em; text-align: center">u-1/2 u-1/4@lg</div>
-                        </div>
-                        <div class="o-grid__col u-1/2 u-1/4@lg">
-                            <div style="background-color: #ddd; padding: 1em; text-align: center">u-1/2 u-1/4@lg</div>
-                        </div>
-                        <div class="o-grid__col u-1/2 u-1/4@lg">
-                            <div style="background-color: #ddd; padding: 1em; text-align: center">u-1/2 u-1/4@lg</div>
-                        </div>
-                    </div>
+        <div class="c-btn-group">
+          <button class="c-btn c-btn--primary" type="submit">Sign up</button>
+          <button class="c-btn c-btn--secondary" type="button">Find out more</button>
+          <button class="c-btn" type="button">Cancel</button>
+          <button class="c-btn" type="button" disabled>Help</button>
+        </div>
 
-                    <div class="o-grid__row">
-                        <div class="o-grid__col u-1/1 u-1/3@md">
-                            <div style="background-color: #ddd; padding: 1em; text-align: center">u-1/1 u-1/3@md</div>
-                        </div>
-                        <div class="o-grid__col u-1/1 u-2/3@md">
-                            <div style="background-color: #ddd; padding: 1em; text-align: center">u-1/1 u-2/3@md</div>
-                        </div>
-                    </div>
-                </div>
+        <br>
 
-                <hr>
+        <div class="c-btn-group">
+          <button class="c-btn c-btn--primary c-btn--small" type="submit">Sign up</button>
+          <button class="c-btn c-btn--secondary c-btn--small" type="button">Find out more</button>
+          <button class="c-btn c-btn--small" type="button">Cancel</button>
+          <button class="c-btn c-btn--small" type="button" disabled>Help</button>
+        </div>
 
-                <div class="o-media">
-                    <div class="o-media__img">
-                        <img src="http://via.placeholder.com/75x75" width="75" height="75" alt="">
-                    </div>
+        <div class="o-grid">
+          <div class="o-grid__row">
+            <div class="o-grid__col u-1/2">
+              <div style="background-color: #ddd; padding: 1em; text-align: center">u-1/2</div>
+            </div>
+            <div class="o-grid__col u-1/2">
+              <div style="background-color: #ddd; padding: 1em; text-align: center">u-1/2</div>
+            </div>
+          </div>
 
-                    <div class="o-media__body">
-                        <p>"The quick brown fox jumps over the lazy dog" is an English-language pangram—a sentence that
-                            contains all of the letters of the alphabet.</p>
-                    </div>
-                </div>
+          <div class="o-grid__row">
+            <div class="o-grid__col u-1/1 u-1/3@md">
+              <div style="background-color: #ddd; padding: 1em; text-align: center">u-1/1 u-1/3@md</div>
+            </div>
+            <div class="o-grid__col u-1/1 u-1/3@md">
+              <div style="background-color: #ddd; padding: 1em; text-align: center">u-1/1 u-1/3@md</div>
+            </div>
+            <div class="o-grid__col u-1/1 u-1/3@md">
+              <div style="background-color: #ddd; padding: 1em; text-align: center">u-1/1 u-1/3@md</div>
+            </div>
+          </div>
 
-                <br>
+          <div class="o-grid__row">
+            <div class="o-grid__col u-1/2 u-1/4@lg">
+              <div style="background-color: #ddd; padding: 1em; text-align: center">u-1/2 u-1/4@lg</div>
+            </div>
+            <div class="o-grid__col u-1/2 u-1/4@lg">
+              <div style="background-color: #ddd; padding: 1em; text-align: center">u-1/2 u-1/4@lg</div>
+            </div>
+            <div class="o-grid__col u-1/2 u-1/4@lg">
+              <div style="background-color: #ddd; padding: 1em; text-align: center">u-1/2 u-1/4@lg</div>
+            </div>
+            <div class="o-grid__col u-1/2 u-1/4@lg">
+              <div style="background-color: #ddd; padding: 1em; text-align: center">u-1/2 u-1/4@lg</div>
+            </div>
+          </div>
 
-                <div class="c-alert">
-                    <div class="c-alert__body">
-                        <p>This is a <a href="index.html">default</a> alert.</p>
-                    </div>
-                    <button class="c-alert__dismiss" type="button">
-                        <i class="fas fa-times" aria-hidden="true"></i>
-                    </button>
-                </div>
+          <div class="o-grid__row">
+            <div class="o-grid__col u-1/1 u-1/3@md">
+              <div style="background-color: #ddd; padding: 1em; text-align: center">u-1/1 u-1/3@md</div>
+            </div>
+            <div class="o-grid__col u-1/1 u-2/3@md">
+              <div style="background-color: #ddd; padding: 1em; text-align: center">u-1/1 u-2/3@md</div>
+            </div>
+          </div>
+        </div>
 
-                <div class="c-alert c-alert--success">
-                    <div class="c-alert__body">
-                        <p>This is a <a href="index.html">success</a> alert.</p>
-                    </div>
-                    <button class="c-alert__dismiss" type="button">
-                        <i class="fas fa-times" aria-hidden="true"></i>
-                    </button>
-                </div>
+        <hr>
 
-                <div class="c-alert c-alert--warning">
-                    <div class="c-alert__body">
-                        <p>This is a <a href="index.html">warning</a> alert.</p>
-                    </div>
-                    <button class="c-alert__dismiss" type="button">
-                        <i class="fas fa-times" aria-hidden="true"></i>
-                    </button>
-                </div>
+        <div class="o-media">
+          <div class="o-media__img">
+            <img src="http://via.placeholder.com/75x75" width="75" height="75" alt="">
+          </div>
 
-                <div class="c-alert c-alert--error">
-                    <div class="c-alert__body">
-                        <p>This is an <a href="index.html">error</a> alert.</p>
-                    </div>
-                    <button class="c-alert__dismiss" type="button">
-                        <i class="fas fa-times" aria-hidden="true"></i>
-                    </button>
-                </div>
+          <div class="o-media__body">
+            <p>"The quick brown fox jumps over the lazy dog" is an English-language pangram—a sentence that
+              contains all of the letters of the alphabet.</p>
+          </div>
+        </div>
 
-                <span class="c-badge">Default</span>
-                <span class="c-badge c-badge--success">Success</span>
-                <span class="c-badge c-badge--warning">Warning</span>
-                <span class="c-badge c-badge--error">Error</span>
+        <br>
 
-                <br><br>
+        <div class="c-alert">
+          <div class="c-alert__body">
+            <p>This is a <a href="index.html">default</a> alert.</p>
+          </div>
+          <button class="c-alert__dismiss" type="button">
+            <i class="fas fa-times" aria-hidden="true"></i>
+          </button>
+        </div>
 
-                <div class="c-breadcrumbs">
-                    <div class="c-breadcrumbs__item">
-                        <a class="c-breadcrumbs__link" href="index.html">Home Page</a>
-                    </div>
-                    <div class="c-breadcrumbs__item">
-                        <a class="c-breadcrumbs__link" href="index.html">Section 1</a>
-                    </div>
-                    <div class="c-breadcrumbs__item">
-                        <a class="c-breadcrumbs__link" href="index.html">Item 1</a>
-                    </div>
-                    <div class="c-breadcrumbs__item">Current Item</div>
-                </div>
+        <div class="c-alert c-alert--success">
+          <div class="c-alert__body">
+            <p>This is a <a href="index.html">success</a> alert.</p>
+          </div>
+          <button class="c-alert__dismiss" type="button">
+            <i class="fas fa-times" aria-hidden="true"></i>
+          </button>
+        </div>
 
-                <br>
+        <div class="c-alert c-alert--warning">
+          <div class="c-alert__body">
+            <p>This is a <a href="index.html">warning</a> alert.</p>
+          </div>
+          <button class="c-alert__dismiss" type="button">
+            <i class="fas fa-times" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <div class="c-alert c-alert--error">
+          <div class="c-alert__body">
+            <p>This is an <a href="index.html">error</a> alert.</p>
+          </div>
+          <button class="c-alert__dismiss" type="button">
+            <i class="fas fa-times" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <span class="c-badge">Default</span>
+        <span class="c-badge c-badge--success">Success</span>
+        <span class="c-badge c-badge--warning">Warning</span>
+        <span class="c-badge c-badge--error">Error</span>
+
+        <br><br>
+
+        <div class="c-breadcrumbs">
+          <div class="c-breadcrumbs__item">
+            <a class="c-breadcrumbs__link" href="index.html">Home Page</a>
+          </div>
+          <div class="c-breadcrumbs__item">
+            <a class="c-breadcrumbs__link" href="index.html">Section 1</a>
+          </div>
+          <div class="c-breadcrumbs__item">
+            <a class="c-breadcrumbs__link" href="index.html">Item 1</a>
+          </div>
+          <div class="c-breadcrumbs__item">Current Item</div>
+        </div>
+
+        <br>
 
                 <div class="c-pagination">
                     <div class="c-pagination__meta">
@@ -350,9 +463,9 @@
                     </a>
                 </div>
 
-                <br>
-            </form>
-        </div>
-    </main>
+        <br>
+      </form>
+    </div>
+  </main>
 </body>
 </html>
