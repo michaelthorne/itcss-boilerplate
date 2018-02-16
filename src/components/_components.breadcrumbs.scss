@@ -21,8 +21,8 @@
         color: $color-brand-secondary;
         content: '/';
         flex: 0 1 auto;
-        padding-left: $base-spacing-unit-xs;
-        padding-right: $base-spacing-unit-xs;
+        padding-left: $base-spacing-unit-small;
+        padding-right: $base-spacing-unit-small;
       }
     }
   }
@@ -30,11 +30,15 @@
   /* Link */
 
   .c-breadcrumbs__link {
+    border-bottom: 0.0625em solid transparent;
     color: $color-brand-secondary;
     flex: 0 1 auto;
+    text-decoration: none;
+    transition: border-bottom-color 0.25s, color 0.25s;
 
     &:focus,
     &:hover {
+      border-bottom-color: $color-brand;
       color: $color-brand;
     }
   }

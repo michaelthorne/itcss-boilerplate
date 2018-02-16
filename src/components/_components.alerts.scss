@@ -3,13 +3,13 @@
    ========================================================================== */
 
 .c-alert {
-  background-color: $color-information-lighter;
-  border: $base-border-width-small solid $color-information;
-  border-radius: $base-border-radius-large;
+  background-color: $color-information;
+  border-top: $base-border-width solid $color-information-dark;
+  border-radius: $base-border-radius-small;
   box-shadow: $base-box-shadow;
-  color: $color-information-dark;
+  color: $color-white;
   margin-bottom: $base-spacing-unit;
-  padding: $base-spacing-unit-small $base-spacing-unit $base-spacing-unit-small $base-spacing-unit-small;
+  padding: $base-spacing-unit-small $base-spacing-unit-large $base-spacing-unit-small $base-spacing-unit-small;
   position: relative;
 
   /* Body */
@@ -25,12 +25,12 @@
     }
 
     a {
-      color: $color-information-dark;
+      color: $color-white;
       font-weight: $weight-bold;
 
       &:focus,
       &:hover {
-        color: $color-information;
+        color: $color-white;
       }
     }
   }
@@ -44,8 +44,9 @@
     cursor: pointer;
     padding: 0;
     position: absolute;
-    right: $base-spacing-unit-xs;
-    top: $base-spacing-unit-xs;
+    right: $base-spacing-unit-small;
+    top: 50%;
+    transform: translateY(-50%);
     transition: color 0.25s;
 
     &:focus,
@@ -60,23 +61,8 @@
    */
 
   &.c-alert--success {
-    background-color: $color-success-lighter;
-    border-color: $color-success;
-    color: $color-success-dark;
-
-    /* Body */
-
-    .c-alert__body {
-
-      a {
-        color: $color-success-dark;
-
-        &:focus,
-        &:hover {
-          color: $color-success;
-        }
-      }
-    }
+    background-color: $color-success;
+    border-top-color: $color-success-dark;
 
     /* Dismiss */
 
@@ -85,7 +71,7 @@
 
       &:focus,
       &:hover {
-        color: $color-success;
+        color: $color-white;
       }
     }
   }
@@ -95,23 +81,8 @@
    */
 
   &.c-alert--warning {
-    background-color: $color-warning-lighter;
-    border-color: $color-warning;
-    color: $color-warning-dark;
-
-    /* Body */
-
-    .c-alert__body {
-
-      a {
-        color: $color-warning-dark;
-
-        &:focus,
-        &:hover {
-          color: $color-warning;
-        }
-      }
-    }
+    background-color: $color-warning;
+    border-top-color: $color-warning-dark;
 
     /* Dismiss */
 
@@ -120,7 +91,7 @@
 
       &:focus,
       &:hover {
-        color: $color-warning;
+        color: $color-white;
       }
     }
   }
@@ -130,23 +101,8 @@
    */
 
   &.c-alert--error {
-    background-color: $color-error-lighter;
-    border-color: $color-error;
-    color: $color-error-dark;
-
-    /* Body */
-
-    .c-alert__body {
-
-      a {
-        color: $color-error-dark;
-
-        &:focus,
-        &:hover {
-          color: $color-error;
-        }
-      }
-    }
+    background-color: $color-error;
+    border-top-color: $color-error-dark;
 
     /* Dismiss */
 
@@ -155,7 +111,7 @@
 
       &:focus,
       &:hover {
-        color: $color-error;
+        color: $color-white;
       }
     }
   }

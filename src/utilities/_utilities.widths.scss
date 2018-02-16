@@ -88,3 +88,22 @@
     width: 25%;
   }
 }
+
+@media all and (min-width: $bp-xl) {
+
+  .u-2\/3\@xl {
+    width: 66.66%;
+  }
+
+  .u-1\/2\@xl {
+    width: 50%;
+  }
+
+  .u-1\/3\@xl {
+    width: 33.33%;
+  }
+
+  .u-1\/4\@xl {
+    width: 25%;
+  }
+}

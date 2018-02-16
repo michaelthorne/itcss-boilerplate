@@ -6,10 +6,13 @@
   @include clearfix;
   align-items: center;
   display: flex;
+  justify-content: flex-end;
+  margin-top: $base-spacing-unit;
 
   /* Meta */
 
   .c-pagination__meta {
+    font-size: 0.875em;
     margin-right: $base-spacing-unit-small;
     vertical-align: middle;
   }
@@ -17,7 +20,8 @@
   /* Control */
 
   .c-pagination__control {
-    border: 0.0625em solid $color-gray-20;
+    background-color: $color-white;
+    border: $base-border-width-small solid $color-gray-20;
     color: $color-brand-secondary;
     line-height: 1;
     padding: $base-spacing-unit-xs $base-spacing-unit-small;

@@ -2,10 +2,46 @@
    #FORMS
    ========================================================================== */
 
+/* Form */
+
+.c-form {
+
+  /**
+   * Inline
+   */
+
+  &.c-form--inline {
+    display: flex;
+
+    /* Group */
+
+    .c-form-group {
+      margin-bottom: 0;
+      flex: 1;
+
+      input {
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+      }
+
+      & + .c-btn {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+      }
+    }
+  }
+}
+
 /* Group */
 
 .c-form-group {
   margin-bottom: $base-spacing-unit-small;
+
+  /* Flat */
+
+  &.c-form-group--flat {
+    margin-bottom: 0;
+  }
 
   /* Inline */
 
@@ -25,8 +61,9 @@
 /* Control */
 
 .c-form-control {
-  border: $base-border-width-small solid $color-gray-10;
+  border: $base-border-width-small solid $color-gray-20;
   border-radius: $base-border-radius;
+  box-shadow: $base-box-shadow-inset;
   display: block;
   font-family: inherit;
   font-size: inherit;
@@ -47,6 +84,7 @@
 
   &.c-form-control--file {
     border: 0;
+    box-shadow: none;
     height: auto;
     padding: 0;
     width: auto;
@@ -55,12 +93,32 @@
     &:hover {
       box-shadow: none;
     }
+
+    /**
+     * Error
+     */
+
+    &.is-error {
+      box-shadow: none;
+    }
   }
 
-  /* Textarea */
+  /**
+   * Textarea
+   */
 
   &.c-form-control--textarea {
     height: auto;
+    resize: vertical;
+  }
+
+  /**
+   * Error
+   */
+
+  &.is-error {
+    border-color: $color-error;
+    box-shadow: $base-box-shadow-error;
   }
 }
 
@@ -70,4 +128,40 @@
   color: $color-gray-50;
   font-size: 0.75rem; /* 14 / 16 */
   margin-top: $base-spacing-unit-xs;
+
+  /**
+   * Error
+   */
+
+  &.is-error {
+    color: $color-error;
+  }
+}
+
+@media all and (min-width: $bp-medium) {
+
+  /* Form */
+
+  .c-form {
+
+    /**
+     * Inline
+     */
+
+    &.c-form--inline {
+
+      .c-form-group {
+        flex: auto;
+      }
+    }
+  }
+}
+
+@media all and (min-width: $bp-large) {
+
+  /* Group */
+
+  .c-form-group {
+    margin-bottom: $base-spacing-unit;
+  }
 }
