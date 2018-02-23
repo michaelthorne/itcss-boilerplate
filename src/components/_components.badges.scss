@@ -3,9 +3,9 @@
    ========================================================================== */
 
 .c-badge {
-  background-color: lighten($color-information, 40%);
+  background-color: $color-information;
   border-radius: $base-border-radius-large;
-  color: darken($color-information, 20%);
+  color: $color-white;
   display: inline-block;
   font-size: 0.625rem;
   font-weight: $weight-bold;
@@ -17,7 +17,7 @@
   /* Link */
 
   .c-badge__link {
-    color: darken($color-information, 20%);
+    color: $color-white;
     text-decoration: none;
   }
 
@@ -26,14 +26,7 @@
    */
 
   &.c-badge--success {
-    background-color: lighten($color-success, 35%);
-    color: darken($color-success, 20%);
-
-    /* Link */
-
-    .c-badge__link {
-      color: darken($color-success, 20%);
-    }
+    background-color: $color-success;
   }
 
   /**
@@ -41,14 +34,7 @@
    */
 
   &.c-badge--warning {
-    background-color: lighten($color-warning, 35%);
-    color: darken($color-warning, 20%);
-
-    /* Link */
-
-    .c-badge__link {
-      color: darken($color-warning, 20%);
-    }
+    background-color: $color-warning;
   }
 
   /**
@@ -56,13 +42,6 @@
    */
 
   &.c-badge--error {
-    background-color: lighten($color-error, 35%);
-    color: darken($color-error, 20%);
-
-    /* Link */
-
-    .c-badge__link {
-      color: darken($color-error, 20%);
-    }
+    background-color: $color-error;
   }
 }

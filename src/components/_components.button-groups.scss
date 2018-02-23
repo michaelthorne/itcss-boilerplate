@@ -3,15 +3,40 @@
    ========================================================================== */
 
 .c-btn-group {
-  @include clearfix;
-  margin-bottom: -$base-spacing-unit-small;
+  display: flex;
+
+  /* Button */
 
   .c-btn {
-    float: left;
 
     &:not(:last-child) {
-      margin-bottom: $base-spacing-unit-small;
       margin-right: $base-spacing-unit-small;
+    }
+  }
+}
+
+@media all and (min-width: $bp-large) {
+
+  .c-btn-group {
+
+    /* Button */
+
+    .c-btn {
+
+      &:not(:last-child) {
+        margin-right: $base-spacing-unit;
+      }
+
+      /**
+       * Small
+       */
+
+      &.c-btn--small {
+
+        &:not(:last-child) {
+          margin-right: $base-spacing-unit-small
+        }
+      }
     }
   }
 }

@@ -3,14 +3,15 @@
    ========================================================================== */
 
 .c-btn {
-  background-color: transparent;
-  border: $base-border-width-small solid $color-brand-secondary;
+  background-color: $color-white;
+  border: $base-border-width-small solid $color-brand-secondary-light;
   border-radius: $base-border-radius-large;
   color: $color-brand-secondary;
   cursor: pointer;
   display: inline-block;
   font-family: inherit;
   font-size: inherit;
+  font-weight: $weight-bold;
   line-height: $base-line-height;
   padding: $base-spacing-unit-small $base-spacing-unit;
   position: relative;
@@ -18,6 +19,7 @@
   text-decoration: none;
   transition: background-color 0.25s, transform 0.25s;
   vertical-align: middle;
+  white-space: nowrap;
 
   &::after {
     border-radius: $base-border-radius;
@@ -35,6 +37,8 @@
 
   &:focus,
   &:hover {
+    border-color: $color-brand-secondary;
+    color: $color-brand-secondary;
     outline: 0;
     transform: translateY(-0.0625em);
 
@@ -51,20 +55,10 @@
     }
   }
 
-  &[disabled] {
-    background-color: $color-gray-20;
-    border-color: $color-gray-20;
-    color: $color-gray-50;
-    cursor: default;
+  /* Icon */
 
-    &:focus,
-    &:hover {
-      transform: translateY(0);
-
-      &::after {
-        opacity: 0;
-      }
-    }
+  .c-btn__icon {
+    margin-right: $base-spacing-unit-xs;
   }
 
   /**
@@ -115,10 +109,23 @@
   }
 
   /**
-   * Large
+   * Disabled
    */
 
-  &.c-btn--large {
-    padding: $base-spacing-unit $base-spacing-unit-large;
+  &[disabled] {
+    background-color: $color-gray-10;
+    border-color: $color-gray-10;
+    color: $color-gray-50;
+    cursor: not-allowed;
+
+    &:focus,
+    &:hover {
+      background-color: $color-gray-10;
+      transform: translateY(0);
+
+      &::after {
+        opacity: 0;
+      }
+    }
   }
 }

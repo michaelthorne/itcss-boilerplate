@@ -4,7 +4,11 @@
 
 .o-grid {
   clear: both;
-  margin-bottom: $base-spacing-unit;
+  width: 100%;
+
+  & + .o-grid {
+    margin-top: $base-spacing-unit;
+  }
 
   /* Row */
 
@@ -12,12 +16,16 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: -$base-spacing-unit;
+    margin-top: -$base-spacing-unit;
+
+    & + .o-grid__row {
+      margin-top: 0;
+    }
   }
 
   /* Column */
 
   .o-grid__col {
-    flex: 1 1 auto;
     padding-left: $base-spacing-unit;
     padding-top: $base-spacing-unit;
   }

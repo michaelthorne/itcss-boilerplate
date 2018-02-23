@@ -47,5 +47,7 @@ $base-border-radius-small:       0.0625em;
 
 /* Shadows */
 
-$base-box-shadow:                0 0.125em 0.5em rgba(34, 34, 34, 0.125);
-$base-box-shadow-highlight:      0 0 0.5em rgba(1, 255, 112, 0.25);
+$base-box-shadow:                0 0 1em rgba(34, 34, 34, 0.125);
+$base-box-shadow-inset:          0 0 0.25em rgba(34, 34, 34, 0.125) inset;
+$base-box-shadow-error:          0 0 0.5em rgba(255, 65, 54, 0.25);
+$base-box-shadow-highlight:      0 0 0.5em rgba(0, 169, 151, 0.25);

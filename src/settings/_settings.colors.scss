@@ -34,21 +34,13 @@ $color-youtube:               #f00;
 $color-error:                 #ff4136;
 $color-error-dark:            darken($color-error, 20%);
 $color-error-light:           lighten($color-error, 20%);
-$color-error-lighter:         lighten($color-error, 35%);
-
 $color-warning:               #ff851b;
-$color-warning-dark:          darken($color-warning, 20%);
+$color-warning-dark:          darken($color-warning, 10%);
 $color-warning-light:         lighten($color-warning, 20%);
-$color-warning-lighter:       lighten($color-warning, 35%);
-
 $color-highlight:             #ffdc00;
-
 $color-success:               #2ecc40;
-$color-success-dark:          darken($color-success, 20%);
-$color-success-light:         lighten($color-success, 15%);
-$color-success-lighter:       lighten($color-success, 35%);
-
+$color-success-dark:          darken($color-success, 5%);
+$color-success-light:         lighten($color-success, 20%);
 $color-information:           #0074d9;
-$color-information-dark:      darken($color-information, 20%);
-$color-information-light:     lighten($color-information, 25%);
-$color-information-lighter:   lighten($color-information, 40%);
+$color-information-dark:      darken($color-information, 5%);
+$color-information-light:     lighten($color-information, 20%);
