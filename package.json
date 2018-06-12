@@ -6,13 +6,12 @@
   "devDependencies": {
     "browser-sync": "^2.24.4",
     "del": "^3.0.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-sass": "^4.0.1",
     "gulp-stylelint": "^7.0.0",
     "gulp-util": "^3.0.8",
     "gulp-watch": "^5.0.0",
     "normalize.css": "^8.0.0",
-    "run-sequence": "^2.2.1",
     "stylelint": "^9.2.1",
     "stylelint-config-standard": "^18.2.0"
   },

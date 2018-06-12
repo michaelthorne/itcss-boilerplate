@@ -1,7 +1,6 @@
 let gulp = require('gulp')
 let browserSync = require('browser-sync')
 let del = require('del')
-let runSequence = require('run-sequence')
 let stylelint = require('gulp-stylelint')
 let sass = require('gulp-sass')
 let util = require('gulp-util')
@@ -25,8 +24,8 @@ function getPath () {
 }
 
 // Cleanup build files
-gulp.task('delete', function () {
-  return del([getPath()])
+gulp.task('delete', function (done) {
+  return del([getPath()], done)
 })
 
 // Copy assets to build
@@ -66,12 +65,18 @@ gulp.task('sass', function () {
 
 // Watch HTML and SCSS files for changes
 gulp.task('watch', function () {
-  gulp.watch(config.paths.src + '**/*.html', ['html']).on('change', browserSync.reload)
-  gulp.watch(config.paths.src + '**/*.scss', ['sass']).on('change', browserSync.reload)
+  gulp.watch(config.paths.src + '**/*.html', gulp.series('html', reload))
+  gulp.watch(config.paths.src + '**/*.scss', gulp.series('sass', reload))
 })
 
+// Reload the local server
+function reload(done) {
+  browserSync.reload()
+  done()
+}
+
 // Start a local server
-gulp.task('server', function () {
+gulp.task('server', function (done) {
   if (!config.dist) {
     browserSync.init({
       port: 1337,
@@ -79,12 +84,14 @@ gulp.task('server', function () {
       server: getPath()
     })
   }
+  done()
 })
 
 // Build the files
-gulp.task('build', function () {
-  runSequence('delete', 'sass', 'html')
+gulp.task('build', function (done) {
+  gulp.series('delete', 'sass', 'html')
+  done()
 })
 
 // Default task
-gulp.task('default', ['build', 'server', 'watch'])
+gulp.task('default', gulp.series('build', 'server', 'watch'), function () {})
