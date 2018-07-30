@@ -4,17 +4,17 @@
   "description": "ITCSS Boilerplate: Inverted Triangle CSS architecture by Harry Roberts @csswizardry",
   "dependencies": {},
   "devDependencies": {
-    "browser-sync": "^2.18.13",
+    "browser-sync": "^2.24.6",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0",
-    "gulp-stylelint": "^6.0.0",
+    "gulp-sass": "^3.2.1",
+    "gulp-stylelint": "^7.0.0",
     "gulp-util": "^3.0.8",
-    "gulp-watch": "^4.3.11",
-    "normalize.css": "^7.0.0",
-    "run-sequence": "^2.2.0",
-    "stylelint": "^8.4.0",
-    "stylelint-config-standard": "^18.0.0"
+    "gulp-watch": "^5.0.1",
+    "normalize.css": "^8.0.0",
+    "run-sequence": "^2.2.1",
+    "stylelint": "^9.4.0",
+    "stylelint-config-standard": "^18.2.0"
   },
   "scripts": {
     "start": "gulp"
