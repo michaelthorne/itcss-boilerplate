@@ -12,7 +12,7 @@
     color: $color-brand;
     display: flex;
     flex: 0 1 auto;
-    font-size: 0.875rem;
+    font-size: 0.875rem; /* 14 / 16 */
     white-space: nowrap;
 
     &:not(:last-child) {

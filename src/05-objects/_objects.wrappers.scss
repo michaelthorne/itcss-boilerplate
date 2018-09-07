@@ -8,30 +8,20 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 75em; /* 1200 / 16 */
-  padding-left: $base-spacing-unit-small;
-  padding-right: $base-spacing-unit-small;
 
   /**
    * Small
    */
 
   &.o-wrapper--small {
-    max-width: 40em; /* 640 / 16 */
+    max-width: 30em; /* 480 / 16 */
   }
 
   /**
-   * Extra Small
+   * Medium
    */
 
-  &.o-wrapper--xs {
-    max-width: 30em; /* 480 / 16 */
-  }
-}
-
-@media all and (min-width: $bp-large) {
-
-  .o-wrapper {
-    padding-left: $base-spacing-unit;
-    padding-right: $base-spacing-unit;
+  &.o-wrapper--medium {
+    max-width: 40em; /* 640 / 16 */
   }
 }

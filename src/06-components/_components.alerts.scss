@@ -16,14 +16,6 @@
 
   .c-alert__body {
 
-    p {
-      margin-bottom: 0;
-
-      & + p {
-        margin-top: $base-spacing-unit-small;
-      }
-    }
-
     a {
       color: $color-white;
       font-weight: $weight-bold;
@@ -32,6 +24,19 @@
       &:hover {
         color: $color-white;
       }
+    }
+
+    p {
+      margin-bottom: 0;
+
+      & + p,
+      & + ul {
+        margin-top: $base-spacing-unit-small;
+      }
+    }
+
+    ul {
+      margin-bottom: 0;
     }
   }
 
@@ -44,9 +49,8 @@
     cursor: pointer;
     padding: 0;
     position: absolute;
-    right: $base-spacing-unit-small;
-    top: 50%;
-    transform: translateY(-50%);
+    right: $base-spacing-unit-xs;
+    top: $base-spacing-unit-xs;
     transition: color 0.25s;
 
     &:focus,
