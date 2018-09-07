@@ -1,6 +1,6 @@
 # [ITCSS Boilerplate](http://www.userx.co.za/itcss-boilerplate/)
 
-This is an [Inverted Triangle CSS](https://itcss.io/) architecture boilerplate.
+[Inverted Triangle CSS](https://itcss.io/) architecture inspired by [Harry Roberts](@csswizardry).
 
 ## Setup
 
@@ -20,7 +20,7 @@ gulp build --dist
 
 ## What is ITCSS?
 
-ITCSS stands for _Inverted Triangle CSS_. It is a sane, scalable, managed CSS architecture from [CSS Wizardry](https://csswizardry.com/).
+ITCSS stands for _Inverted Triangle CSS_. It is a sane, scalable, managed CSS architecture from [Harry Roberts](https://csswizardry.com/).
 
 ## Further reading
 
