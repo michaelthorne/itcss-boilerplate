@@ -5,22 +5,22 @@
 /**
  * TABLE OF CONTENTS
  *
- * SETTINGS
+ * 01. SETTINGS
  * Global..............Unique brand identity values.
  * Colors..............The color palette.
  * Fonts...............Font family, sizing and weights.
  * Responsive..........Breakpoints for media queries.
  *
- * TOOLS
+ * 02. TOOLS
  * Mixins..............Functions for DRY code.
  *
- * GENERIC
+ * 03. GENERIC
  * Normalize.css.......Render all elements more consistently.
  * Reset...............A tiny reset.
  * Box Sizing..........Default box sizing of all elements.
  * Shared..............Rules that apply to multiple selectors.
  *
- * ELEMENTS
+ * 04. ELEMENTS
  * Page................The defaults of the document.
  * Headings............Setup of h1 to h6.
  * Type................Basic typographic elements.
@@ -32,13 +32,13 @@
  * Quotes..............Cater for block and inline quotes.
  * Tables..............Tabular data styles.
  *
- * OBJECTS
+ * 05. OBJECTS
  * Wrapper.............Content width constraints.
  * Grid................Basic grid layout.
  * Lists...............Custom list styles.
  * Media...............An image with descriptive contents.
  *
- * COMPONENTS
+ * 06. COMPONENTS
  * Alerts..............Provides feedback to the interface.
  * Badges..............Highlight a piece of information.
  * Breadcrumbs.........Displays the hierarchy between content.
@@ -48,7 +48,7 @@
  * Pagination..........Controls to navigate pages of data.
  * Footer..............Page footer styles.
  *
- * UTILITIES
+ * 07. UTILITIES
  * Print...............Default styles from HTML5 Boilerplate.
  * Colors..............Background and foreground color overrides.
  * Clearfix............Provides a class for the clearfix mixin.
@@ -66,10 +66,10 @@
 /* #SETTINGS
    ========================================================================== */
 
-@import 'settings/settings.global';
-@import 'settings/settings.colors';
-@import 'settings/settings.fonts';
-@import 'settings/settings.responsive';
+@import '01-settings/settings.global';
+@import '01-settings/settings.colors';
+@import '01-settings/settings.fonts';
+@import '01-settings/settings.responsive';
 
 
 
@@ -78,7 +78,7 @@
 /* #TOOLS
    ========================================================================== */
 
-@import 'tools/tools.mixins';
+@import '02-tools/tools.mixins';
 
 
 
@@ -88,9 +88,9 @@
    ========================================================================== */
 
 @import './node_modules/normalize.css/normalize.css';
-@import 'generic/generic.reset';
-@import 'generic/generic.box-sizing';
-@import 'generic/generic.shared';
+@import '03-generic/generic.reset';
+@import '03-generic/generic.box-sizing';
+@import '03-generic/generic.shared';
 
 
 
@@ -99,16 +99,16 @@
 /* #ELEMENTS
    ========================================================================== */
 
-@import 'elements/elements.page';
-@import 'elements/elements.headings';
-@import 'elements/elements.type';
-@import 'elements/elements.links';
-@import 'elements/elements.lists';
-@import 'elements/elements.forms';
-@import 'elements/elements.figures';
-@import 'elements/elements.images';
-@import 'elements/elements.quotes';
-@import 'elements/elements.tables';
+@import '04-elements/elements.page';
+@import '04-elements/elements.headings';
+@import '04-elements/elements.type';
+@import '04-elements/elements.links';
+@import '04-elements/elements.lists';
+@import '04-elements/elements.forms';
+@import '04-elements/elements.figures';
+@import '04-elements/elements.images';
+@import '04-elements/elements.quotes';
+@import '04-elements/elements.tables';
 
 
 
@@ -117,10 +117,10 @@
 /* #OBJECTS
    ========================================================================== */
 
-@import 'objects/objects.wrappers';
-@import 'objects/objects.grid';
-@import 'objects/objects.lists';
-@import 'objects/objects.media';
+@import '05-objects/objects.wrappers';
+@import '05-objects/objects.grid';
+@import '05-objects/objects.lists';
+@import '05-objects/objects.media';
 
 
 
@@ -129,13 +129,13 @@
 /* #COMPONENTS
    ========================================================================== */
 
-@import 'components/components.alerts';
-@import 'components/components.badges';
-@import 'components/components.breadcrumbs';
-@import 'components/components.forms';
-@import 'components/components.buttons';
-@import 'components/components.button-groups';
-@import 'components/components.pagination';
+@import '06-components/components.alerts';
+@import '06-components/components.badges';
+@import '06-components/components.breadcrumbs';
+@import '06-components/components.forms';
+@import '06-components/components.buttons';
+@import '06-components/components.button-groups';
+@import '06-components/components.pagination';
 
 
 
@@ -144,11 +144,11 @@
 /* #UTILITIES
    ========================================================================== */
 
-@import 'utilities/utilities.print';
-@import 'utilities/utilities.colors';
-@import 'utilities/utilities.clearfix';
-@import 'utilities/utilities.floats';
-@import 'utilities/utilities.headings';
-@import 'utilities/utilities.spacing';
-@import 'utilities/utilities.visibility';
-@import 'utilities/utilities.widths';
+@import '07-utilities/utilities.print';
+@import '07-utilities/utilities.colors';
+@import '07-utilities/utilities.clearfix';
+@import '07-utilities/utilities.floats';
+@import '07-utilities/utilities.headings';
+@import '07-utilities/utilities.spacing';
+@import '07-utilities/utilities.visibility';
+@import '07-utilities/utilities.widths';
