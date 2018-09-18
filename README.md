@@ -1,4 +1,4 @@
-# [ITCSS Boilerplate](http://www.userx.co.za/itcss-boilerplate/)
+# [ITCSS Boilerplate](https://www.userx.co.za/itcss-boilerplate/)
 
 [Inverted Triangle CSS](https://itcss.io/) architecture inspired by [Harry Roberts](@csswizardry).
 
