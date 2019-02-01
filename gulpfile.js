@@ -31,8 +31,8 @@ gulp.task('delete', function (done) {
 // Copy assets to build
 gulp.task('html', function () {
   return gulp.src(config.paths.src + '**/*.html', {
-    'base': config.paths.src
-  })
+      'base': config.paths.src
+    })
     .pipe(gulp.dest(getPath()))
 })
 
@@ -43,7 +43,7 @@ gulp.task('lint-css', function () {
     .src(config.paths.src + '**/*.scss')
     .pipe(stylelint({
       reporters: [
-        {formatter: 'string', console: true}
+        { formatter: 'string', console: true }
       ]
     }))
 })
@@ -70,7 +70,7 @@ gulp.task('watch', function () {
 })
 
 // Reload the local server
-function reload(done) {
+function reload (done) {
   browserSync.reload()
   done()
 }
