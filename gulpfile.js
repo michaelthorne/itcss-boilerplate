@@ -1,9 +1,9 @@
-let gulp = require('gulp')
-let browserSync = require('browser-sync')
-let del = require('del')
-let stylelint = require('gulp-stylelint')
-let sass = require('gulp-sass')
-let util = require('gulp-util')
+const gulp = require('gulp')
+const browserSync = require('browser-sync')
+const del = require('del')
+const stylelint = require('gulp-stylelint')
+const sass = require('gulp-sass')
+const util = require('gulp-util')
 
 // Config
 let config = {
@@ -24,32 +24,12 @@ function getPath () {
 }
 
 // Cleanup build files
-gulp.task('delete', function (done) {
-  return del([getPath()], done)
-})
+function clean () {
+  return del([getPath()])
+}
 
-// Copy assets to build
-gulp.task('html', function () {
-  return gulp.src(config.paths.src + '**/*.html', {
-      'base': config.paths.src
-    })
-    .pipe(gulp.dest(getPath()))
-})
-
-// Lint CSS
-gulp.task('lint-css', function () {
-
-  return gulp
-    .src(config.paths.src + '**/*.scss')
-    .pipe(stylelint({
-      reporters: [
-        { formatter: 'string', console: true }
-      ]
-    }))
-})
-
-// Compile Sass to CSS
-gulp.task('sass', function () {
+// Compile Sass
+function compileSass () {
   let options = {
     outputStyle: 'nested'
   }
@@ -61,22 +41,34 @@ gulp.task('sass', function () {
   return gulp.src(config.paths.src + '**/*.scss')
     .pipe(sass(options).on('error', sass.logError))
     .pipe(gulp.dest(getPath() + '/css'))
-})
+}
 
-// Watch HTML and SCSS files for changes
-gulp.task('watch', function () {
-  gulp.watch(config.paths.src + '**/*.html', gulp.series('html', reload))
-  gulp.watch(config.paths.src + '**/*.scss', gulp.series('sass', reload))
-})
+// Lint Sass
+function lintSass () {
+  return gulp
+    .src(config.paths.src + '**/*.scss')
+    .pipe(stylelint({
+      reporters: [
+        { formatter: 'string', console: true }
+      ]
+    }))
+}
+
+// Copy HTML files to build
+function copyHTML () {
+  return gulp.src(config.paths.src + '**/*.html', {
+      'base': config.paths.src
+    })
+    .pipe(gulp.dest(getPath()))
+}
 
 // Reload the local server
-function reload (done) {
+function reload () {
   browserSync.reload()
-  done()
 }
 
 // Start a local server
-gulp.task('server', function (done) {
+function server (done) {
   if (!config.dist) {
     browserSync.init({
       port: 1337,
@@ -85,13 +77,27 @@ gulp.task('server', function (done) {
     })
   }
   done()
-})
+}
 
-// Build the files
-gulp.task('build', function (done) {
-  gulp.series('delete', 'sass', 'html')
-  done()
-})
+// Watch HTML and SCSS files for changes
+function watch () {
+  gulp.watch(config.paths.src + '**/*.html', gulp.series(copyHTML, reload))
+  gulp.watch(config.paths.src + '**/*.scss', gulp.series(compileSass, reload))
+}
 
-// Default task
-gulp.task('default', gulp.series('build', 'server', 'watch'), function () {})
+let buildTask = gulp.series(clean, compileSass, copyHTML)
+let defaultTask = gulp.series(buildTask, server, watch)
+
+exports.clean = clean
+exports.compileSass = compileSass
+exports.copyHTML = copyHTML
+exports.lintSass = lintSass
+exports.reload = reload
+exports.server = server
+exports.watch = watch
+
+/*
+ * Define default task that can be called by just running `gulp` from cli
+ */
+exports.build = buildTask
+exports.default = defaultTask
