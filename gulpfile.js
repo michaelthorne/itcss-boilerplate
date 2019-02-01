@@ -5,7 +5,9 @@ const stylelint = require('gulp-stylelint')
 const sass = require('gulp-sass')
 const util = require('gulp-util')
 
-// Config
+/*
+ * Configuration
+ */
 let config = {
   dist: !!util.env.dist,
   paths: {
@@ -23,12 +25,16 @@ function getPath () {
   return config.dist ? config.paths.dist : config.paths.build
 }
 
-// Cleanup build files
+/*
+ * Cleanup build files
+ */
 function clean () {
   return del([getPath()])
 }
 
-// Compile Sass
+/*
+ * Compile Sass
+ */
 function compileSass () {
   let options = {
     outputStyle: 'nested'
@@ -43,7 +49,9 @@ function compileSass () {
     .pipe(gulp.dest(getPath() + '/css'))
 }
 
-// Lint Sass
+/*
+ * Lint Sass
+ */
 function lintSass () {
   return gulp
     .src(config.paths.src + '**/*.scss')
@@ -54,7 +62,9 @@ function lintSass () {
     }))
 }
 
-// Copy HTML files to build
+/*
+ * Copy HTML files to build directory
+ */
 function copyHTML () {
   return gulp.src(config.paths.src + '**/*.html', {
       'base': config.paths.src
@@ -67,7 +77,9 @@ function reload () {
   browserSync.reload()
 }
 
-// Start a local server
+/*
+ * Start a local server
+ */
 function server (done) {
   if (!config.dist) {
     browserSync.init({
@@ -79,7 +91,9 @@ function server (done) {
   done()
 }
 
-// Watch HTML and SCSS files for changes
+/*
+ * Watch HTML and SCSS files for changes
+ */
 function watch () {
   gulp.watch(config.paths.src + '**/*.html', gulp.series(copyHTML, reload))
   gulp.watch(config.paths.src + '**/*.scss', gulp.series(compileSass, reload))
