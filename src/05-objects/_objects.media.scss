@@ -8,13 +8,11 @@
  */
 
 .o-media {
-  @include clearfix;
-  display: block;
+  display: flex;
 
   /* Image */
 
   .o-media__img {
-    float: left;
     margin-right: $base-spacing-unit;
 
     > img {
@@ -25,8 +23,7 @@
   /* Body */
 
   .o-media__body {
-    display: block;
-    overflow: hidden;
+    flex: 1;
 
     > :last-child {
       margin-bottom: 0;

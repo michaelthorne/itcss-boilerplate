@@ -14,45 +14,23 @@
   font-weight: $weight-bold;
   line-height: $base-line-height;
   padding: $base-spacing-unit-small $base-spacing-unit;
-  position: relative;
   text-align: center;
   text-decoration: none;
-  transition: background-color 0.25s, transform 0.25s;
+  transition: background-color 0.25s, box-shadow 0.25s, transform 0.25s;
   vertical-align: middle;
   white-space: nowrap;
-
-  &::after {
-    border-radius: $base-border-radius;
-    box-shadow: $base-box-shadow;
-    content: '';
-    height: 100%;
-    left: 0;
-    opacity: 0.5;
-    position: absolute;
-    top: 0;
-    transition: opacity 0.25s;
-    width: 100%;
-    z-index: -1;
-  }
 
   &:focus,
   &:hover {
     border-color: $color-brand-secondary;
+    box-shadow: $base-box-shadow;
     color: $color-brand-secondary;
     outline: 0;
     transform: translateY(-0.0625em);
-
-    &::after {
-      opacity: 1;
-    }
   }
 
   &:active {
     transform: translateY(0);
-
-    &::after {
-      opacity: 0.5;
-    }
   }
 
   /* Icon */

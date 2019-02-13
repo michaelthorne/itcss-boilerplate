@@ -67,14 +67,15 @@ function lintSass () {
  */
 function copyHTML () {
   return gulp.src(config.paths.src + '**/*.html', {
-      'base': config.paths.src
-    })
+    'base': config.paths.src
+  })
     .pipe(gulp.dest(getPath()))
 }
 
 // Reload the local server
-function reload () {
+function reload (done) {
   browserSync.reload()
+  done()
 }
 
 /*
