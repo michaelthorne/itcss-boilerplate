@@ -25,8 +25,8 @@
 
     .c-palette__code {
       background-color: #fff;
-      border-radius: 0.25em;
-      box-shadow: 0 0.125em 0.25em rgba(34, 34, 34, 0.25);
+      border-radius: 0.125em;
+      box-shadow: 0 0.125em 0.125em rgba(34, 34, 34, 0.125);
       display: inline-block;
       font-size: 0.875rem;
       padding: 0.125em 0.5em;
@@ -133,8 +133,10 @@
 
       <h6>The quick brown fox jumps over the lazy dog</h6>
 
-      <p>"The quick brown fox jumps over the lazy dog" is an English-language pangram—a sentence that contains all
-        of the letters of the alphabet.</p>
+      <p>"The
+        <mark>quick brown fox jumps</mark>
+        over the lazy dog" is an English-language pangram—a sentence that contains all of the letters of the alphabet.
+      </p>
 
       <hr>
 
@@ -246,8 +248,8 @@
         </div>
 
         <div class="c-form-group">
-          <label for="email_address">Email Address</label>
-          <input class="c-form-control" type="email" id="email_address" name="email_address" required>
+          <label for="email">Email</label>
+          <input class="c-form-control" type="email" id="email" name="email" required>
         </div>
 
         <div class="c-form-group">
@@ -255,7 +257,25 @@
           <input class="c-form-control" type="password" id="password" name="password" required>
         </div>
 
-        <fieldset class="c-form-group c-form-group--inline">
+        <div class="c-form-group">
+          <label for="dob">Date of Birth</label>
+          <input class="c-form-control" type="date" id="dob" name="dob" required>
+        </div>
+
+        <fieldset class="c-form-group c-form-group--check">
+          <legend>Subscribe to newsletter?</legend>
+          <label for="subscribe-1">
+            <input type="radio" value="1" id="subscribe-1" name="subscribe">
+            Yes
+          </label>
+
+          <label for="subscribe-2">
+            <input type="radio" value="1" id="subscribe-2" name="subscribe">
+            No
+          </label>
+        </fieldset>
+
+        <fieldset class="c-form-group c-form-group--check c-form-group--inline">
           <legend>Favourite Food</legend>
           <label for="food-1">
             <input type="checkbox" value="1" id="food-1" name="food">
@@ -296,7 +316,7 @@
           <textarea class="c-form-control c-form-control--textarea" id="notes" name="notes" rows="4"></textarea>
         </div>
 
-        <div class="c-form-group c-form-group--inline">
+        <div class="c-form-group c-form-group--check">
           <label for="remember">
             <input type="checkbox" value="1" id="remember" name="remember">
             Remember me? <a href="index.html">I’m not sure</a>.
