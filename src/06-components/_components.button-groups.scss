@@ -8,7 +8,6 @@
   /* Button */
 
   .c-btn {
-
     &:not(:last-child) {
       margin-right: $base-spacing-unit-small;
     }
@@ -16,13 +15,9 @@
 }
 
 @media all and (min-width: $bp-large) {
-
   .c-btn-group {
-
     /* Button */
-
     .c-btn {
-
       &:not(:last-child) {
         margin-right: $base-spacing-unit;
       }
@@ -32,9 +27,8 @@
        */
 
       &.c-btn--small {
-
         &:not(:last-child) {
-          margin-right: $base-spacing-unit-small
+          margin-right: $base-spacing-unit-small;
         }
       }
     }

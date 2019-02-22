@@ -16,7 +16,6 @@
     white-space: nowrap;
 
     &:not(:last-child) {
-
       &::after {
         color: $color-brand-secondary;
         content: '/';

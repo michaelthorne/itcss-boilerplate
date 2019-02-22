@@ -4,43 +4,43 @@
 
 /* Brand */
 
-$color-brand-dark:            darken($brand-color, 5%);
-$color-brand:                 $brand-color;
-$color-brand-light:           lighten($brand-color, 5%);
-$color-brand-secondary-dark:  darken($brand-color-secondary, 5%);
-$color-brand-secondary:       $brand-color-secondary;
+$color-brand-dark: darken($brand-color, 5%);
+$color-brand: $brand-color;
+$color-brand-light: lighten($brand-color, 5%);
+$color-brand-secondary-dark: darken($brand-color-secondary, 5%);
+$color-brand-secondary: $brand-color-secondary;
 $color-brand-secondary-light: lighten($brand-color-secondary, 5%);
 
 /* Neutral */
 
-$color-black:                 #000;
-$color-gray-90:               lighten($color-black, 10%);
-$color-gray-80:               lighten($color-black, 25%);
-$color-gray-50:               lighten($color-black, 50%);
-$color-gray-20:               lighten($color-black, 80%);
-$color-gray-10:               lighten($color-black, 90%);
-$color-gray-05:               lighten($color-black, 95%);
-$color-white:                 #fff;
+$color-black: #000;
+$color-gray-90: lighten($color-black, 10%);
+$color-gray-80: lighten($color-black, 25%);
+$color-gray-50: lighten($color-black, 50%);
+$color-gray-20: lighten($color-black, 80%);
+$color-gray-10: lighten($color-black, 90%);
+$color-gray-05: lighten($color-black, 95%);
+$color-white: #fff;
 
 /* Social */
 
-$color-facebook:              #3b5998;
-$color-linkedin:              #0077b5;
-$color-twitter:               #1da1f2;
-$color-youtube:               #f00;
+$color-facebook: #3b5998;
+$color-linkedin: #0077b5;
+$color-twitter: #1da1f2;
+$color-youtube: #f00;
 
 /* Utility */
 
-$color-error:                 #ff4136;
-$color-error-dark:            darken($color-error, 20%);
-$color-error-light:           lighten($color-error, 20%);
-$color-warning:               #ff851b;
-$color-warning-dark:          darken($color-warning, 10%);
-$color-warning-light:         lighten($color-warning, 20%);
-$color-highlight:             #ffdc00;
-$color-success:               #2ecc40;
-$color-success-dark:          darken($color-success, 5%);
-$color-success-light:         lighten($color-success, 20%);
-$color-information:           #0074d9;
-$color-information-dark:      darken($color-information, 5%);
-$color-information-light:     lighten($color-information, 20%);
+$color-error: #ff4136;
+$color-error-dark: darken($color-error, 20%);
+$color-error-light: lighten($color-error, 20%);
+$color-warning: #ff851b;
+$color-warning-dark: darken($color-warning, 10%);
+$color-warning-light: lighten($color-warning, 20%);
+$color-highlight: #ffdc00;
+$color-success: #2ecc40;
+$color-success-dark: darken($color-success, 5%);
+$color-success-light: lighten($color-success, 20%);
+$color-information: #0074d9;
+$color-information-dark: darken($color-information, 5%);
+$color-information-light: lighten($color-information, 20%);

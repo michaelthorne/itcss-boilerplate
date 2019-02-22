@@ -5,12 +5,23 @@
 /* Remove margins and padding. */
 
 body,
-h1, h2, h3, h4, h5, h6,
-blockquote, p, pre,
-dl, dd, ol, ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+p,
+pre,
+dl,
+dd,
+ol,
+ul,
 figure,
 hr,
-fieldset, legend {
+fieldset,
+legend {
   margin: 0;
   padding: 0;
 }
@@ -18,7 +29,6 @@ fieldset, legend {
 /* Remove trailing margins from nested lists. */
 
 li > {
-
   ol,
   ul {
     margin-bottom: 0;
