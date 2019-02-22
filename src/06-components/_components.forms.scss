@@ -171,11 +171,7 @@
 }
 
 @media all and (min-width: $bp-medium) {
-  /* Form */
   .c-form {
-    /**
-     * Inline
-     */
     &.c-form--inline {
       .c-form-group {
         flex: auto;
@@ -185,7 +181,6 @@
 }
 
 @media all and (min-width: $bp-large) {
-  /* Group */
   .c-form-group {
     margin-bottom: $base-spacing-unit;
   }

@@ -25,6 +25,10 @@
       }
     }
 
+    ul {
+      margin-bottom: 0;
+    }
+
     p {
       margin-bottom: 0;
 
@@ -32,10 +36,6 @@
       & + ul {
         margin-top: $base-spacing-unit-small;
       }
-    }
-
-    ul {
-      margin-bottom: 0;
     }
   }
 

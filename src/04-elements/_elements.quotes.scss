@@ -2,6 +2,21 @@
    #QUOTES
    ========================================================================== */
 
+/* Inline */
+
+q {
+  font-style: italic;
+  quotes: '‘' '’' '“' '”';
+
+  &::after {
+    content: close-quote;
+  }
+
+  &::before {
+    content: open-quote;
+  }
+}
+
 /* Block */
 
 blockquote {
@@ -22,20 +37,5 @@ blockquote {
 
   cite {
     display: block;
-  }
-}
-
-/* Inline */
-
-q {
-  font-style: italic;
-  quotes: '‘' '’' '“' '”';
-
-  &::after {
-    content: close-quote;
-  }
-
-  &::before {
-    content: open-quote;
   }
 }

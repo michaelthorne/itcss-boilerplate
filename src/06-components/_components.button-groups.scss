@@ -16,7 +16,6 @@
 
 @media all and (min-width: $bp-large) {
   .c-btn-group {
-    /* Button */
     .c-btn {
       &:not(:last-child) {
         margin-right: $base-spacing-unit;
