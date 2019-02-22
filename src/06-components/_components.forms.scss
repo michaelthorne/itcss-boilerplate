@@ -2,6 +2,52 @@
    #FORMS
    ========================================================================== */
 
+/* Group */
+
+.c-form-group {
+  margin-bottom: $base-spacing-unit-small;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Checkbox or Radio Button */
+
+  &.c-form-group--check {
+    label {
+      display: block;
+      font-weight: $weight-normal;
+      margin-bottom: 0;
+
+      & + label {
+        margin-top: $base-spacing-unit-small;
+      }
+    }
+  }
+
+  /* Inline */
+
+  &.c-form-group--inline {
+    legend {
+      margin-bottom: 0;
+    }
+
+    label {
+      display: inline-block;
+
+      &:not(:last-child) {
+        margin-right: $base-spacing-unit-small;
+      }
+    }
+  }
+
+  /* Flat */
+
+  &.c-form-group--flat {
+    margin-bottom: 0;
+  }
+}
+
 /* Form */
 
 .c-form {
@@ -26,52 +72,6 @@
       & + .c-btn {
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
-      }
-    }
-  }
-}
-
-/* Group */
-
-.c-form-group {
-  margin-bottom: $base-spacing-unit-small;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-
-  /* Checkbox or Radio Button */
-
-  &.c-form-group--check {
-    label {
-      display: block;
-      font-weight: $weight-normal;
-      margin-bottom: 0;
-
-      & + label {
-        margin-top: $base-spacing-unit-small;
-      }
-    }
-  }
-
-  /* Flat */
-
-  &.c-form-group--flat {
-    margin-bottom: 0;
-  }
-
-  /* Inline */
-
-  &.c-form-group--inline {
-    legend {
-      margin-bottom: 0;
-    }
-
-    label {
-      display: inline-block;
-
-      &:not(:last-child) {
-        margin-right: $base-spacing-unit-small;
       }
     }
   }

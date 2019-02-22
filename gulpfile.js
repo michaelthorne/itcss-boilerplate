@@ -54,12 +54,7 @@ function compileSass () {
  */
 function lintSass () {
   return gulp
-    .src([
-      config.paths.src + '**/*.scss',
-      '!' + config.paths.src + '01-settings/*.scss',
-      '!' + config.paths.src + '02-tools/*.scss',
-      '!' + config.paths.src + '07-utilities/*.scss'
-    ])
+    .src(config.paths.src + '**/*.scss')
     .pipe(stylelint({
       reporters: [
         { formatter: 'string', console: true }
