@@ -133,12 +133,23 @@
    ========================================================================== */
 /* Remove margins and padding. */
 body,
-h1, h2, h3, h4, h5, h6,
-blockquote, p, pre,
-dl, dd, ol, ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+p,
+pre,
+dl,
+dd,
+ol,
+ul,
 figure,
 hr,
-fieldset, legend {
+fieldset,
+legend {
   margin: 0;
   padding: 0; }
 
@@ -199,9 +210,18 @@ body {
   height: 100%; }
 
 address,
-h1, h2, h3, h4, h5, h6,
-blockquote, p, pre,
-dl, ol, ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+p,
+pre,
+dl,
+ol,
+ul,
 figure,
 hr,
 table {
@@ -301,7 +321,9 @@ a {
 /* ==========================================================================
    #LISTS
    ========================================================================== */
-dd, ol, ul {
+dd,
+ol,
+ul {
   margin-left: 1.5rem; }
 
 /* ==========================================================================
@@ -905,13 +927,9 @@ table {
  */
 @media print {
   *,
-  *:before,
-  *:after {
+  *::before,
+  *::after {
     background: transparent !important;
-    /**
-     * Black prints faster:
-     * http://www.sanbeiji.com/archives/953
-     */
     color: #000 !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
@@ -919,16 +937,16 @@ table {
   a,
   a:visited {
     text-decoration: underline; }
-  a[href]:after {
+  a[href]::after {
     content: " (" attr(href) ")"; }
-  abbr[title]:after {
+  abbr[title]::after {
     content: " (" attr(title) ")"; }
   /**
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
     content: ""; }
   pre {
     white-space: pre-wrap !important; }
@@ -1304,7 +1322,8 @@ table {
    * to be focusable when navigated to via the keyboard:
    * https://www.drupal.org/node/897638
    */ }
-  .u-visuallyhidden.focusable:active, .u-visuallyhidden.focusable:focus {
+  .u-visuallyhidden.focusable .u-visuallyhidden:active,
+  .u-visuallyhidden.focusable .u-visuallyhidden:focus {
     clip: auto;
     clip-path: none;
     height: auto;
