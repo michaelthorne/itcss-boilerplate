@@ -294,7 +294,6 @@ p:last-child {
 a {
   color: #001f3f;
   text-decoration: underline;
-  text-decoration-skip: ink;
   transition: color 0.25s; }
   a:active, a:focus, a:hover {
     color: #0074d9; }
@@ -450,24 +449,15 @@ table {
  * http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code
  */
 .o-media {
-  display: block;
+  display: flex;
   /* Image */
   /* Body */ }
-  .o-media::before, .o-media::after {
-    content: ' ';
-    /* 1 */
-    display: table;
-    /* 2 */ }
-  .o-media::after {
-    clear: both; }
   .o-media .o-media__img {
-    float: left;
     margin-right: 1.5rem; }
     .o-media .o-media__img > img {
       display: block; }
   .o-media .o-media__body {
-    display: block;
-    overflow: hidden; }
+    flex: 1; }
     .o-media .o-media__body > :last-child {
       margin-bottom: 0; }
 
@@ -749,10 +739,9 @@ table {
   font-weight: 700;
   line-height: 1.5;
   padding: 0.75rem 1.5rem;
-  position: relative;
   text-align: center;
   text-decoration: none;
-  transition: background-color 0.25s, transform 0.25s;
+  transition: background-color 0.25s, box-shadow 0.25s, transform 0.25s;
   vertical-align: middle;
   white-space: nowrap;
   /* Icon */
@@ -771,29 +760,14 @@ table {
   /**
    * Disabled
    */ }
-  .c-btn::after {
-    border-radius: 0.125em;
-    box-shadow: 0 0 1em rgba(34, 34, 34, 0.125);
-    content: '';
-    height: 100%;
-    left: 0;
-    opacity: 0.5;
-    position: absolute;
-    top: 0;
-    transition: opacity 0.25s;
-    width: 100%;
-    z-index: -1; }
   .c-btn:focus, .c-btn:hover {
     border-color: #001f3f;
+    box-shadow: 0 0 1em rgba(34, 34, 34, 0.125);
     color: #001f3f;
     outline: 0;
     transform: translateY(-0.0625em); }
-    .c-btn:focus::after, .c-btn:hover::after {
-      opacity: 1; }
   .c-btn:active {
     transform: translateY(0); }
-    .c-btn:active::after {
-      opacity: 0.5; }
   .c-btn .c-btn__icon {
     margin-right: 0.375rem; }
   .c-btn.c-btn--primary {
