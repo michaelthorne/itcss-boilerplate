@@ -38,15 +38,13 @@
 
   @if ($important == true) {
     $important: !important;
-  }
-  @else {
+  } @else {
     $important: null;
   }
 
   @if ($line-height == 'auto') {
     line-height: ceil($font-size / $base-line-height) * ($base-line-height / $font-size) $important;
-  }
-  @else {
+  } @else {
     line-height: $line-height $important;
   }
 }
