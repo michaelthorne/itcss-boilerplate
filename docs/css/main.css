@@ -368,6 +368,15 @@ img {
 /* ==========================================================================
    #QUOTES
    ========================================================================== */
+/* Inline */
+q {
+  font-style: italic;
+  quotes: '‘' '’' '“' '”'; }
+  q::after {
+    content: close-quote; }
+  q::before {
+    content: open-quote; }
+
 /* Block */
 blockquote {
   border-left: 0.125em solid #0074d9;
@@ -380,15 +389,6 @@ blockquote {
       content: open-quote; }
   blockquote cite {
     display: block; }
-
-/* Inline */
-q {
-  font-style: italic;
-  quotes: '‘' '’' '“' '”'; }
-  q::after {
-    content: close-quote; }
-  q::before {
-    content: open-quote; }
 
 /* ==========================================================================
    #TABLES
@@ -513,13 +513,13 @@ table {
     font-weight: 700; }
     .c-alert .c-alert__body a:focus, .c-alert .c-alert__body a:hover {
       color: #fff; }
+  .c-alert .c-alert__body ul {
+    margin-bottom: 0; }
   .c-alert .c-alert__body p {
     margin-bottom: 0; }
     .c-alert .c-alert__body p + p,
     .c-alert .c-alert__body p + ul {
       margin-top: 0.75rem; }
-  .c-alert .c-alert__body ul {
-    margin-bottom: 0; }
   .c-alert .c-alert__dismiss {
     background-color: transparent;
     border: 0;
@@ -627,6 +627,29 @@ table {
 /* ==========================================================================
    #FORMS
    ========================================================================== */
+/* Group */
+.c-form-group {
+  margin-bottom: 0.75rem;
+  /* Checkbox or Radio Button */
+  /* Inline */
+  /* Flat */ }
+  .c-form-group:last-child {
+    margin-bottom: 0; }
+  .c-form-group.c-form-group--check label {
+    display: block;
+    font-weight: 400;
+    margin-bottom: 0; }
+    .c-form-group.c-form-group--check label + label {
+      margin-top: 0.75rem; }
+  .c-form-group.c-form-group--inline legend {
+    margin-bottom: 0; }
+  .c-form-group.c-form-group--inline label {
+    display: inline-block; }
+    .c-form-group.c-form-group--inline label:not(:last-child) {
+      margin-right: 0.75rem; }
+  .c-form-group.c-form-group--flat {
+    margin-bottom: 0; }
+
 /* Form */
 .c-form {
   /**
@@ -644,29 +667,6 @@ table {
       .c-form.c-form--inline .c-form-group + .c-btn {
         border-bottom-left-radius: 0;
         border-top-left-radius: 0; }
-
-/* Group */
-.c-form-group {
-  margin-bottom: 0.75rem;
-  /* Checkbox or Radio Button */
-  /* Flat */
-  /* Inline */ }
-  .c-form-group:last-child {
-    margin-bottom: 0; }
-  .c-form-group.c-form-group--check label {
-    display: block;
-    font-weight: 400;
-    margin-bottom: 0; }
-    .c-form-group.c-form-group--check label + label {
-      margin-top: 0.75rem; }
-  .c-form-group.c-form-group--flat {
-    margin-bottom: 0; }
-  .c-form-group.c-form-group--inline legend {
-    margin-bottom: 0; }
-  .c-form-group.c-form-group--inline label {
-    display: inline-block; }
-    .c-form-group.c-form-group--inline label:not(:last-child) {
-      margin-right: 0.75rem; }
 
 /* Control */
 .c-form-control {
@@ -733,16 +733,10 @@ table {
     color: #ff4136; }
 
 @media all and (min-width: 48em) {
-  /* Form */
-  .c-form {
-    /**
-     * Inline
-     */ }
-    .c-form.c-form--inline .c-form-group {
-      flex: auto; } }
+  .c-form.c-form--inline .c-form-group {
+    flex: auto; } }
 
 @media all and (min-width: 62em) {
-  /* Group */
   .c-form-group {
     margin-bottom: 1.5rem; } }
 
@@ -760,6 +754,7 @@ table {
   font-size: inherit;
   font-weight: 700;
   line-height: 1.5;
+  margin: 0;
   padding: 0.75rem 1.5rem;
   text-align: center;
   text-decoration: none;
@@ -830,16 +825,14 @@ table {
     margin-right: 0.75rem; }
 
 @media all and (min-width: 62em) {
-  .c-btn-group {
-    /* Button */ }
-    .c-btn-group .c-btn {
-      /**
+  .c-btn-group .c-btn {
+    /**
        * Small
        */ }
-      .c-btn-group .c-btn:not(:last-child) {
-        margin-right: 1.5rem; }
-      .c-btn-group .c-btn.c-btn--small:not(:last-child) {
-        margin-right: 0.75rem; } }
+    .c-btn-group .c-btn:not(:last-child) {
+      margin-right: 1.5rem; }
+    .c-btn-group .c-btn.c-btn--small:not(:last-child) {
+      margin-right: 0.75rem; } }
 
 /* ==========================================================================
    #PAGINATION
@@ -930,6 +923,7 @@ table {
   *::before,
   *::after {
     background: transparent !important;
+    /* Black prints faster: http://www.sanbeiji.com/archives/953 */
     color: #000 !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
