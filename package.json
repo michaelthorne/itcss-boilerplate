@@ -1,6 +1,6 @@
 {
   "name": "itcss-boilerplate",
-  "version": "1.0.1",
+  "version": "0.0.0",
   "description": "ITCSS Boilerplate: Inverted Triangle CSS architecture inspired by Harry Roberts @csswizardry",
   "dependencies": {},
   "devDependencies": {
