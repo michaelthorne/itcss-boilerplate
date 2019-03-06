@@ -19,7 +19,8 @@
     "stylelint-scss": "^3.5.3"
   },
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "release": "npm version patch --git-tag-version false"
   },
   "repository": {
     "type": "git",
