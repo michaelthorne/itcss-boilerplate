@@ -2,7 +2,8 @@ const browserSync = require('browser-sync')
 const del = require('del')
 const gulp = require('gulp')
 const gulpStylelint = require('gulp-stylelint')
-const sass = require('gulp-sass')
+const gulpSass = require('gulp-sass')
+gulpSass.compiler = require('sass');
 const util = require('gulp-util')
 
 /*
@@ -35,9 +36,9 @@ function getPath () {
 /*
  * Compile Sass
  */
-function compile () {
+function sass () {
   let options = {
-    outputStyle: 'nested'
+    outputStyle: 'expanded'
   }
 
   if (config.dist) {
@@ -45,7 +46,7 @@ function compile () {
   }
 
   return gulp.src(config.paths.src + '**/*.scss')
-    .pipe(sass(options).on('error', sass.logError))
+    .pipe(gulpSass(options).on('error', gulpSass.logError))
     .pipe(gulp.dest(getPath() + '/css'))
 }
 
@@ -93,17 +94,17 @@ function server (done) {
  */
 function watch () {
   gulp.watch(config.paths.src + '**/*.html', gulp.series(copy, reload))
-  gulp.watch(config.paths.src + '**/*.scss', gulp.series(compile, reload))
+  gulp.watch(config.paths.src + '**/*.scss', gulp.series(sass, reload))
 }
 
-let buildTask = gulp.series(clean, compile, copy)
+let buildTask = gulp.series(clean, sass, copy)
 let defaultTask = gulp.series(buildTask, server, watch)
 
 exports.clean = clean
-exports.compile = compile
 exports.copy = copy
 exports.lint = lint
 exports.reload = reload
+exports.sass = sass
 exports.server = server
 exports.watch = watch
 
