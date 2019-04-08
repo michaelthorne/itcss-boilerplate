@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "ITCSS Boilerplate: Inverted Triangle CSS architecture inspired by Harry Roberts @csswizardry",
   "scripts": {
+    "build": "gulp build",
     "start": "gulp",
     "release": "npm version patch --git-tag-version false"
   },
@@ -22,14 +23,8 @@
     "del": "^4.0.0",
     "gulp": "^4.0.0",
     "gulp-sass": "^4.0.2",
-    "gulp-stylelint": "^8.0.0",
     "gulp-util": "^3.0.8",
     "gulp-watch": "^5.0.1",
     "normalize.css": "^8.0.1",
-    "run-sequence": "^2.2.1",
-    "stylelint": "^9.10.1",
-    "stylelint-config-recommended-scss": "^3.2.0",
-    "stylelint-config-standard": "^18.2.0",
-    "stylelint-scss": "^3.5.4"
   }
 }

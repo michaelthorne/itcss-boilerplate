@@ -1,7 +1,6 @@
 const gulp = require('gulp')
 const browserSync = require('browser-sync')
 const del = require('del')
-const stylelint = require('gulp-stylelint')
 const sass = require('gulp-sass')
 const util = require('gulp-util')
 
@@ -35,7 +34,7 @@ function clean () {
 /*
  * Compile Sass
  */
-function compileSass () {
+function compile () {
   let options = {
     outputStyle: 'nested'
   }
@@ -50,22 +49,9 @@ function compileSass () {
 }
 
 /*
- * Lint Sass
- */
-function lintSass () {
-  return gulp
-    .src(config.paths.src + '**/*.scss')
-    .pipe(stylelint({
-      reporters: [
-        { formatter: 'string', console: true }
-      ]
-    }))
-}
-
-/*
  * Copy HTML files to build directory
  */
-function copyHTML () {
+function copy () {
   return gulp.src(config.paths.src + '**/*.html', {
     'base': config.paths.src
   })
@@ -96,17 +82,16 @@ function server (done) {
  * Watch HTML and SCSS files for changes
  */
 function watch () {
-  gulp.watch(config.paths.src + '**/*.html', gulp.series(copyHTML, reload))
-  gulp.watch(config.paths.src + '**/*.scss', gulp.series(compileSass, reload))
+  gulp.watch(config.paths.src + '**/*.html', gulp.series(copy, reload))
+  gulp.watch(config.paths.src + '**/*.scss', gulp.series(compile, reload))
 }
 
-let buildTask = gulp.series(clean, compileSass, copyHTML)
+let buildTask = gulp.series(clean, compile, copy)
 let defaultTask = gulp.series(buildTask, server, watch)
 
 exports.clean = clean
-exports.compileSass = compileSass
-exports.copyHTML = copyHTML
-exports.lintSass = lintSass
+exports.compile = compile
+exports.copy = copy
 exports.reload = reload
 exports.server = server
 exports.watch = watch
