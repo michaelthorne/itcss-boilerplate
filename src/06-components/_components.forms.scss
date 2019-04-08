@@ -2,6 +2,14 @@
    #FORMS
    ========================================================================== */
 
+/**
+ * Inline
+ */
+
+.c-form--inline {
+  display: flex;
+}
+
 /* Group */
 
 .c-form-group {
@@ -10,70 +18,64 @@
   &:last-child {
     margin-bottom: 0;
   }
+}
 
-  /* Checkbox or Radio Button */
+/**
+ * Checkbox or Radio Button
+ */
 
-  &.c-form-group--check {
-    label {
-      display: block;
-      font-weight: $weight-normal;
-      margin-bottom: 0;
-
-      & + label {
-        margin-top: $base-spacing-unit-small;
-      }
-    }
-  }
-
-  /* Inline */
-
-  &.c-form-group--inline {
-    legend {
-      margin-bottom: 0;
-    }
-
-    label {
-      display: inline-block;
-
-      &:not(:last-child) {
-        margin-right: $base-spacing-unit-small;
-      }
-    }
-  }
-
-  /* Flat */
-
-  &.c-form-group--flat {
+.c-form-group--check {
+  label {
+    display: block;
+    font-weight: $weight-normal;
     margin-bottom: 0;
+  }
+
+  label + label {
+    margin-top: $base-spacing-unit-small;
   }
 }
 
-/* Form */
+/**
+ * Inline
+ */
 
-.c-form {
-  /**
-   * Inline
-   */
+.c-form-group--inline {
+  legend {
+    margin-bottom: 0;
+  }
 
-  &.c-form--inline {
-    display: flex;
+  label {
+    display: inline-block;
+  }
 
-    /* Group */
+  label:not(:last-child) {
+    margin-right: $base-spacing-unit-small;
+  }
+}
 
-    .c-form-group {
-      margin-bottom: 0;
-      flex: 1;
+/**
+ * Flat
+ */
 
-      input {
-        border-bottom-right-radius: 0;
-        border-top-right-radius: 0;
-      }
+.c-form-group--flat {
+  margin-bottom: 0;
+}
 
-      & + .c-btn {
-        border-bottom-left-radius: 0;
-        border-top-left-radius: 0;
-      }
-    }
+/* Group */
+
+.c-form-group {
+  flex: 1;
+  margin-bottom: 0;
+
+  input {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  + .c-btn {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
   }
 }
 
@@ -92,19 +94,6 @@
   transition: border-color 0.25s, box-shadow 0.25s;
   width: 100%;
 
-  &[disabled] {
-    background-color: $color-gray-05;
-    box-shadow: none;
-    color: $color-brand-secondary;
-
-    &:focus,
-    &:hover {
-      border-color: $color-gray-20;
-      box-shadow: none;
-      cursor: not-allowed;
-    }
-  }
-
   &:focus,
   &:hover {
     border-color: $color-brand;
@@ -112,36 +101,17 @@
     outline: 0;
   }
 
-  /* File */
-
-  &.c-form-control--file {
-    border: 0;
+  &[disabled] {
+    background-color: $color-gray-05;
     box-shadow: none;
-    height: auto;
-    padding: 0;
-    width: auto;
-
-    &:focus,
-    &:hover {
-      box-shadow: none;
-    }
-
-    /**
-     * Error
-     */
-
-    &.is-error {
-      box-shadow: none;
-    }
+    color: $color-brand-secondary;
   }
 
-  /**
-   * Textarea
-   */
-
-  &.c-form-control--textarea {
-    height: auto;
-    resize: vertical;
+  &[disabled]:focus,
+  &[disabled]:hover {
+    border-color: $color-gray-20;
+    box-shadow: none;
+    cursor: not-allowed;
   }
 
   /**
@@ -152,6 +122,40 @@
     border-color: $color-error;
     box-shadow: $base-box-shadow-error;
   }
+}
+
+/**
+ * File
+ */
+
+.c-form-control--file {
+  border: 0;
+  box-shadow: none;
+  height: auto;
+  padding: 0;
+  width: auto;
+
+  &:focus,
+  &:hover {
+    box-shadow: none;
+  }
+
+  /**
+   * Error
+   */
+
+  &.is-error {
+    box-shadow: none;
+  }
+}
+
+/**
+ * Textarea
+ */
+
+.c-form-control--textarea {
+  height: auto;
+  resize: vertical;
 }
 
 /* Help */
@@ -171,11 +175,16 @@
 }
 
 @media all and (min-width: $bp-medium) {
-  .c-form {
-    &.c-form--inline {
-      .c-form-group {
-        flex: auto;
-      }
+  /**
+   * Inline
+   */
+
+  .c-form--inline {
+
+    /* Group */
+
+    .c-form-group {
+      flex: auto;
     }
   }
 }

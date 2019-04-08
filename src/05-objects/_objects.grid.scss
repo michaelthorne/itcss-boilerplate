@@ -6,27 +6,27 @@
   clear: both;
   width: 100%;
 
-  & + .o-grid {
+  + .o-grid {
     margin-top: $base-spacing-unit;
   }
+}
 
-  /* Row */
+/* Row */
 
-  .o-grid__row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -$base-spacing-unit;
-    margin-top: -$base-spacing-unit;
+.o-grid__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -$base-spacing-unit;
+  margin-top: -$base-spacing-unit;
 
-    & + .o-grid__row {
-      margin-top: 0;
-    }
+  + .o-grid__row {
+    margin-top: 0;
   }
+}
 
-  /* Column */
+/* Column */
 
-  .o-grid__col {
-    padding-left: $base-spacing-unit;
-    padding-top: $base-spacing-unit;
-  }
+.o-grid__col {
+  padding-left: $base-spacing-unit;
+  padding-top: $base-spacing-unit;
 }

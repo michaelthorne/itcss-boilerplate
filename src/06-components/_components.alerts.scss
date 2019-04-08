@@ -4,118 +4,118 @@
 
 .c-alert {
   background-color: $color-information;
-  border-top: $base-border-width solid $color-information-dark;
   border-radius: $base-border-radius-small;
+  border-top: $base-border-width solid $color-information-dark;
   box-shadow: $base-box-shadow;
   color: $color-white;
   margin-bottom: $base-spacing-unit;
   padding: $base-spacing-unit-small $base-spacing-unit-large $base-spacing-unit-small $base-spacing-unit-small;
   position: relative;
+}
 
-  /* Body */
+/* Body */
 
-  .c-alert__body {
-    a {
-      color: $color-white;
-      font-weight: $weight-bold;
-
-      &:focus,
-      &:hover {
-        color: $color-white;
-      }
-    }
-
-    ul {
-      margin-bottom: 0;
-    }
-
-    p {
-      margin-bottom: 0;
-
-      & + p,
-      & + ul {
-        margin-top: $base-spacing-unit-small;
-      }
-    }
-  }
-
-  /* Dismiss */
-
-  .c-alert__dismiss {
-    background-color: transparent;
-    border: 0;
-    color: $color-information-light;
-    cursor: pointer;
-    padding: 0;
-    position: absolute;
-    right: $base-spacing-unit-xs;
-    top: $base-spacing-unit-xs;
-    transition: color 0.25s;
+.c-alert__body {
+  a {
+    color: $color-white;
+    font-weight: $weight-bold;
 
     &:focus,
     &:hover {
       color: $color-white;
-      outline: none;
     }
   }
 
-  /**
-   * Success
-   */
-
-  &.c-alert--success {
-    background-color: $color-success;
-    border-top-color: $color-success-dark;
-
-    /* Dismiss */
-
-    .c-alert__dismiss {
-      color: $color-success-light;
-
-      &:focus,
-      &:hover {
-        color: $color-white;
-      }
-    }
+  ul {
+    margin-bottom: 0;
   }
 
-  /**
-   * Warning
-   */
-
-  &.c-alert--warning {
-    background-color: $color-warning;
-    border-top-color: $color-warning-dark;
-
-    /* Dismiss */
-
-    .c-alert__dismiss {
-      color: $color-warning-light;
-
-      &:focus,
-      &:hover {
-        color: $color-white;
-      }
-    }
+  p {
+    margin-bottom: 0;
   }
 
-  /**
-   * Error
-   */
+  p + p,
+  p + ul {
+    margin-top: $base-spacing-unit-small;
+  }
+}
 
-  &.c-alert--error {
-    background-color: $color-error;
-    border-top-color: $color-error-dark;
+/* Dismiss */
 
-    /* Dismiss */
+.c-alert__dismiss {
+  background-color: transparent;
+  border: 0;
+  color: $color-information-light;
+  cursor: pointer;
+  padding: 0;
+  position: absolute;
+  right: $base-spacing-unit-xs;
+  top: $base-spacing-unit-xs;
+  transition: color 0.25s;
 
-    .c-alert__dismiss {
-      color: $color-error-light;
+  &:focus,
+  &:hover {
+    color: $color-white;
+    outline: none;
+  }
+}
 
-      &:focus,
-      &:hover {
-        color: $color-white;
-      }
-    }
+/**
+ * Success
+ */
+
+.c-alert--success {
+  background-color: $color-success;
+  border-top-color: $color-success-dark;
+
+  /* Dismiss */
+
+  .c-alert__dismiss {
+    color: $color-success-light;
+  }
+
+  .c-alert__dismiss:focus,
+  .c-alert__dismiss:hover {
+    color: $color-white;
+  }
+}
+
+/**
+ * Warning
+ */
+
+.c-alert--warning {
+  background-color: $color-warning;
+  border-top-color: $color-warning-dark;
+
+  /* Dismiss */
+
+  .c-alert__dismiss {
+    color: $color-warning-light;
+  }
+
+  .c-alert__dismiss:focus,
+  .c-alert__dismiss:hover {
+    color: $color-white;
+  }
+}
+
+/**
+ * Error
+ */
+
+.c-alert--error {
+  background-color: $color-error;
+  border-top-color: $color-error-dark;
+
+  /* Dismiss */
+
+  .c-alert__dismiss {
+    color: $color-error-light;
+  }
+
+  .c-alert__dismiss:focus,
+  .c-alert__dismiss:hover {
+    color: $color-white;
   }
 }

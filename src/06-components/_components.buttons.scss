@@ -41,53 +41,6 @@
   }
 
   /**
-   * Primary
-   */
-
-  &.c-btn--primary {
-    background-color: $color-brand;
-    border-color: $color-brand;
-    color: $color-white;
-
-    &:focus,
-    &:hover {
-      background-color: $color-brand-light;
-    }
-  }
-
-  /**
-   * Secondary
-   */
-
-  &.c-btn--secondary {
-    background-color: $color-brand-secondary;
-    border-color: $color-brand-secondary;
-    color: $color-white;
-
-    &:focus,
-    &:hover {
-      background-color: $color-brand-secondary-light;
-    }
-  }
-
-  /**
-   * Block
-   */
-
-  &.c-btn--block {
-    display: block;
-    width: 100%;
-  }
-
-  /**
-   * Small
-   */
-
-  &.c-btn--small {
-    padding: $base-spacing-unit-xs $base-spacing-unit-small;
-  }
-
-  /**
    * Disabled
    */
 
@@ -96,15 +49,59 @@
     border-color: $color-gray-10;
     color: $color-gray-50;
     cursor: not-allowed;
-
-    &:focus,
-    &:hover {
-      background-color: $color-gray-10;
-      transform: translateY(0);
-
-      &::after {
-        opacity: 0;
-      }
-    }
   }
+
+  &[disabled]:focus,
+  &[disabled]:hover {
+    background-color: $color-gray-10;
+    box-shadow: none;
+    transform: translateY(0);
+  }
+}
+
+/**
+ * Primary
+ */
+
+.c-btn--primary {
+  background-color: $color-brand;
+  border-color: $color-brand;
+  color: $color-white;
+
+  &:focus,
+  &:hover {
+    background-color: $color-brand-light;
+  }
+}
+
+/**
+ * Secondary
+ */
+
+.c-btn--secondary {
+  background-color: $color-brand-secondary;
+  border-color: $color-brand-secondary;
+  color: $color-white;
+
+  &:focus,
+  &:hover {
+    background-color: $color-brand-secondary-light;
+  }
+}
+
+/**
+ * Block
+ */
+
+.c-btn--block {
+  display: block;
+  width: 100%;
+}
+
+/**
+ * Small
+ */
+
+.c-btn--small {
+  padding: $base-spacing-unit-xs $base-spacing-unit-small;
 }

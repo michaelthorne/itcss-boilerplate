@@ -7,29 +7,26 @@
 
   /* Button */
 
-  .c-btn {
-    &:not(:last-child) {
-      margin-right: $base-spacing-unit-small;
-    }
+  .c-btn:not(:last-child) {
+    margin-right: $base-spacing-unit-small;
   }
 }
 
 @media all and (min-width: $bp-large) {
   .c-btn-group {
-    .c-btn {
-      &:not(:last-child) {
-        margin-right: $base-spacing-unit;
-      }
 
-      /**
-       * Small
-       */
+    /* Button */
 
-      &.c-btn--small {
-        &:not(:last-child) {
-          margin-right: $base-spacing-unit-small;
-        }
-      }
+    .c-btn:not(:last-child) {
+      margin-right: $base-spacing-unit;
+    }
+
+    /**
+     * Small
+     */
+
+    .c-btn--small:not(:last-child) {
+      margin-right: $base-spacing-unit-small;
     }
   }
 }

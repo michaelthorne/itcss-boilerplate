@@ -4,12 +4,14 @@
 
 .o-list {
   @include list-reset;
+}
 
-  /* Inline */
+/**
+ * Inline
+ */
 
-  &.o-list--inline {
-    li {
-      display: inline-block;
-    }
+.o-list--inline {
+  li {
+    display: inline-block;
   }
 }

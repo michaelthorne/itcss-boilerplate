@@ -1,3 +1,5 @@
+/* stylelint-disable selector-list-comma-newline-after */
+
 /* ==========================================================================
    #RESET
    ========================================================================== */
@@ -5,23 +7,12 @@
 /* Remove margins and padding. */
 
 body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-blockquote,
-p,
-pre,
-dl,
-dd,
-ol,
-ul,
+h1, h2, h3, h4, h5, h6,
+blockquote, p, pre,
+dl, dd, ol, ul,
 figure,
 hr,
-fieldset,
-legend {
+fieldset, legend {
   margin: 0;
   padding: 0;
 }
@@ -66,4 +57,5 @@ fieldset {
 
 table {
   border-collapse: collapse;
+  border-spacing: 0;
 }

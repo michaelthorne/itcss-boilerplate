@@ -13,35 +13,35 @@
   text-align: center;
   text-transform: uppercase;
   transition: background-color 0.25s;
+}
 
-  /* Link */
+/* Link */
 
-  .c-badge__link {
-    color: $color-white;
-    text-decoration: none;
-  }
+.c-badge__link {
+  color: $color-white;
+  text-decoration: none;
+}
 
-  /**
-   * Success
-   */
+/**
+ * Success
+ */
 
-  &.c-badge--success {
-    background-color: $color-success;
-  }
+.c-badge--success {
+  background-color: $color-success;
+}
 
-  /**
-   * Warning
-   */
+/**
+ * Warning
+ */
 
-  &.c-badge--warning {
-    background-color: $color-warning;
-  }
+.c-badge--warning {
+  background-color: $color-warning;
+}
 
-  /**
-   * Error
-   */
+/**
+ * Error
+ */
 
-  &.c-badge--error {
-    background-color: $color-error;
-  }
+.c-badge--error {
+  background-color: $color-error;
 }

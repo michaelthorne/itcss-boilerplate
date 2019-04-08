@@ -75,7 +75,7 @@
 /* #GENERIC
    ========================================================================== */
 
-@import './node_modules/normalize.css/normalize.css';
+@import '../node_modules/normalize.css/normalize';
 @import '03-generic/generic.reset';
 @import '03-generic/generic.box-sizing';
 @import '03-generic/generic.shared';

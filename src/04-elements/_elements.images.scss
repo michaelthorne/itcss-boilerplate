@@ -1,18 +1,29 @@
+/* stylelint-disable selector-no-qualifying-type */
+
 /* ==========================================================================
    #IMAGES
    ========================================================================== */
 
 /**
- * Fluid images for responsive designs
- *
- * 1. Images with a `width` and/or `height` attribute are not fluid.
+ * 1. Offset `alt` text from surrounding copy.
+ * 2. Fluid images for responsive purposes.
+ * 3. Setting `vertical-align` removes the whitespace that appears under `img`
+ *    elements when they are dropped into a page as-is. Safer alternative to
+ *    using `display: block;`.
  */
 
 img {
-  max-width: 100%;
+  font-style: italic; /* [1] */
+  max-width: 100%; /* [2] */
+  vertical-align: middle; /* [3] */
+
+  /**
+   * If a `width` and/or `height` attribute has been explicitly defined, let’s
+   * not make the image fluid.
+   */
 
   &[height],
   &[width] {
-    max-width: none; /* [1] */
+    max-width: none;
   }
 }

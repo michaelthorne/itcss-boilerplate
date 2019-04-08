@@ -25,14 +25,14 @@ blockquote {
 
   q {
     quotes: '‘' '’';
+  }
 
-    &::after {
-      content: close-quote;
-    }
+  q::after {
+    content: close-quote;
+  }
 
-    &::before {
-      content: open-quote;
-    }
+  q::before {
+    content: open-quote;
   }
 
   cite {

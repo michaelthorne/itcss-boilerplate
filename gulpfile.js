@@ -1,6 +1,7 @@
-const gulp = require('gulp')
 const browserSync = require('browser-sync')
 const del = require('del')
+const gulp = require('gulp')
+const gulpStylelint = require('gulp-stylelint')
 const sass = require('gulp-sass')
 const util = require('gulp-util')
 
@@ -16,19 +17,19 @@ let config = {
   }
 }
 
+/*
+ * Cleanup build files
+ */
+function clean () {
+  return del([getPath()])
+}
+
 /**
  * Get the path of the current environment
  * @returns {string}
  */
 function getPath () {
   return config.dist ? config.paths.dist : config.paths.build
-}
-
-/*
- * Cleanup build files
- */
-function clean () {
-  return del([getPath()])
 }
 
 /*
@@ -64,8 +65,17 @@ function reload (done) {
   done()
 }
 
+function lint () {
+  return gulp.src('**/07-utilities/_utilities.widths.scss')
+    .pipe(gulpStylelint({
+      reporters: [
+        { formatter: 'string', console: true }
+      ]
+    }))
+}
+
 /*
- * Start a local server
+ * Start a development server
  */
 function server (done) {
   if (!config.dist) {
@@ -92,6 +102,7 @@ let defaultTask = gulp.series(buildTask, server, watch)
 exports.clean = clean
 exports.compile = compile
 exports.copy = copy
+exports.lint = lint
 exports.reload = reload
 exports.server = server
 exports.watch = watch
