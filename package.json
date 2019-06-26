@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/michaelthorne/itcss-boilerplate#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.5",
+    "browser-sync": "^2.26.7",
     "del": "^4.1.1",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2",
@@ -28,8 +28,8 @@
     "gulp-util": "^3.0.8",
     "gulp-watch": "^5.0.1",
     "normalize.css": "^8.0.1",
-    "sass": "^1.20.1",
-    "stylelint": "^9.10.1",
+    "sass": "^1.22.0",
+    "stylelint": "^10.1.0",
     "stylelint-config-sass-guidelines": "^6.0.0"
   }
 }
